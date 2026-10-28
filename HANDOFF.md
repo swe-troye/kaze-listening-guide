@@ -1,3 +1,17 @@
+# 最新交接：動漫導聆
+
+更新日期：2026-10-29。使用者要求以藤井風為原型的原創向量角色插畫、橫式動漫歌詞介紹、簡報翻頁與流暢動畫，並明確授權改完測試直接 commit／push origin/main；不需要額外設計或發布確認。忽略使用者誤輸入的 remote-control start。
+
+首頁新增「進入動漫導聆」按鈕，新分頁開 anime.html。新增 anime.html/css/js 與 assets/kaze-guide.svg；18首直接共用已核對 data.js，未更動資料或順序。三種內容為歌曲大意／一種聽法／聆聽重點，完整筆記與來源用原生 dialog。章節可搜尋，支援上下首、鍵盤、左右滑動、分享 hash、儲存恢復、全螢幕（依瀏覽器支援）及減少動態。手機／平板直式改插畫帶與閱讀欄，橫式完整分欄。
+
+建置與本機伺服器已加入新資產。npm run build 產生10個資產及 standalone.html、anime-standalone.html，兩個離線HTML均內嵌內容與圖片，需放同一目錄才能互相連結。GitHub Pages 仍發布 main 根目錄，不用上傳 dist。
+
+驗證：npm test 6項通過；原頁 scripts/browser-check.cjs 12組 Edge 回歸通過（包含閱讀模式）；新頁 scripts/anime-browser-check.cjs 10組檢查涵蓋18首三種內容／筆記／來源、章節搜尋、鍵盤與dialog焦點、分享／儲存受限、滑動、動畫與快速翻頁、7種橫直式尺寸、200%文字與全螢幕失敗。離線雙頁與本機HTTP均已測試；截圖位於 /private/tmp/kaze-anime-qa、/private/tmp/kaze-anime-http-qa。獨立layout／type評估與機械掃描已完成，修正觸控區、直式提示與放大字體標籤換行；实际檢查角色與構圖後另改善平板直式。
+
+後續從原始碼修改，先讀 README.md、DESIGN.md、SOURCES.md。部署網址：https://swe-troye.github.io/kaze-listening-guide/ ，動漫頁 anime.html。以下保留先前內容查證與部署紀錄。
+
+---
+
 # 已完成接續：風，在歌裡
 
 更新日期：2026-10-28。

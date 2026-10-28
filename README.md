@@ -12,6 +12,10 @@ GitHub Pages 儲存庫：https://github.com/swe-troye/kaze-listening-guide 。�
 
 也可執行 `npm start`，瀏覽 http://localhost:4173 。`npm run preview` 預覽 dist。網站無第三方執行依賴，已部署至 GitHub Pages。
 
+動漫導聆：https://swe-troye.github.io/kaze-listening-guide/anime.html 。首頁「進入動漫導聆」會另開分頁；18首橫式動漫章節使用原創向量角色插畫，可按左右鍵、點上下首、左右滑動，或搜尋章節。每首有三種內容與完整來源；手機直式也能閱讀，橫拿可展開構圖。支援減少動態效果、裝置内章節保存及 `#song-曲目ID` 分享。
+
+離線使用時請把建置產生的 `standalone.html` 與 `anime-standalone.html` 放在同一目錄，兩頁皆內嵌自己的內容、樣式及圖片，互相連結。
+
 ## 內容與來源
 
 2026-10-28 已逐首打開、讀完 18 首的原文與外部中文翻譯（含重複副歌與尾聲），重寫摘要、歌詞大意與聆聽重點。原文主要為 KKBOX，對照 marumaru；中譯使用 marumaru 或有署名的方格子文章。每首附來源連結、閱讀範圍、日期、譯者／轉載資訊與必要的譯法分歧。
@@ -33,11 +37,13 @@ GitHub Pages 儲存庫：https://github.com/swe-troye/kaze-listening-guide 。�
 
 `npm test`：6 項資料／來源結構、搜尋、篩選與儲存測試。
 
-`npm run build`：產生 dist 與 standalone.html；檢查語法、資產及 app 引用的靜態 DOM ID，避免再次交付缺少控制區 ID 的頁面。
+`npm run build`：產生 dist 與兩份 standalone HTML；檢查語法、資產及 app 引用的靜態 DOM ID，避免再次交付缺少控制區 ID 的頁面。
 
 2026-10-28 已使用真實 Edge 156.0.4314.42 的 headless 程序驗證 `file://` 單檔，12 組瀏覽器檢查全部通過且無頁面 JavaScript 錯誤。涵蓋滑鼠／鍵盤模式切換、保存恢復、閱讀位置、來源展開、搜尋、篩選、收藏、已讀、空結果重設、手機目錄，以及 localStorage 不可用。測試尺寸為桌面 1440px、平板 768px、手機 390px／320px，並檢查水平溢出與實際截圖。
 
 瀏覽器回歸腳本為 `scripts/browser-check.cjs`。它是開發用檢查，需要已有的 Playwright Core 與 Edge，不是網站的執行依賴。可透過 `KAZE_PLAYWRIGHT_MODULE` 指定模組路徑、`KAZE_BROWSER_PATH` 指定瀏覽器、`KAZE_QA_DIR` 指定截圖目錄；`KAZE_SITE_URL` 可指定公開網站進行同樣檢查，再執行 `node scripts/browser-check.cjs`。本次使用系統已提供的 Playwright Core，沒有新增 npm 套件。
+
+動漫頁瀏覽器檢查：`node scripts/anime-browser-check.cjs`，使用同樣環境變數。涵蓋18首內容與來源、標籤／翻頁鍵盤、章節搜尋與對話框焦點、分享和保存、儲存受限、滑動、快速連點、減少動態、7種橫直式尺寸、200%文字與全螢幕失敗處理。預設檢查離線雙頁，`KAZE_SITE_URL` 可改為本機HTTP或公開首頁。
 
 ## 已修正的 Edge 切換問題
 

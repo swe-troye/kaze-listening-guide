@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#182A3E">
+  <meta name="description" content="用原創動漫角色與橫式章節，逐首走進藤井風的 18 首歌。歌曲大意、意境與來源，一頁一首慢慢翻。">
+  <title>動漫導聆 · 風，在歌裡</title>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="anime.css">
+  <link rel="preload" href="assets/kaze-guide.svg" as="image" type="image/svg+xml">
+  <script src="data.js" defer></script>
+  <script src="core.js" defer></script>
+  <script src="anime.js" defer></script>
+</head>
+<body data-scene="sky" data-palette="mint">
+  <a class="skip" href="#slide-title">跳到歌曲</a>
+  <div class="anime-shell">
+    <header class="anime-header">
+      <a class="anime-brand" href="index.html"><span class="brand-sign" aria-hidden="true">風</span><span>風，在歌裡<small>動漫導聆</small></span></a>
+      <p class="orientation-note">橫拿手機，展開這段旅程</p>
+      <nav class="header-actions" aria-label="頁面操作">
+        <a class="header-link" href="index.html">文字版<span aria-hidden="true"> ↗</span></a>
+        <button id="chapter-open" class="header-button" type="button"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 5h4v4H4zm0 10h4v4H4zM12 7h8M12 17h8"/></svg><span>章節</span></button>
+        <button id="fullscreen" class="header-button fullscreen-button" type="button" aria-label="進入全螢幕"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 4H4v5m11-5h5v5M4 15v5h5m11-5v5h-5"/></svg></button>
+      </nav>
+    </header>
+    <main id="anime-stage" class="anime-stage" aria-label="歌曲導聆簡報" aria-roledescription="輪播">
+      <div class="scene-panel" aria-hidden="true">
+        <div class="scene-sun"></div>
+        <svg class="scene-landscape" viewBox="0 0 640 800" preserveAspectRatio="xMidYMax slice">
+          <defs><pattern id="scene-dot-pattern" width="16" height="16" patternUnits="userSpaceOnUse"><circle cx="2" cy="2" r="1.5" fill="currentColor"/></pattern></defs>
+          <g class="scene-sky-lines" fill="none" stroke="currentColor" stroke-width="2"><path d="M-40 178C131 126 284 151 345 186M338 186h135M-25 211h166M400 111h186"/><path d="M471 391h141M12 363h120"/></g>
+          <g class="scene-city" fill="currentColor"><path d="M0 693V516h56v-58h28v58h31v177h22V586h74V450h16v-31h10v31h16v243h27V541h65v152h22V593h39v-92h39v-33h13v33h22v192h15V557h48v-33h39v169h25V604h44v89h27V484h18v-36h10v36h13v209Z"/><path d="M0 708h640v92H0Z"/></g>
+          <g class="scene-waves" fill="none" stroke="currentColor" stroke-width="3"><path d="M-30 545Q130 499 290 545T650 545M-30 577Q130 531 290 577T650 577M-30 609Q130 563 290 609T650 609"/></g>
+          <g class="scene-stars" fill="currentColor"><path d="M91 172l6 22 22 6-22 6-6 22-6-22-22-6 22-6ZM488 242l5 16 16 5-16 5-5 16-5-16-16-5 16-5ZM370 82l4 12 12 4-12 4-4 12-4-12-12-4 12-4ZM49 370l4 12 12 4-12 4-4 12-4-12-12-4 12-4Z"/><circle cx="470" cy="94" r="3"/><circle cx="143" cy="309" r="3"/><circle cx="527" cy="401" r="4"/></g>
+          <g class="scene-petals" fill="currentColor"><path d="M67 341C41 321 50 298 73 306C92 286 114 301 103 321C126 339 109 360 90 350C73 373 52 359 67 341ZM493 156C476 143 482 128 497 134C510 121 524 130 518 144C533 156 522 169 509 163C498 178 484 169 493 156ZM527 507C500 486 513 464 535 473C553 453 576 468 565 489C585 505 572 528 552 518C535 540 514 525 527 507Z"/></g>
+          <path class="scene-dot-field" d="M14 489h170v242H14z" fill="url(#scene-dot-pattern)"/>
+        </svg>
+        <div class="scene-orbit"></div>
+        <p id="scene-word" class="scene-word">聴</p>
+        <img id="guide-character" class="guide-character" src="assets/kaze-guide.svg" width="760" height="940" alt="" fetchpriority="high">
+        <div class="scene-caption"><span class="scene-caption-mark" aria-hidden="true">✦</span><p id="scene-caption">把耳朵，借給心裡的聲音。</p></div>
+      </div>
+      <article id="slide-copy" class="slide-copy" aria-labelledby="slide-title">
+        <div class="chapter-heading"><p class="chapter-marker"><span id="chapter-number">01</span><span class="chapter-rule" aria-hidden="true"></span><span id="chapter-name">心裡的聲音</span></p><span id="song-duration" class="song-duration">5:21</span></div>
+        <h1 id="slide-title" tabindex="-1">何なんw</h1>
+        <p id="slide-meta" class="slide-meta">なんなん · Nan-Nan</p>
+        <p id="slide-line" class="slide-line">那個被你忽略的內在聲音，一直希望你好。</p>
+        <div id="content-tabs" class="content-tabs" role="tablist" aria-label="選擇導聆內容">
+          <button id="tab-summary" type="button" role="tab" aria-selected="true" aria-controls="content-panel" data-view="summary">歌曲大意</button>
+          <button id="tab-interpretation" type="button" role="tab" aria-selected="false" aria-controls="content-panel" data-view="interpretation" tabindex="-1">一種聽法</button>
+          <button id="tab-listen" type="button" role="tab" aria-selected="false" aria-controls="content-panel" data-view="listen" tabindex="-1">聆聽重點</button>
+        </div>
+        <div id="content-panel" class="content-panel" role="tabpanel" aria-labelledby="tab-summary" tabindex="0"><p id="slide-text">從提醒牙縫裡的青海苔，到眼看對方不聽勸、又栽進同一個坑，說話者始終留在身旁。這首歌是在提醒我們，聽見內在的善意。</p></div>
+        <div class="slide-footnote"><p id="content-label">原創摘要 · 完整原文與中譯已核對</p><button id="notes-open" class="notes-link" type="button">完整筆記與來源 <span aria-hidden="true">↗</span></button></div>
+      </article>
+      <div id="page-turn" class="page-turn" aria-hidden="true"></div>
+    </main>
+    <footer class="anime-footer">
+      <div class="journey"><p><strong id="journey-count">01</strong><span> / 18 首</span><span class="journey-caption">一首，一段風景。</span></p><div id="journey-track" class="journey-track" aria-hidden="true"></div></div>
+      <p class="keyboard-hint"><kbd>←</kbd><kbd>→</kbd> 翻頁<span> · 也可以左右滑動</span></p>
+      <div class="page-navigation"><button id="previous" class="previous-button" type="button" disabled><span aria-hidden="true">←</span><span>上一首</span></button><button id="next" class="next-button" type="button"><span id="next-label">下一首</span><span aria-hidden="true">→</span></button></div>
+    </footer>
+  </div>
+  <dialog id="chapter-dialog" class="chapter-dialog" aria-labelledby="chapters-title"><div class="dialog-heading"><div><p class="dialog-kicker">18 首，一起慢慢走</p><h2 id="chapters-title">選一段風景</h2></div><button id="chapter-close" class="dialog-close" type="button" aria-label="關閉章節目錄">✕</button></div><label class="chapter-search-label" for="chapter-search">找歌名</label><input id="chapter-search" class="chapter-search" type="search" placeholder="日文、英文或中文歌名" autocomplete="off"><nav id="chapter-list" class="chapter-list" aria-label="歌曲章節"></nav><p id="chapter-empty" class="chapter-empty" hidden>沒有符合的歌名，試試另一種語言。</p><p class="art-credit">以藤井風為原型的原創向量角色插畫。</p></dialog>
+  <dialog id="notes-dialog" class="notes-dialog" aria-labelledby="notes-title"><div class="dialog-heading"><div><p class="dialog-kicker">往歌裡，再走一點</p><h2 id="notes-title">何なんw</h2></div><button id="notes-close" class="dialog-close" type="button" aria-label="關閉完整筆記">✕</button></div><div id="notes-content" class="notes-content"></div></dialog>
+  <p id="slide-status" class="sr-only" role="status" aria-live="polite" aria-atomic="true"></p>
+  <p id="anime-toast" class="anime-toast" role="status" hidden></p>
+  <noscript><div class="no-script"><p>請開啟 JavaScript 使用章節翻頁；你也可以回到文字版閱讀。</p><a href="index.html">回文字版</a></div></noscript>
+</body>
+</html>

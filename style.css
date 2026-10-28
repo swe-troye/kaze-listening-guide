@@ -42,6 +42,11 @@ main { max-width: 1280px; padding: 0 var(--space-2xl); margin: auto; }
 .occasion-dot { width: 6px; height: 6px; border-radius: 50%; background: var(--brand); }
 h1 { font-size: var(--text-display); line-height: 1.25; letter-spacing: -.025em; font-weight: 700; }
 .intro-text { color: var(--muted); margin-top: var(--space-lg); font-size: var(--text-lead); }
+.anime-entry { display: inline-flex; align-items: center; gap: var(--space-md); margin-top: var(--space-lg); min-height: 64px; padding: var(--space-md) var(--space-lg); border-radius: .5rem; background: var(--brand); color: var(--white); text-decoration: none; font-size: var(--text-body); font-weight: 600; }
+.anime-entry small { display: block; font-size: var(--text-caption); font-weight: 400; margin-top: var(--space-xs); }
+.anime-entry-arrow { margin-left: var(--space-lg); font-size: var(--text-lead); }
+.anime-entry:hover { background: var(--ink); }
+.anime-entry:active { transform: translateY(1px); }
 .intro-aside { display: flex; align-items: center; gap: var(--space-lg); align-self: center; color: var(--brand); }
 .intro-aside p { font-size: var(--text-caption); line-height: 1.9; }
 .intro-symbol { font-size: 6rem; line-height: 1; font-weight: 300; }

@@ -12,7 +12,7 @@ const server = http.createServer((req, res) => {
   catch { res.writeHead(400); return res.end('Invalid URL'); }
   const target = path.resolve(root, '.' + (pathname === '/' ? '/index.html' : pathname));
   if (!target.startsWith(root + path.sep)) { res.writeHead(403); return res.end('Forbidden'); }
-  const allowed = new Set(['index.html','standalone.html','style.css','data.js','core.js','app.js','favicon.svg']);
+  const allowed = new Set(['index.html','standalone.html','style.css','data.js','core.js','app.js','favicon.svg','anime.html','anime-standalone.html','anime.css','anime.js','assets/kaze-guide.svg']);
   if (!allowed.has(path.relative(root,target))) { res.writeHead(404); return res.end('Not found'); }
   fs.readFile(target, (error, data) => {
     if (error) { res.writeHead(404); return res.end('Not found'); }
