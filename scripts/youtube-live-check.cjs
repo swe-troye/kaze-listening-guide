@@ -6,7 +6,7 @@ const {chromium,webkit}=require(process.env.KAZE_PLAYWRIGHT_MODULE||'/Users/troy
  const engine=process.env.KAZE_BROWSER==='webkit'?webkit:chromium;
  const browser=await engine.launch({headless:true,...(engine===chromium?{executablePath:process.env.KAZE_BROWSER_PATH||'/Applications/Microsoft Edge.app/Contents/MacOS/Microsoft Edge'}:{})});
  try{
-  const page=await browser.newPage({viewport:{width:390,height:844},isMobile:true,hasTouch:true});const errors=[];page.on('pageerror',e=>errors.push(e.message));page.on('console',m=>{if(process.env.KAZE_DIAG)console.log('CONSOLE',m.type(),m.text());});page.on('requestfailed',r=>{if(process.env.KAZE_DIAG)console.log('FAILED',r.url().split('?')[0],r.failure()?.errorText);});
+  const page=await browser.newPage({viewport:{width:390,height:844},isMobile:true,hasTouch:true});const errors=[],externalAdErrors=[];page.on('pageerror',e=>{if(/\/{1,2}www\.youtube\.com\/pagead\/interaction\/.*due to access control checks/.test(e.message))externalAdErrors.push('YouTube ad interaction CORS');else errors.push(e.message);});page.on('console',m=>{if(process.env.KAZE_DIAG)console.log('CONSOLE',m.type(),m.text());});page.on('requestfailed',r=>{if(process.env.KAZE_DIAG)console.log('FAILED',r.url().split('?')[0],r.failure()?.errorText);});
   if(process.env.KAZE_TEST_LOCAL_SCRIPT)await page.route('**/youtube.js',r=>r.fulfill({contentType:'text/javascript',body:require('node:fs').readFileSync(require('node:path').join(__dirname,'../youtube.js'),'utf8')}));
   if(process.env.KAZE_TEST_HOST)await page.route('**/youtube.js',async r=>{const response=await r.fetch();await r.fulfill({response,body:(await response.text()).replace("host:'https://www.youtube-nocookie.com'","host:'https://www.youtube.com'")});});
   await page.goto(new URL('youtube.html#song-'+(process.env.KAZE_TEST_SONG||'nan-nan'),process.env.KAZE_SITE_URL||'http://127.0.0.1:4175/').href);
@@ -40,7 +40,7 @@ const {chromium,webkit}=require(process.env.KAZE_PLAYWRIGHT_MODULE||'/Users/troy
   await page.waitForFunction(()=>document.querySelector('[data-cue="1"]').getAttribute('aria-current')==='true');console.log('PASS real YouTube seeking highlights imported local cue');
   await page.click('#next');
   await waitForSongPlayback('もうええわ');
-  console.log('PASS next official video starts and its playback time advances');assert.match(await page.locator('#content-kind').innerText(),/原創繁中翻譯/);assert.deepEqual(errors,[]);assert.ok(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth));
+  console.log('PASS next official video starts and its playback time advances');assert.match(await page.locator('#content-kind').innerText(),/原創繁中翻譯/);assert.deepEqual(errors,[]);if(externalAdErrors.length)console.log(`${externalAdErrors.length} third-party YouTube ad tracking CORS errors recorded separately; playback checks passed.`);assert.ok(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth));
   await page.screenshot({path:process.env.KAZE_LIVE_SCREENSHOT||'/private/tmp/kaze-youtube-live.png',fullPage:true});
  }finally{await browser.close();}
 })().catch(e=>{console.error(e);process.exitCode=1;});

@@ -104,4 +104,4 @@ KAZE_BROWSER=webkit KAZE_SITE_URL=http://127.0.0.1:4175/ node scripts/youtube-li
 
 前者使用受控 IFrame API 測試互動與版面；後者使用真實 YouTube，兩種結果分開記錄。可透過 `KAZE_PLAYWRIGHT_MODULE` 和 `KAZE_BROWSER_PATH` 指定本機 Playwright／Chromium；WebKit 需已安裝。資料生成腳本 `scripts/build-youtube-data.py` 的輸入為本機研究與使用者檔案，原始外部快照不會提交；日常部署只需 `npm run build`。
 
-本次驗證：15 項核心／歌詞測試、24 項受控歌詞頁互動與版面、首頁／動漫頁各 13 項通過。本機來源的 YouTube 在 Edge／WebKit 顯示「無法播放這部影片」；公開 Pages 網域可播放。已修正前置廣告的 ID 與時間不能當歌曲時間，廣告期間顯示等待並隔離高亮／跳播。修正版在公開網域的 Edge 真實播放、內建雙語跳播、本機 LRC 跳播、下一首續播均通過；瀏覽器與影片限制仍由官方播放器處理。
+本次驗證：15 項核心／歌詞測試、24 項受控歌詞頁互動與版面、首頁／動漫頁各 13 項通過。本機來源的 YouTube 在 Edge／WebKit 顯示「無法播放這部影片」；公開 Pages 網域可播放。已修正前置廣告的 ID 與時間不能當歌曲時間，廣告期間顯示等待並隔離高亮／跳播。已發布版本的 Edge 真實播放、內建雙語跳播、本機 LRC 跳播、下一首續播均通過。WebKit 首次完成相同四項操作，另回報 YouTube 廣告統計 CORS；重試收到 YouTube 150（嵌入限制），因此不宣稱 WebKit 全程穩定通過。頁面會顯示官方錯誤與直接開啟影片連結。

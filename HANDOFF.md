@@ -4,7 +4,7 @@
 
 功能含點句跳播、原文／繁中同步、ruby／翻譯／字級切換、跟隨／暫停跟隨、速度、單句與 A–B 循環、逐影片偏移保存、LRC 匯入還原、搜尋與鍵盤。真實 getCurrentTime 驅動高亮与播放狀態；第一次要按播放，播完接下一首、最後停止；無法啟播或連線有直接 YouTube 入口與可讀歌詞。首頁及動漫頁入口已加入，動漫頁會傳目前 song hash 並暫停試聽。Pages 仍部署 main 根目錄，build/serve 加入全部 19 資產；歌詞頁需 HTTP(S)，不可保證 file:// 播放。
 
-驗證：npm test 15 項與 build 通過；歌詞頁受控 IFrame API 24 項（包含自動換歌／最後停止、讀音與翻譯、匯入／儲存隔離、循環、320/390/768/844px 與 200% 字體、API 與 storage 失敗）、首頁 13 項、動漫頁 13 項通過。截圖在 /private/tmp/kaze-youtube-desktop.png、kaze-ruby-mobile.png；已視覺檢查。本機來源的 YouTube 在 Edge／WebKit 第一／第二首回傳「無法播放這部影片」，一般與 nocookie 都重現。fca2eb6 已成功發布，全部 10 個新／整合資產與本機 hash 一致。公開 Pages 網域可播放，但前置廣告回報不同影片 ID，原先的播放 guard 會誤判未啟播；已修正為前置內容等待，隔離廣告時間與跳播，歌曲開始後同步，包含原生廣告暂停狀態。修正版用公開網域 + 本機 youtube.js fixture 的 Edge 真實測試已通過 4 項：播放時間、內建雙語跳播／高亮、匯入 LRC 跳播、下一首續播。發布修正版後另用未替換資產的公開網址驗證。受控 API 与真實播放結果分開記錄。
+驗證：npm test 15 項與 build 通過；歌詞頁受控 IFrame API 24 項（包含自動換歌／最後停止、讀音與翻譯、匯入／儲存隔離、循環、320/390/768/844px 與 200% 字體、API 與 storage 失敗）、首頁 13 項、動漫頁 13 項通過。截圖在 /private/tmp/kaze-youtube-desktop.png、kaze-ruby-mobile.png；已視覺檢查。本機來源的 YouTube 在 Edge／WebKit 第一／第二首回傳「無法播放這部影片」，一般與 nocookie 都重現。fca2eb6 已成功發布，全部 10 個新／整合資產與本機 hash 一致。公開 Pages 網域可播放，但前置廣告回報不同影片 ID，原先的播放 guard 會誤判未啟播；已修正為前置內容等待，隔離廣告時間與跳播，歌曲開始後同步，包含原生廣告暂停狀態。修正版用公開網域 + 本機 youtube.js fixture 的 Edge 真實測試已通過 4 項：播放時間、內建雙語跳播／高亮、匯入 LRC 跳播、下一首續播。8f0f739 已成功部署，公開 youtube.js hash 與本機一致。未替換資產的 Edge 公開版本四項真實播放檢查全數通過；WebKit 第一次同樣完成四項操作，但廣告統計 CORS 被原測試的全頁 error 斷言捕捉。測試現只把已知 YouTube pagead/interaction CORS 記到獨立外部錯誤欄，不排除其他錯誤；重試遇到官方 YouTube 150，不能宣稱 WebKit 穩定全數通過。受控 API 与真實播放結果分開記錄。
 
 本機研究 /private/tmp/kaze-*.json/txt/py、kaze-maru-pages 和 kaze-maru-timings 留在 tmp 不提交，含外部完整內容與暫時字幕 URL。公開資產只含使用者原文轉換、原創翻譯、文字不變的讀音片段與時間事實。scripts/build-youtube-data.py 使用 prepared research + user ZIP 生成資產，平常不用重新抓取。所有功能不需 API Key。後續保持原有測試後直接 commit/push 授權，不需再問發布確認。
 
