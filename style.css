@@ -245,3 +245,10 @@ dialog::backdrop { background: oklch(.15 0 0 / .35); }
 .summary-facts dt { font-size: var(--text-caption); font-weight: 600; color: var(--muted); }
 .summary-facts dd { margin: 0; font-size: var(--text-body); line-height: 1.9; max-width: 40em; }
 @media (max-width: 850px) { .prema-basics { grid-template-columns: minmax(0,1fr); gap: var(--space-lg); } }
+
+/* The two listening views share the introductory entry area. */
+.guide-entries { display:flex; flex-wrap:wrap; align-items:stretch; gap:var(--space-md); margin-top:var(--space-lg); }
+.guide-entries .anime-entry { margin-top:0; }
+.lyrics-entry { display:inline-flex; align-items:center; justify-content:space-between; gap:var(--space-lg); padding:var(--space-md) var(--space-lg); min-height:64px; border:1px solid var(--brand); border-radius:.5rem; color:var(--brand); text-decoration:none; font-weight:600; }
+.lyrics-entry small { display:block; margin-top:var(--space-xs); font-size:var(--text-caption); font-weight:400; }
+.lyrics-entry:hover { background:var(--brand); color:var(--white); }

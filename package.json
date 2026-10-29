@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "node scripts/serve.cjs",
     "start": "node scripts/serve.cjs",
-    "test": "node --test scripts/core.test.cjs",
+    "test": "node --test scripts/*.test.cjs",
     "build": "node scripts/build.cjs",
     "preview": "node scripts/serve.cjs dist"
   }

@@ -93,7 +93,8 @@
     document.querySelectorAll('[data-chapter]').forEach(button => {
       if (Number(button.dataset.chapter) === current) button.setAttribute('aria-current','true'); else button.removeAttribute('aria-current');
     });
-    document.querySelector('.header-link').href = `index.html#song-${song.id}`;
+    $('text-open').href = `index.html#song-${song.id}`;
+    $('lyrics-open').href = `youtube.html#song-${song.id}`;
     document.title = `${song.name} · 動漫導聆 · 風，在歌裡`;
     renderView();
     renderPlayer(song);
@@ -105,6 +106,7 @@
     if (direction) animate(direction);
   }
   const player = window.KazePlayer.create({host:$('spotify-player'),button:$('play-toggle'),status:$('playback-status')});
+  $('lyrics-open').addEventListener('click',()=>player.pause());
   $('spotify-open').addEventListener('click',()=>player.pause());
   function renderPlayer(song) {
     $('spotify-open').href = `https://open.spotify.com/track/${song.spotifyTrackId}`;

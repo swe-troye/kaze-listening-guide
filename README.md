@@ -84,3 +84,24 @@ git push origin main
 `assets/kaze-guide.svg` 是直接編寫 SVG 向量路徑繪製的原創 2D 動漫角色，不是圖片生成 API 的輸出。新版參考《LOVE ALL SERVE ALL》封面氣質，以蓬鬆捲髮、圓潤臉型、閉眼小笑容、淡珊瑚眼妝與腮紅呈現更年輕可愛的神情；輪廓、五官、襯衫與項鍊由 `<path>`、`<circle>` 和平面色塊組成；背景與角色分層，背景由 `anime.html` 的 SVG 與 `anime.css` 配色呈現，翻頁由 `anime.js` 的 Web Animations API 驅動。SVG 自帶透明背景，可直接編輯、縮放，不需要 OPENAI_API_KEY，也沒有生圖 API 費用。
 
 2026/10/29 已回查原始 session：`rollout-2026-10-28T11-14-29-01a18080-87e8-77e3-bb61-181004bf314b.jsonl`。紀錄在 2026-10-28 16:03 UTC 確認使用原創向量角色，16:08 UTC 透過 shell 將 SVG 原始碼寫入 `assets/kaze-guide.svg`；Git 提交 `db5a608` 收錄該插畫。這是可重現的製作方法，不需尋找隱藏的生圖工具。延伸網站可沿用向量方式，另畫新藝人人像，不把藤井風角色當作另一位藝人。
+
+
+## YouTube 歌詞跟唱
+
+[開啟歌詞跟唱](https://swe-troye.github.io/kaze-listening-guide/youtube.html)。首頁與動漫頁都有入口，動漫頁會帶入目前歌曲。參考同作者 Vaundy repo 的歌詞頁，支援完整 YouTube 影片、原文／原創繁中逐句高亮、點句跳播、漢字讀音與翻譯切換、字級、跟隨播放、速度、單句／A–B 循環、逐影片時間微調、本機 LRC 匯入與還原；播放完畢會接下一首，最後一首停止。第一次需要使用者按播放，瀏覽器阻擋時會提示點影片的播放鍵。
+
+18 首原文取自使用者提供的 `fujii_kaze_18_lrc.zip`；繁中為本站原創翻譯，沒有複製 marumaru 的逐句中譯。17 首影片與參考時間軸來自各曲 marumaru 頁；〈Okay, Goodbye〉未找到該站對照頁，使用官方音源與原始 LRC。已依同一支影片的參考時間重新對齊，包含〈何なんw〉約 +5 秒、〈Feelin’ Go(o)d〉約 +15 秒、〈満ちてゆく〉約 +14 秒的差異。202 個起點為推算，67 個起點保留原時軸待核對；並未逐句實聽全部影片。方法與逐曲狀態見 [對照報告](outputs/kaze-youtube-alignment.md)。
+
+`youtube-data.js` 保存影片與選用來源；`youtube-lrc.js` 保存雙語歌詞、ZIP 雜湊與對照狀態；`youtube-readings.js` 是保持原文的 ruby 片段；`youtube-core.js` 解析 LRC。所有靜態資產已提交，執行不需 API Key 或生圖 API。YouTube 頁需透過 HTTP(S) 開啟（`npm start` 或 Pages）；直接 `file://` 開啟的獨立導聆仍可閱讀，歌詞入口需相鄰靜態資產與本機伺服器。
+
+`npm test` 包含核心與歌詞資料／時間軸測試。新增瀏覽器驗證：
+
+```sh
+KAZE_SITE_URL=http://127.0.0.1:4175/ node scripts/youtube-browser-check.cjs
+KAZE_SITE_URL=http://127.0.0.1:4175/ node scripts/youtube-live-check.cjs
+KAZE_BROWSER=webkit KAZE_SITE_URL=http://127.0.0.1:4175/ node scripts/youtube-live-check.cjs
+```
+
+前者使用受控 IFrame API 測試互動與版面；後者使用真實 YouTube，兩種結果分開記錄。可透過 `KAZE_PLAYWRIGHT_MODULE` 和 `KAZE_BROWSER_PATH` 指定本機 Playwright／Chromium；WebKit 需已安裝。資料生成腳本 `scripts/build-youtube-data.py` 的輸入為本機研究與使用者檔案，原始外部快照不會提交；日常部署只需 `npm run build`。
+
+本次驗證：15 項核心／歌詞測試、23 項受控歌詞頁互動與版面、首頁／動漫頁各 13 項通過。真實本機 YouTube 啟播在 Edge／WebKit 顯示「無法播放這部影片」，因此未記為通過；頁面保留直接開啟影片與可閱讀歌詞的功能。

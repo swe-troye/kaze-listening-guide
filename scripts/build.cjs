@@ -3,10 +3,10 @@ const fs = require('node:fs');
 const path = require('node:path');
 const vm = require('node:vm');
 const root = path.resolve(__dirname, '..');
-const files = ['index.html', 'style.css', 'data.js', 'core.js', 'app.js', 'favicon.svg', 'anime.html', 'anime.css', 'previews.js', 'player.js', 'anime.js', 'assets/kaze-guide.svg'];
+const files = ['index.html', 'style.css', 'data.js', 'core.js', 'app.js', 'favicon.svg', 'anime.html', 'anime.css', 'previews.js', 'player.js', 'anime.js', 'youtube.html','youtube.css','youtube-data.js','youtube-lrc.js','youtube-readings.js','youtube-core.js','youtube.js','assets/kaze-guide.svg'];
 const read = file => fs.readFileSync(path.join(root,file),'utf8');
 for (const file of files) if (file.endsWith('.js')) new vm.Script(read(file), {filename:file});
-for (const [page, script] of [['index.html','app.js'],['anime.html','anime.js']]) {
+for (const [page, script] of [['index.html','app.js'],['anime.html','anime.js'],['youtube.html','youtube.js']]) {
   const html = read(page);
   for (const [,id] of read(script).matchAll(/\$\('([\w-]+)'\)/g)) {
     if (!html.includes(`id="${id}"`)) throw new Error(`Missing ${script} DOM anchor: ${id}`);

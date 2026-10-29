@@ -180,3 +180,16 @@
 | "Seishun Sick" | 2PDtvT5DEamQTM5qeiTDsR | https://p.scdn.co/mp3-preview/cbcbb8c829f6e3a2f54b3a96e6638fb3abd9672c |
 | Hachikō | 4WhHNXBgRglnkjy7TMzgdh | https://p.scdn.co/mp3-preview/46f18d8c6fb52789a092b84c897e0aa543674f11 |
 | masshiro (pure white) | 1yzVgJGGU4vrjy67nOx3od | https://p.scdn.co/mp3-preview/177594d114ab59bb4d5751f82d0f0f386dafc1f7 |
+
+
+## 2026-10-29：使用者 LRC 與 YouTube 歌詞跟唱
+
+本次使用者提供 `/Users/troye/Downloads/fujii_kaze_18_lrc.zip`，明確要求將歌詞用於歌詞網頁並對照 marumaru 的 YouTube 影片。這是新增的完整逐句功能；此前導聆頁的原創摘要與外部翻譯連結維持原有內容。18 首 LRC 原文保留其用詞、標點與寫法，未把 marumaru 的完整原文／翻譯匯入產品；重複時間的日文＋羅馬字取日文作主行，繁中依使用者原文重新翻譯。空白時間點以 `♪` 顯示間奏／停頓。ZIP 檔名的非 UTF-8 字元會誤碼，產品用 `01.lrc` 至 `18.lrc` 作順序識別，檔案與封裝 SHA-256 留在資料和對照報告。
+
+17 首實際取得 marumaru 曲頁上的 YouTube ID 與該影片的時間資料，依全曲順序配對以避免副歌對錯段落，再對拆分／合併句子推算；624 個起點直接採參考時間，202 個推算。〈Okay, Goodbye〉未找到 marumaru 頁，改用官方音源（Topic 頻道）與原始 67 個時間點。全部影片 ID、標題、頻道及長度已逐曲取得官方 YouTube 公開資料核對；不代表逐句聽完整支影片，也不代表參考時間全部精確。網站明示差異，保留每影片 ±20 秒的本機調整。完整資料來源、位移與逐點比對證據見 [對照報告](outputs/kaze-youtube-alignment.md) 與 [JSON](outputs/kaze-youtube-alignment.json)。
+
+漢字讀音從各曲 marumaru ruby 對應到使用者相同文字，不替換原詞。〈死ぬのがいいわ〉的「私／誰／直」、〈ガーデン〉的「振」在原檔與參考寫法不同，補上一般讀音並在頁面標記；不是宣稱已驗證的特殊唱法。純英文歌曲沒有漢字讀音，按鈕會自動停用。
+
+繁中是本站原創翻譯，不是官方譯詞，也未轉載原站翻譯。外部完整 HTML／歌詞時間資料只保存在本機研究目錄；儲存庫包含使用者原文的轉換結果、原創翻譯、讀音片段與時間／來源事實，不包含原站完整快照或暫時簽署字幕 URL。
+
+功能參考：[Vaundy repo](https://github.com/swe-troye/vaundy-listening-guide) 的 `youtube.html/css/js`、LRC parser 和瀏覽器檢查，改為本專案 18 首、品牌、資料與獨立保存空間。使用官方 YouTube nocookie IFrame API，真實播放时间推動高亮；未使用爬取音訊或虛擬進度。

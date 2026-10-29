@@ -1,0 +1,7213 @@
+{
+  "checkedAt": "2026-10-29",
+  "archiveName": "fujii_kaze_18_lrc.zip",
+  "archiveSHA256": "a9010483d78be74c0e309bec227c8a7be63abc20e1311356dd4840cd5013ef21",
+  "method": "Sequence matching against the same marumaru-linked video; unpaired cues interpolated; isolated offsets >2s use median fallback. No full auditory verification.",
+  "songs": [
+    {
+      "id": "nan-nan",
+      "name": "何なんw",
+      "videoId": "Nt6ZwuVzOS4",
+      "videoSource": "https://www.youtube.com/watch?v=Nt6ZwuVzOS4",
+      "referenceUrl": "https://www.marumaru-x.com/japanese-song/play-wzrv4zxwr3",
+      "providedFile": "01.lrc",
+      "cueCount": 51,
+      "directlyAlignedCues": 48,
+      "estimatedCues": 3,
+      "unchangedUnverifiedCues": 0,
+      "medianOffsetSeconds": 5.055,
+      "timingVerified": false,
+      "cues": [
+        {
+          "originalStart": 57.44,
+          "start": 62.4,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            0,
+            0
+          ]
+        },
+        {
+          "originalStart": 63.3,
+          "start": 68.45,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            1,
+            1
+          ]
+        },
+        {
+          "originalStart": 69.07,
+          "start": 74.2,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            2,
+            2
+          ]
+        },
+        {
+          "originalStart": 78.76,
+          "start": 83.9,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            3,
+            3
+          ]
+        },
+        {
+          "originalStart": 85.27,
+          "start": 90.1,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            4,
+            4
+          ]
+        },
+        {
+          "originalStart": 90.47,
+          "start": 95.45,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            5,
+            5
+          ]
+        },
+        {
+          "originalStart": 95.43,
+          "start": 100.45,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            6,
+            6
+          ]
+        },
+        {
+          "originalStart": 101.5,
+          "start": 106.8,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            7,
+            7
+          ]
+        },
+        {
+          "originalStart": 105.83,
+          "start": 110.9,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            8,
+            8
+          ]
+        },
+        {
+          "originalStart": 111.9,
+          "start": 116.9,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            9,
+            9
+          ]
+        },
+        {
+          "originalStart": 116.42,
+          "start": 121.45,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            10,
+            10
+          ]
+        },
+        {
+          "originalStart": 122.03,
+          "start": 127.1,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            11,
+            11
+          ]
+        },
+        {
+          "originalStart": 124.34,
+          "start": 129.6,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            12,
+            12
+          ]
+        },
+        {
+          "originalStart": 127.04,
+          "start": 132.25,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            13,
+            13
+          ]
+        },
+        {
+          "originalStart": 129.51,
+          "start": 134.85,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            14,
+            14
+          ]
+        },
+        {
+          "originalStart": 132.56,
+          "start": 137.55,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            15,
+            15
+          ]
+        },
+        {
+          "originalStart": 135.08,
+          "start": 140.2,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            16,
+            16
+          ]
+        },
+        {
+          "originalStart": 138.46,
+          "start": 143.48,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            17,
+            17
+          ]
+        },
+        {
+          "originalStart": 141.09,
+          "start": 146.2,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            18,
+            18
+          ]
+        },
+        {
+          "originalStart": 144.67000000000002,
+          "start": 149.45,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            19,
+            19
+          ]
+        },
+        {
+          "originalStart": 149.85,
+          "start": 154.9,
+          "matchRatio": 0.9091,
+          "referenceIndices": [
+            20,
+            20
+          ]
+        },
+        {
+          "originalStart": 155.18,
+          "start": 160.2,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            21,
+            21
+          ]
+        },
+        {
+          "originalStart": 160.54,
+          "start": 165.45,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            22,
+            22
+          ]
+        },
+        {
+          "originalStart": 165.42000000000002,
+          "start": 170.4,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            23,
+            23
+          ]
+        },
+        {
+          "originalStart": 169.82,
+          "start": 174.85,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            24,
+            24
+          ]
+        },
+        {
+          "originalStart": 176.07999999999998,
+          "start": 181.2,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            25,
+            25
+          ]
+        },
+        {
+          "originalStart": 180.47,
+          "start": 185.45,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            26,
+            26
+          ]
+        },
+        {
+          "originalStart": 185.94,
+          "start": 191.2,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            27,
+            27
+          ]
+        },
+        {
+          "originalStart": 188.36,
+          "start": 193.5,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            28,
+            28
+          ]
+        },
+        {
+          "originalStart": 191.05,
+          "start": 196.2,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            29,
+            29
+          ]
+        },
+        {
+          "originalStart": 193.64,
+          "start": 198.8,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            30,
+            30
+          ]
+        },
+        {
+          "originalStart": 196.4,
+          "start": 201.45,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            31,
+            31
+          ]
+        },
+        {
+          "originalStart": 199.16,
+          "start": 204.2,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            32,
+            32
+          ]
+        },
+        {
+          "originalStart": 202.31,
+          "start": 207.5,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            33,
+            33
+          ]
+        },
+        {
+          "originalStart": 204.97,
+          "start": 210.1,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            34,
+            34
+          ]
+        },
+        {
+          "originalStart": 209.27,
+          "start": 214.325,
+          "alignment": "interpolated"
+        },
+        {
+          "originalStart": 214.13,
+          "start": 219.1,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            35,
+            35
+          ]
+        },
+        {
+          "originalStart": 220.44,
+          "start": 225.352,
+          "alignment": "interpolated"
+        },
+        {
+          "originalStart": 224.98,
+          "start": 229.85,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            36,
+            36
+          ]
+        },
+        {
+          "originalStart": 229.41,
+          "start": 234.5,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            37,
+            38
+          ]
+        },
+        {
+          "originalStart": 240.44,
+          "start": 245.45,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            39,
+            39
+          ]
+        },
+        {
+          "originalStart": 247.32,
+          "start": 252.2,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            40,
+            40
+          ]
+        },
+        {
+          "originalStart": 252.61,
+          "start": 257.85,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            41,
+            41
+          ]
+        },
+        {
+          "originalStart": 255.66,
+          "start": 260.5,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            42,
+            42
+          ]
+        },
+        {
+          "originalStart": 257.77,
+          "start": 262.9,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            43,
+            43
+          ]
+        },
+        {
+          "originalStart": 260.85,
+          "start": 266,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            44,
+            44
+          ]
+        },
+        {
+          "originalStart": 264.01,
+          "start": 269,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            45,
+            45
+          ]
+        },
+        {
+          "originalStart": 269.17,
+          "start": 274.2,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            46,
+            46
+          ]
+        },
+        {
+          "originalStart": 271.62,
+          "start": 276.75,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            47,
+            47
+          ]
+        },
+        {
+          "originalStart": 274.59000000000003,
+          "start": 279.65,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            48,
+            48
+          ]
+        },
+        {
+          "originalStart": 275.04,
+          "start": 280.1,
+          "alignment": "interpolated"
+        }
+      ]
+    },
+    {
+      "id": "mo-eh-wa",
+      "name": "もうええわ",
+      "videoId": "y4FYCJRjHBg",
+      "videoSource": "https://www.youtube.com/watch?v=y4FYCJRjHBg",
+      "referenceUrl": "https://www.marumaru-x.com/japanese-song/play-g9r059j0nv",
+      "providedFile": "02.lrc",
+      "cueCount": 54,
+      "directlyAlignedCues": 35,
+      "estimatedCues": 19,
+      "unchangedUnverifiedCues": 0,
+      "medianOffsetSeconds": -0.08,
+      "timingVerified": false,
+      "cues": [
+        {
+          "originalStart": 12.86,
+          "start": 12.7,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            0,
+            0
+          ]
+        },
+        {
+          "originalStart": 15.63,
+          "start": 15.55,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            1,
+            1
+          ]
+        },
+        {
+          "originalStart": 18.53,
+          "start": 18.4,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            2,
+            2
+          ]
+        },
+        {
+          "originalStart": 24.44,
+          "start": 24.6,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            3,
+            3
+          ]
+        },
+        {
+          "originalStart": 27.37,
+          "start": 27.3,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            4,
+            4
+          ]
+        },
+        {
+          "originalStart": 30.35,
+          "start": 30.2,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            5,
+            5
+          ]
+        },
+        {
+          "originalStart": 36.69,
+          "start": 36.45,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            6,
+            6
+          ]
+        },
+        {
+          "originalStart": 42.48,
+          "start": 42.4,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            7,
+            7
+          ]
+        },
+        {
+          "originalStart": 48.23,
+          "start": 48.18,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            8,
+            8
+          ]
+        },
+        {
+          "originalStart": 55.16,
+          "start": 54.55,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            9,
+            9
+          ]
+        },
+        {
+          "originalStart": 59.0,
+          "start": 59.4,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            10,
+            10
+          ]
+        },
+        {
+          "originalStart": 61.67,
+          "start": 61.927,
+          "alignment": "interpolated"
+        },
+        {
+          "originalStart": 65.18,
+          "start": 65.25,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            11,
+            11
+          ]
+        },
+        {
+          "originalStart": 67.51,
+          "start": 67.56,
+          "alignment": "interpolated"
+        },
+        {
+          "originalStart": 71.08,
+          "start": 71.1,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            12,
+            12
+          ]
+        },
+        {
+          "originalStart": 73.5,
+          "start": 73.532,
+          "alignment": "interpolated"
+        },
+        {
+          "originalStart": 77.15,
+          "start": 77.2,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            13,
+            13
+          ]
+        },
+        {
+          "originalStart": 82.24,
+          "start": 82.247,
+          "alignment": "interpolated"
+        },
+        {
+          "originalStart": 89.55,
+          "start": 89.495,
+          "alignment": "interpolated"
+        },
+        {
+          "originalStart": 100.75,
+          "start": 100.6,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            14,
+            14
+          ]
+        },
+        {
+          "originalStart": 103.57,
+          "start": 103.3,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            15,
+            15
+          ]
+        },
+        {
+          "originalStart": 106.37,
+          "start": 106.3,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            16,
+            16
+          ]
+        },
+        {
+          "originalStart": 112.34,
+          "start": 112.4,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            17,
+            17
+          ]
+        },
+        {
+          "originalStart": 115.27000000000001,
+          "start": 115.1,
+          "matchRatio": 0.8571,
+          "referenceIndices": [
+            18,
+            18
+          ]
+        },
+        {
+          "originalStart": 118.87,
+          "start": 118.696,
+          "alignment": "interpolated"
+        },
+        {
+          "originalStart": 124.58,
+          "start": 124.4,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            20,
+            20
+          ]
+        },
+        {
+          "originalStart": 130.53,
+          "start": 130.1,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            21,
+            21
+          ]
+        },
+        {
+          "originalStart": 136.13,
+          "start": 135.88,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            22,
+            22
+          ]
+        },
+        {
+          "originalStart": 142.69,
+          "start": 142.4,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            23,
+            23
+          ]
+        },
+        {
+          "originalStart": 147.16,
+          "start": 147.2,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            24,
+            24
+          ]
+        },
+        {
+          "originalStart": 149.63,
+          "start": 149.666,
+          "alignment": "interpolated"
+        },
+        {
+          "originalStart": 153.07,
+          "start": 153.1,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            25,
+            25
+          ]
+        },
+        {
+          "originalStart": 155.52,
+          "start": 155.597,
+          "alignment": "interpolated"
+        },
+        {
+          "originalStart": 158.76,
+          "start": 158.9,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            26,
+            26
+          ]
+        },
+        {
+          "originalStart": 161.11,
+          "start": 161.189,
+          "alignment": "interpolated"
+        },
+        {
+          "originalStart": 164.97,
+          "start": 164.95,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            27,
+            27
+          ]
+        },
+        {
+          "originalStart": 170.43,
+          "start": 170.5,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            28,
+            28
+          ]
+        },
+        {
+          "originalStart": 180.64,
+          "start": 180.596,
+          "alignment": "interpolated"
+        },
+        {
+          "originalStart": 199.96,
+          "start": 199.7,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            29,
+            29
+          ]
+        },
+        {
+          "originalStart": 202.26,
+          "start": 202.1,
+          "alignment": "interpolated"
+        },
+        {
+          "originalStart": 205.71,
+          "start": 205.7,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            30,
+            30
+          ]
+        },
+        {
+          "originalStart": 208.19,
+          "start": 208.151,
+          "alignment": "interpolated"
+        },
+        {
+          "originalStart": 211.63,
+          "start": 211.55,
+          "matchRatio": 0.898,
+          "referenceIndices": [
+            31,
+            31
+          ]
+        },
+        {
+          "originalStart": 214.02,
+          "start": 213.691,
+          "alignment": "interpolated"
+        },
+        {
+          "originalStart": 219.97,
+          "start": 219.02,
+          "alignment": "interpolated"
+        },
+        {
+          "originalStart": 223.52,
+          "start": 222.2,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            32,
+            32
+          ]
+        },
+        {
+          "originalStart": 225.73,
+          "start": 225.013,
+          "alignment": "interpolated"
+        },
+        {
+          "originalStart": 228.94,
+          "start": 229.1,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            33,
+            33
+          ]
+        },
+        {
+          "originalStart": 231.53,
+          "start": 231.564,
+          "alignment": "interpolated"
+        },
+        {
+          "originalStart": 235.09,
+          "start": 234.95,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            34,
+            34
+          ]
+        },
+        {
+          "originalStart": 237.59,
+          "start": 237.558,
+          "alignment": "interpolated"
+        },
+        {
+          "originalStart": 240.89,
+          "start": 241,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            35,
+            35
+          ]
+        },
+        {
+          "originalStart": 246.46,
+          "start": 246.57,
+          "alignment": "interpolated"
+        },
+        {
+          "originalStart": 251.26,
+          "start": 251.37,
+          "alignment": "interpolated"
+        }
+      ]
+    },
+    {
+      "id": "shinunoga-e-wa",
+      "name": "死ぬのがいいわ",
+      "videoId": "dawrQnvwMTY",
+      "videoSource": "https://www.youtube.com/watch?v=dawrQnvwMTY",
+      "referenceUrl": "https://www.marumaru-x.com/japanese-song/play-14o71m3dok",
+      "providedFile": "03.lrc",
+      "cueCount": 45,
+      "directlyAlignedCues": 35,
+      "estimatedCues": 10,
+      "unchangedUnverifiedCues": 0,
+      "medianOffsetSeconds": 0.14,
+      "timingVerified": false,
+      "cues": [
+        {
+          "originalStart": 6.3,
+          "start": 6.52,
+          "alignment": "interpolated"
+        },
+        {
+          "originalStart": 9.35,
+          "start": 9.57,
+          "alignment": "interpolated"
+        },
+        {
+          "originalStart": 12.59,
+          "start": 12.81,
+          "alignment": "interpolated"
+        },
+        {
+          "originalStart": 24.28,
+          "start": 24.5,
+          "matchRatio": 0.8667,
+          "referenceIndices": [
+            0,
+            0
+          ]
+        },
+        {
+          "originalStart": 27.43,
+          "start": 27.65,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            1,
+            1
+          ]
+        },
+        {
+          "originalStart": 32.26,
+          "start": 32.4,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            2,
+            2
+          ]
+        },
+        {
+          "originalStart": 36.41,
+          "start": 36.58,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            3,
+            3
+          ]
+        },
+        {
+          "originalStart": 39.67,
+          "start": 39.78,
+          "matchRatio": 0.9091,
+          "referenceIndices": [
+            4,
+            4
+          ]
+        },
+        {
+          "originalStart": 44.38,
+          "start": 44.55,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            5,
+            5
+          ]
+        },
+        {
+          "originalStart": 48.61,
+          "start": 48.75,
+          "matchRatio": 0.8333,
+          "referenceIndices": [
+            6,
+            6
+          ]
+        },
+        {
+          "originalStart": 51.77,
+          "start": 51.85,
+          "matchRatio": 0.8125,
+          "referenceIndices": [
+            7,
+            7
+          ]
+        },
+        {
+          "originalStart": 54.7,
+          "start": 54.85,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            8,
+            8
+          ]
+        },
+        {
+          "originalStart": 57.65,
+          "start": 57.75,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            9,
+            9
+          ]
+        },
+        {
+          "originalStart": 60.84,
+          "start": 60.8,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            10,
+            10
+          ]
+        },
+        {
+          "originalStart": 63.85,
+          "start": 64.15,
+          "matchRatio": 0.8125,
+          "referenceIndices": [
+            11,
+            11
+          ]
+        },
+        {
+          "originalStart": 66.98,
+          "start": 67.15,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            12,
+            12
+          ]
+        },
+        {
+          "originalStart": 69.87,
+          "start": 69.88,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            13,
+            13
+          ]
+        },
+        {
+          "originalStart": 72.84,
+          "start": 73.1,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            14,
+            14
+          ]
+        },
+        {
+          "originalStart": 76.08,
+          "start": 76.15,
+          "matchRatio": 0.9444,
+          "referenceIndices": [
+            15,
+            15
+          ]
+        },
+        {
+          "originalStart": 80.87,
+          "start": 80.95,
+          "matchRatio": 0.92,
+          "referenceIndices": [
+            16,
+            16
+          ]
+        },
+        {
+          "originalStart": 85.18,
+          "start": 85.25,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            17,
+            17
+          ]
+        },
+        {
+          "originalStart": 88.23,
+          "start": 88.3,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            18,
+            18
+          ]
+        },
+        {
+          "originalStart": 93.13,
+          "start": 93.1,
+          "matchRatio": 0.9167,
+          "referenceIndices": [
+            19,
+            19
+          ]
+        },
+        {
+          "originalStart": 95.97999999999999,
+          "start": 95.054,
+          "alignment": "interpolated"
+        },
+        {
+          "originalStart": 97.36,
+          "start": 96,
+          "matchRatio": 0.7692,
+          "referenceIndices": [
+            20,
+            21
+          ]
+        },
+        {
+          "originalStart": 100.42,
+          "start": 100.35,
+          "matchRatio": 0.8125,
+          "referenceIndices": [
+            22,
+            22
+          ]
+        },
+        {
+          "originalStart": 103.47,
+          "start": 103.45,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            23,
+            24
+          ]
+        },
+        {
+          "originalStart": 106.32,
+          "start": 106.368,
+          "alignment": "interpolated"
+        },
+        {
+          "originalStart": 109.36,
+          "start": 109.48,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            25,
+            25
+          ]
+        },
+        {
+          "originalStart": 112.4,
+          "start": 112.7,
+          "matchRatio": 0.8125,
+          "referenceIndices": [
+            26,
+            26
+          ]
+        },
+        {
+          "originalStart": 115.47,
+          "start": 115.65,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            27,
+            28
+          ]
+        },
+        {
+          "originalStart": 118.43,
+          "start": 118.645,
+          "alignment": "interpolated"
+        },
+        {
+          "originalStart": 122.54,
+          "start": 122.803,
+          "alignment": "interpolated"
+        },
+        {
+          "originalStart": 145.96,
+          "start": 146.5,
+          "matchRatio": 0.8333,
+          "referenceIndices": [
+            29,
+            29
+          ]
+        },
+        {
+          "originalStart": 149.06,
+          "start": 149.5,
+          "matchRatio": 0.8125,
+          "referenceIndices": [
+            30,
+            30
+          ]
+        },
+        {
+          "originalStart": 151.91,
+          "start": 152.2,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            31,
+            32
+          ]
+        },
+        {
+          "originalStart": 154.99,
+          "start": 155.214,
+          "alignment": "interpolated"
+        },
+        {
+          "originalStart": 157.94,
+          "start": 158.1,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            33,
+            33
+          ]
+        },
+        {
+          "originalStart": 161.12,
+          "start": 161.25,
+          "matchRatio": 0.8125,
+          "referenceIndices": [
+            34,
+            34
+          ]
+        },
+        {
+          "originalStart": 164.27,
+          "start": 164.25,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            35,
+            36
+          ]
+        },
+        {
+          "originalStart": 167.22,
+          "start": 167.195,
+          "alignment": "interpolated"
+        },
+        {
+          "originalStart": 170.23,
+          "start": 170.2,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            37,
+            37
+          ]
+        },
+        {
+          "originalStart": 173.24,
+          "start": 173.4,
+          "matchRatio": 0.9545,
+          "referenceIndices": [
+            38,
+            38
+          ]
+        },
+        {
+          "originalStart": 177.93,
+          "start": 178.25,
+          "matchRatio": 0.9231,
+          "referenceIndices": [
+            39,
+            39
+          ]
+        },
+        {
+          "originalStart": 180.29,
+          "start": 180.61,
+          "alignment": "interpolated"
+        }
+      ]
+    },
+    {
+      "id": "matsuri",
+      "name": "まつり",
+      "videoId": "NwOvu-j_WjY",
+      "videoSource": "https://www.youtube.com/watch?v=NwOvu-j_WjY",
+      "referenceUrl": "https://www.marumaru-x.com/japanese-song/play-vxn5wx0wn9",
+      "providedFile": "04.lrc",
+      "cueCount": 58,
+      "directlyAlignedCues": 50,
+      "estimatedCues": 8,
+      "unchangedUnverifiedCues": 0,
+      "medianOffsetSeconds": -0.35,
+      "timingVerified": false,
+      "cues": [
+        {
+          "originalStart": 4.84,
+          "start": 4.51,
+          "alignment": "interpolated"
+        },
+        {
+          "originalStart": 6.92,
+          "start": 6.59,
+          "alignment": "interpolated"
+        },
+        {
+          "originalStart": 25.23,
+          "start": 24.9,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            0,
+            0
+          ]
+        },
+        {
+          "originalStart": 30.31,
+          "start": 29.8,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            1,
+            1
+          ]
+        },
+        {
+          "originalStart": 35.2,
+          "start": 34.65,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            2,
+            2
+          ]
+        },
+        {
+          "originalStart": 39.11,
+          "start": 38.75,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            3,
+            3
+          ]
+        },
+        {
+          "originalStart": 45.04,
+          "start": 44.7,
+          "matchRatio": 0.8333,
+          "referenceIndices": [
+            4,
+            4
+          ]
+        },
+        {
+          "originalStart": 50.08,
+          "start": 49.61,
+          "alignment": "interpolated"
+        },
+        {
+          "originalStart": 55.15,
+          "start": 54.55,
+          "matchRatio": 0.8333,
+          "referenceIndices": [
+            6,
+            6
+          ]
+        },
+        {
+          "originalStart": 59.12,
+          "start": 58.7,
+          "matchRatio": 0.7879,
+          "referenceIndices": [
+            7,
+            7
+          ]
+        },
+        {
+          "originalStart": 64.92,
+          "start": 64.45,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            8,
+            8
+          ]
+        },
+        {
+          "originalStart": 69.59,
+          "start": 69.5,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            9,
+            9
+          ]
+        },
+        {
+          "originalStart": 71.49,
+          "start": 71.4,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            10,
+            10
+          ]
+        },
+        {
+          "originalStart": 74.61,
+          "start": 74.5,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            11,
+            11
+          ]
+        },
+        {
+          "originalStart": 78.93,
+          "start": 78.8,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            12,
+            12
+          ]
+        },
+        {
+          "originalStart": 82.46000000000001,
+          "start": 82.2,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            13,
+            13
+          ]
+        },
+        {
+          "originalStart": 84.37,
+          "start": 84.1,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            14,
+            14
+          ]
+        },
+        {
+          "originalStart": 86.78999999999999,
+          "start": 86.45,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            15,
+            15
+          ]
+        },
+        {
+          "originalStart": 89.33,
+          "start": 88.85,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            16,
+            16
+          ]
+        },
+        {
+          "originalStart": 91.78999999999999,
+          "start": 91.4,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            17,
+            17
+          ]
+        },
+        {
+          "originalStart": 94.18,
+          "start": 93.9,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            18,
+            18
+          ]
+        },
+        {
+          "originalStart": 96.86,
+          "start": 96.3,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            19,
+            19
+          ]
+        },
+        {
+          "originalStart": 99.83,
+          "start": 99.322,
+          "alignment": "interpolated"
+        },
+        {
+          "originalStart": 106.53999999999999,
+          "start": 106.15,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            20,
+            20
+          ]
+        },
+        {
+          "originalStart": 111.34,
+          "start": 110.9,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            21,
+            21
+          ]
+        },
+        {
+          "originalStart": 116.47,
+          "start": 116.5,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            22,
+            22
+          ]
+        },
+        {
+          "originalStart": 121.25,
+          "start": 120.9,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            23,
+            23
+          ]
+        },
+        {
+          "originalStart": 123.99,
+          "start": 123.65,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            24,
+            24
+          ]
+        },
+        {
+          "originalStart": 126.68,
+          "start": 126.3,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            25,
+            25
+          ]
+        },
+        {
+          "originalStart": 129.03,
+          "start": 128.7,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            26,
+            26
+          ]
+        },
+        {
+          "originalStart": 131.47,
+          "start": 131.2,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            27,
+            27
+          ]
+        },
+        {
+          "originalStart": 133.9,
+          "start": 133.5,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            28,
+            28
+          ]
+        },
+        {
+          "originalStart": 136.38,
+          "start": 136.1,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            29,
+            29
+          ]
+        },
+        {
+          "originalStart": 139.09,
+          "start": 138.7,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            30,
+            30
+          ]
+        },
+        {
+          "originalStart": 141.41,
+          "start": 141.2,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            31,
+            31
+          ]
+        },
+        {
+          "originalStart": 143.67000000000002,
+          "start": 143.45,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            32,
+            32
+          ]
+        },
+        {
+          "originalStart": 148.61,
+          "start": 148.25,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            33,
+            34
+          ]
+        },
+        {
+          "originalStart": 153.76,
+          "start": 153.35,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            35,
+            35
+          ]
+        },
+        {
+          "originalStart": 158.24,
+          "start": 157.9,
+          "matchRatio": 0.9032,
+          "referenceIndices": [
+            36,
+            36
+          ]
+        },
+        {
+          "originalStart": 163.45,
+          "start": 163.45,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            37,
+            37
+          ]
+        },
+        {
+          "originalStart": 166.07,
+          "start": 165.7,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            38,
+            38
+          ]
+        },
+        {
+          "originalStart": 168.57,
+          "start": 168.15,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            39,
+            39
+          ]
+        },
+        {
+          "originalStart": 170.95,
+          "start": 170.6,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            40,
+            40
+          ]
+        },
+        {
+          "originalStart": 173.57,
+          "start": 172.95,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            41,
+            41
+          ]
+        },
+        {
+          "originalStart": 175.97,
+          "start": 175.45,
+          "matchRatio": 0.9333,
+          "referenceIndices": [
+            42,
+            42
+          ]
+        },
+        {
+          "originalStart": 178.98,
+          "start": 178.539,
+          "alignment": "interpolated"
+        },
+        {
+          "originalStart": 183.23,
+          "start": 182.9,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            43,
+            43
+          ]
+        },
+        {
+          "originalStart": 185.63,
+          "start": 185.4,
+          "matchRatio": 0.8,
+          "referenceIndices": [
+            44,
+            45
+          ]
+        },
+        {
+          "originalStart": 188.39,
+          "start": 188.063,
+          "alignment": "interpolated"
+        },
+        {
+          "originalStart": 190.76,
+          "start": 190.35,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            46,
+            46
+          ]
+        },
+        {
+          "originalStart": 193.12,
+          "start": 192.8,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            47,
+            47
+          ]
+        },
+        {
+          "originalStart": 195.88,
+          "start": 195.3,
+          "matchRatio": 0.875,
+          "referenceIndices": [
+            48,
+            48
+          ]
+        },
+        {
+          "originalStart": 198.82,
+          "start": 198.308,
+          "alignment": "interpolated"
+        },
+        {
+          "originalStart": 205.46,
+          "start": 205.1,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            49,
+            49
+          ]
+        },
+        {
+          "originalStart": 210.3,
+          "start": 209.95,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            50,
+            50
+          ]
+        },
+        {
+          "originalStart": 215.48,
+          "start": 215,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            51,
+            51
+          ]
+        },
+        {
+          "originalStart": 220.24,
+          "start": 219.95,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            52,
+            52
+          ]
+        },
+        {
+          "originalStart": 222.16,
+          "start": 221.87,
+          "alignment": "interpolated"
+        }
+      ]
+    },
+    {
+      "id": "kirari",
+      "name": "きらり",
+      "videoId": "TcLLpZBWsck",
+      "videoSource": "https://www.youtube.com/watch?v=TcLLpZBWsck",
+      "referenceUrl": "https://www.marumaru-x.com/japanese-song/play-14o717y7ok",
+      "providedFile": "05.lrc",
+      "cueCount": 54,
+      "directlyAlignedCues": 34,
+      "estimatedCues": 20,
+      "unchangedUnverifiedCues": 0,
+      "medianOffsetSeconds": -0.095,
+      "timingVerified": false,
+      "cues": [
+        {
+          "originalStart": 0.34,
+          "start": 0.5,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            0,
+            0
+          ]
+        },
+        {
+          "originalStart": 4.13,
+          "start": 4.135,
+          "alignment": "interpolated"
+        },
+        {
+          "originalStart": 8.89,
+          "start": 8.7,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            1,
+            1
+          ]
+        },
+        {
+          "originalStart": 12.27,
+          "start": 12.147,
+          "alignment": "interpolated"
+        },
+        {
+          "originalStart": 16.93,
+          "start": 16.9,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            2,
+            2
+          ]
+        },
+        {
+          "originalStart": 20.48,
+          "start": 20.309,
+          "alignment": "interpolated"
+        },
+        {
+          "originalStart": 24.22,
+          "start": 23.9,
+          "matchRatio": 0.9444,
+          "referenceIndices": [
+            3,
+            3
+          ]
+        },
+        {
+          "originalStart": 26.76,
+          "start": 26.568,
+          "alignment": "interpolated"
+        },
+        {
+          "originalStart": 34.31,
+          "start": 34.5,
+          "matchRatio": 0.9143,
+          "referenceIndices": [
+            4,
+            4
+          ]
+        },
+        {
+          "originalStart": 36.87,
+          "start": 36.852,
+          "alignment": "interpolated"
+        },
+        {
+          "originalStart": 41.93,
+          "start": 41.5,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            5,
+            5
+          ]
+        },
+        {
+          "originalStart": 44.96,
+          "start": 44.712,
+          "alignment": "interpolated"
+        },
+        {
+          "originalStart": 49.76,
+          "start": 49.8,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            6,
+            6
+          ]
+        },
+        {
+          "originalStart": 53.21,
+          "start": 53.235,
+          "alignment": "interpolated"
+        },
+        {
+          "originalStart": 56.69,
+          "start": 56.7,
+          "matchRatio": 0.9444,
+          "referenceIndices": [
+            7,
+            7
+          ]
+        },
+        {
+          "originalStart": 59.23,
+          "start": 59.154,
+          "alignment": "interpolated"
+        },
+        {
+          "originalStart": 66.73,
+          "start": 66.4,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            8,
+            8
+          ]
+        },
+        {
+          "originalStart": 70.48,
+          "start": 70.5,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            9,
+            9
+          ]
+        },
+        {
+          "originalStart": 72.62,
+          "start": 72.542,
+          "alignment": "interpolated"
+        },
+        {
+          "originalStart": 74.83,
+          "start": 74.65,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            10,
+            10
+          ]
+        },
+        {
+          "originalStart": 79.15,
+          "start": 78.7,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            11,
+            11
+          ]
+        },
+        {
+          "originalStart": 81.03999999999999,
+          "start": 80.644,
+          "alignment": "interpolated"
+        },
+        {
+          "originalStart": 82.99,
+          "start": 82.65,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            12,
+            12
+          ]
+        },
+        {
+          "originalStart": 88.19,
+          "start": 87.85,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            13,
+            13
+          ]
+        },
+        {
+          "originalStart": 91.6,
+          "start": 91.45,
+          "matchRatio": 0.8947,
+          "referenceIndices": [
+            14,
+            14
+          ]
+        },
+        {
+          "originalStart": 117.86,
+          "start": 118.15,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            15,
+            15
+          ]
+        },
+        {
+          "originalStart": 121.96,
+          "start": 121.795,
+          "alignment": "interpolated"
+        },
+        {
+          "originalStart": 126.24,
+          "start": 125.6,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            16,
+            16
+          ]
+        },
+        {
+          "originalStart": 129.05,
+          "start": 128.574,
+          "alignment": "interpolated"
+        },
+        {
+          "originalStart": 134.65,
+          "start": 134.5,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            17,
+            17
+          ]
+        },
+        {
+          "originalStart": 136.82,
+          "start": 136.48,
+          "alignment": "interpolated"
+        },
+        {
+          "originalStart": 138.98,
+          "start": 138.45,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            18,
+            18
+          ]
+        },
+        {
+          "originalStart": 142.98,
+          "start": 142.7,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            19,
+            19
+          ]
+        },
+        {
+          "originalStart": 144.81,
+          "start": 144.435,
+          "alignment": "interpolated"
+        },
+        {
+          "originalStart": 147.04,
+          "start": 146.55,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            20,
+            20
+          ]
+        },
+        {
+          "originalStart": 151.3,
+          "start": 151.15,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            21,
+            21
+          ]
+        },
+        {
+          "originalStart": 156.97,
+          "start": 156.4,
+          "matchRatio": 0.8889,
+          "referenceIndices": [
+            22,
+            22
+          ]
+        },
+        {
+          "originalStart": 159.36,
+          "start": 158.95,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            23,
+            23
+          ]
+        },
+        {
+          "originalStart": 165.28,
+          "start": 165.4,
+          "matchRatio": 0.8,
+          "referenceIndices": [
+            24,
+            24
+          ]
+        },
+        {
+          "originalStart": 167.37,
+          "start": 167.8,
+          "matchRatio": 0.9333,
+          "referenceIndices": [
+            25,
+            25
+          ]
+        },
+        {
+          "originalStart": 170.44,
+          "start": 170.655,
+          "alignment": "interpolated"
+        },
+        {
+          "originalStart": 173.5,
+          "start": 173.5,
+          "matchRatio": 0.9189,
+          "referenceIndices": [
+            26,
+            26
+          ]
+        },
+        {
+          "originalStart": 176.24,
+          "start": 176.315,
+          "alignment": "interpolated"
+        },
+        {
+          "originalStart": 181.7,
+          "start": 181.924,
+          "alignment": "interpolated"
+        },
+        {
+          "originalStart": 189.22,
+          "start": 189.65,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            27,
+            27
+          ]
+        },
+        {
+          "originalStart": 193.53,
+          "start": 193.6,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            28,
+            28
+          ]
+        },
+        {
+          "originalStart": 195.34,
+          "start": 195.397,
+          "alignment": "interpolated"
+        },
+        {
+          "originalStart": 197.64,
+          "start": 197.68,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            29,
+            29
+          ]
+        },
+        {
+          "originalStart": 201.62,
+          "start": 201.75,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            30,
+            30
+          ]
+        },
+        {
+          "originalStart": 203.77,
+          "start": 203.943,
+          "alignment": "interpolated"
+        },
+        {
+          "originalStart": 205.59,
+          "start": 205.8,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            31,
+            31
+          ]
+        },
+        {
+          "originalStart": 210.76,
+          "start": 211.5,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            32,
+            32
+          ]
+        },
+        {
+          "originalStart": 214.59,
+          "start": 214.55,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            33,
+            33
+          ]
+        },
+        {
+          "originalStart": 224.28,
+          "start": 224.24,
+          "alignment": "interpolated"
+        }
+      ]
+    },
+    {
+      "id": "garden",
+      "name": "ガーデン",
+      "videoId": "vkPfKnUaq5k",
+      "videoSource": "https://www.youtube.com/watch?v=vkPfKnUaq5k",
+      "referenceUrl": "https://www.marumaru-x.com/japanese-song/play-94ogl3p0r0",
+      "providedFile": "06.lrc",
+      "cueCount": 50,
+      "directlyAlignedCues": 30,
+      "estimatedCues": 20,
+      "unchangedUnverifiedCues": 0,
+      "medianOffsetSeconds": -0.305,
+      "timingVerified": false,
+      "cues": [
+        {
+          "originalStart": 15.11,
+          "start": 14.45,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            0,
+            0
+          ]
+        },
+        {
+          "originalStart": 18.38,
+          "start": 18.026,
+          "alignment": "interpolated"
+        },
+        {
+          "originalStart": 21.42,
+          "start": 21.35,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            1,
+            1
+          ]
+        },
+        {
+          "originalStart": 24.36,
+          "start": 24.144,
+          "alignment": "interpolated"
+        },
+        {
+          "originalStart": 28.68,
+          "start": 28.25,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            2,
+            2
+          ]
+        },
+        {
+          "originalStart": 32.09,
+          "start": 31.74,
+          "alignment": "interpolated"
+        },
+        {
+          "originalStart": 35.47,
+          "start": 35.2,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            3,
+            3
+          ]
+        },
+        {
+          "originalStart": 38.6,
+          "start": 38.246,
+          "alignment": "interpolated"
+        },
+        {
+          "originalStart": 41.84,
+          "start": 41.4,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            4,
+            4
+          ]
+        },
+        {
+          "originalStart": 44.92,
+          "start": 44.585,
+          "alignment": "interpolated"
+        },
+        {
+          "originalStart": 48.32,
+          "start": 48.1,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            5,
+            5
+          ]
+        },
+        {
+          "originalStart": 52.18,
+          "start": 51.9,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            6,
+            6
+          ]
+        },
+        {
+          "originalStart": 55.7,
+          "start": 55.3,
+          "matchRatio": 0.9444,
+          "referenceIndices": [
+            7,
+            7
+          ]
+        },
+        {
+          "originalStart": 58.75,
+          "start": 58.236,
+          "alignment": "interpolated"
+        },
+        {
+          "originalStart": 62.66,
+          "start": 62,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            8,
+            8
+          ]
+        },
+        {
+          "originalStart": 66.06,
+          "start": 65.9,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            9,
+            9
+          ]
+        },
+        {
+          "originalStart": 70.55,
+          "start": 70.2,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            10,
+            10
+          ]
+        },
+        {
+          "originalStart": 73.98,
+          "start": 73.565,
+          "alignment": "interpolated"
+        },
+        {
+          "originalStart": 77.42,
+          "start": 76.94,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            11,
+            11
+          ]
+        },
+        {
+          "originalStart": 80.53,
+          "start": 80.096,
+          "alignment": "interpolated"
+        },
+        {
+          "originalStart": 84.23,
+          "start": 83.85,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            12,
+            12
+          ]
+        },
+        {
+          "originalStart": 87.78,
+          "start": 87.523,
+          "alignment": "interpolated"
+        },
+        {
+          "originalStart": 91.14,
+          "start": 91,
+          "matchRatio": 0.9189,
+          "referenceIndices": [
+            13,
+            13
+          ]
+        },
+        {
+          "originalStart": 93.7,
+          "start": 93.412,
+          "alignment": "interpolated"
+        },
+        {
+          "originalStart": 97.72,
+          "start": 97.2,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            14,
+            14
+          ]
+        },
+        {
+          "originalStart": 100.44,
+          "start": 100.088,
+          "alignment": "interpolated"
+        },
+        {
+          "originalStart": 103.89,
+          "start": 103.75,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            15,
+            15
+          ]
+        },
+        {
+          "originalStart": 107.87,
+          "start": 107.65,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            16,
+            16
+          ]
+        },
+        {
+          "originalStart": 111.25,
+          "start": 110.98,
+          "matchRatio": 0.9444,
+          "referenceIndices": [
+            17,
+            17
+          ]
+        },
+        {
+          "originalStart": 114.49000000000001,
+          "start": 114.284,
+          "alignment": "interpolated"
+        },
+        {
+          "originalStart": 117.84,
+          "start": 117.7,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            18,
+            18
+          ]
+        },
+        {
+          "originalStart": 121.78,
+          "start": 121.45,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            19,
+            19
+          ]
+        },
+        {
+          "originalStart": 126.07,
+          "start": 125.85,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            20,
+            20
+          ]
+        },
+        {
+          "originalStart": 129.45,
+          "start": 129.166,
+          "alignment": "interpolated"
+        },
+        {
+          "originalStart": 132.93,
+          "start": 132.58,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            21,
+            21
+          ]
+        },
+        {
+          "originalStart": 136.06,
+          "start": 135.67,
+          "alignment": "interpolated"
+        },
+        {
+          "originalStart": 140.04,
+          "start": 139.6,
+          "matchRatio": 0.9286,
+          "referenceIndices": [
+            22,
+            22
+          ]
+        },
+        {
+          "originalStart": 143.41,
+          "start": 143.053,
+          "alignment": "interpolated"
+        },
+        {
+          "originalStart": 146.97,
+          "start": 146.7,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            23,
+            23
+          ]
+        },
+        {
+          "originalStart": 149.37,
+          "start": 149.076,
+          "alignment": "interpolated"
+        },
+        {
+          "originalStart": 156.22,
+          "start": 155.859,
+          "alignment": "interpolated"
+        },
+        {
+          "originalStart": 167.32,
+          "start": 166.85,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            24,
+            24
+          ]
+        },
+        {
+          "originalStart": 169.99,
+          "start": 169.544,
+          "alignment": "interpolated"
+        },
+        {
+          "originalStart": 173.86,
+          "start": 173.45,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            25,
+            25
+          ]
+        },
+        {
+          "originalStart": 177.52,
+          "start": 177.95,
+          "matchRatio": 0.9,
+          "referenceIndices": [
+            26,
+            26
+          ]
+        },
+        {
+          "originalStart": 181.23,
+          "start": 180.65,
+          "matchRatio": 0.9444,
+          "referenceIndices": [
+            27,
+            27
+          ]
+        },
+        {
+          "originalStart": 184.12,
+          "start": 183.719,
+          "alignment": "interpolated"
+        },
+        {
+          "originalStart": 187.68,
+          "start": 187.5,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            28,
+            28
+          ]
+        },
+        {
+          "originalStart": 191.39,
+          "start": 191.15,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            29,
+            29
+          ]
+        },
+        {
+          "originalStart": 194.61,
+          "start": 194.37,
+          "alignment": "interpolated"
+        }
+      ]
+    },
+    {
+      "id": "kaerou",
+      "name": "帰ろう",
+      "videoId": "goU1Ei8I8uk",
+      "videoSource": "https://www.youtube.com/watch?v=goU1Ei8I8uk",
+      "referenceUrl": "https://www.marumaru-x.com/japanese-song/play-evr849dxnm",
+      "providedFile": "07.lrc",
+      "cueCount": 49,
+      "directlyAlignedCues": 42,
+      "estimatedCues": 7,
+      "unchangedUnverifiedCues": 0,
+      "medianOffsetSeconds": -0.32,
+      "timingVerified": false,
+      "cues": [
+        {
+          "originalStart": 13.32,
+          "start": 13,
+          "matchRatio": 0.9756,
+          "referenceIndices": [
+            0,
+            0
+          ]
+        },
+        {
+          "originalStart": 18.62,
+          "start": 18.185,
+          "alignment": "interpolated"
+        },
+        {
+          "originalStart": 23.95,
+          "start": 23.4,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            1,
+            1
+          ]
+        },
+        {
+          "originalStart": 30.02,
+          "start": 29.493,
+          "alignment": "interpolated"
+        },
+        {
+          "originalStart": 34.46,
+          "start": 33.95,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            2,
+            2
+          ]
+        },
+        {
+          "originalStart": 39.5,
+          "start": 38.927,
+          "alignment": "interpolated"
+        },
+        {
+          "originalStart": 44.89,
+          "start": 44.25,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            3,
+            3
+          ]
+        },
+        {
+          "originalStart": 51.05,
+          "start": 50.6,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            4,
+            4
+          ]
+        },
+        {
+          "originalStart": 55.58,
+          "start": 55.2,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            5,
+            5
+          ]
+        },
+        {
+          "originalStart": 58.19,
+          "start": 57.8,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            6,
+            6
+          ]
+        },
+        {
+          "originalStart": 60.85,
+          "start": 60.5,
+          "matchRatio": 0.9412,
+          "referenceIndices": [
+            7,
+            7
+          ]
+        },
+        {
+          "originalStart": 65.94,
+          "start": 65.7,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            8,
+            8
+          ]
+        },
+        {
+          "originalStart": 68.64,
+          "start": 68.25,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            9,
+            9
+          ]
+        },
+        {
+          "originalStart": 71.14,
+          "start": 70.9,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            10,
+            10
+          ]
+        },
+        {
+          "originalStart": 76.14,
+          "start": 75.95,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            11,
+            11
+          ]
+        },
+        {
+          "originalStart": 80.98,
+          "start": 80.65,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            12,
+            12
+          ]
+        },
+        {
+          "originalStart": 86.03999999999999,
+          "start": 85.85,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            13,
+            13
+          ]
+        },
+        {
+          "originalStart": 91.41,
+          "start": 91.1,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            14,
+            14
+          ]
+        },
+        {
+          "originalStart": 96.97,
+          "start": 96.6,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            15,
+            15
+          ]
+        },
+        {
+          "originalStart": 101.82,
+          "start": 101.65,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            16,
+            16
+          ]
+        },
+        {
+          "originalStart": 107.12,
+          "start": 106.75,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            17,
+            17
+          ]
+        },
+        {
+          "originalStart": 112.24000000000001,
+          "start": 111.95,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            18,
+            18
+          ]
+        },
+        {
+          "originalStart": 118.47,
+          "start": 118.189,
+          "alignment": "interpolated"
+        },
+        {
+          "originalStart": 133.46,
+          "start": 133.2,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            19,
+            19
+          ]
+        },
+        {
+          "originalStart": 138.57,
+          "start": 138.048,
+          "alignment": "interpolated"
+        },
+        {
+          "originalStart": 144.0,
+          "start": 143.2,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            20,
+            20
+          ]
+        },
+        {
+          "originalStart": 150.19,
+          "start": 149.8,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            21,
+            21
+          ]
+        },
+        {
+          "originalStart": 154.32,
+          "start": 153.9,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            22,
+            22
+          ]
+        },
+        {
+          "originalStart": 159.43,
+          "start": 158.907,
+          "alignment": "interpolated"
+        },
+        {
+          "originalStart": 164.78,
+          "start": 164.15,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            23,
+            23
+          ]
+        },
+        {
+          "originalStart": 171.07999999999998,
+          "start": 170.6,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            24,
+            24
+          ]
+        },
+        {
+          "originalStart": 175.4,
+          "start": 175.2,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            25,
+            25
+          ]
+        },
+        {
+          "originalStart": 178.0,
+          "start": 177.9,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            26,
+            26
+          ]
+        },
+        {
+          "originalStart": 180.66,
+          "start": 180.45,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            27,
+            27
+          ]
+        },
+        {
+          "originalStart": 185.93,
+          "start": 185.8,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            28,
+            28
+          ]
+        },
+        {
+          "originalStart": 188.56,
+          "start": 188.3,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            29,
+            29
+          ]
+        },
+        {
+          "originalStart": 191.02,
+          "start": 190.9,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            30,
+            30
+          ]
+        },
+        {
+          "originalStart": 195.95,
+          "start": 195.85,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            31,
+            31
+          ]
+        },
+        {
+          "originalStart": 200.95,
+          "start": 200.65,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            32,
+            32
+          ]
+        },
+        {
+          "originalStart": 206.38,
+          "start": 205.85,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            33,
+            33
+          ]
+        },
+        {
+          "originalStart": 211.77,
+          "start": 211.45,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            34,
+            34
+          ]
+        },
+        {
+          "originalStart": 216.96,
+          "start": 216.55,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            35,
+            35
+          ]
+        },
+        {
+          "originalStart": 221.87,
+          "start": 221.48,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            36,
+            36
+          ]
+        },
+        {
+          "originalStart": 227.06,
+          "start": 226.75,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            37,
+            37
+          ]
+        },
+        {
+          "originalStart": 232.42000000000002,
+          "start": 232.5,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            38,
+            38
+          ]
+        },
+        {
+          "originalStart": 237.31,
+          "start": 237.25,
+          "matchRatio": 0.9333,
+          "referenceIndices": [
+            39,
+            39
+          ]
+        },
+        {
+          "originalStart": 242.65,
+          "start": 242.4,
+          "matchRatio": 0.8966,
+          "referenceIndices": [
+            40,
+            40
+          ]
+        },
+        {
+          "originalStart": 254.44,
+          "start": 254.1,
+          "matchRatio": 0.963,
+          "referenceIndices": [
+            41,
+            41
+          ]
+        },
+        {
+          "originalStart": 258.39,
+          "start": 258.05,
+          "alignment": "interpolated"
+        }
+      ]
+    },
+    {
+      "id": "you",
+      "name": "You",
+      "videoId": "s4UW__ysPEM",
+      "videoSource": "https://www.youtube.com/watch?v=s4UW__ysPEM",
+      "referenceUrl": "https://www.marumaru-x.com/english-song/play-yjqvl01v8m",
+      "providedFile": "08.lrc",
+      "cueCount": 65,
+      "directlyAlignedCues": 56,
+      "estimatedCues": 9,
+      "unchangedUnverifiedCues": 0,
+      "medianOffsetSeconds": 4.53,
+      "timingVerified": false,
+      "cues": [
+        {
+          "originalStart": 24.16,
+          "start": 28.6,
+          "matchRatio": 0.96,
+          "referenceIndices": [
+            0,
+            0
+          ]
+        },
+        {
+          "originalStart": 27.3,
+          "start": 31.7,
+          "matchRatio": 0.9508,
+          "referenceIndices": [
+            1,
+            1
+          ]
+        },
+        {
+          "originalStart": 30.99,
+          "start": 35.4,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            2,
+            2
+          ]
+        },
+        {
+          "originalStart": 35.07,
+          "start": 39.25,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            3,
+            3
+          ]
+        },
+        {
+          "originalStart": 37.59,
+          "start": 41.8,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            4,
+            4
+          ]
+        },
+        {
+          "originalStart": 40.28,
+          "start": 44.58,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            5,
+            5
+          ]
+        },
+        {
+          "originalStart": 43.83,
+          "start": 48.15,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            6,
+            6
+          ]
+        },
+        {
+          "originalStart": 47.42,
+          "start": 51.95,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            7,
+            7
+          ]
+        },
+        {
+          "originalStart": 51.18,
+          "start": 55.45,
+          "matchRatio": 0.9888,
+          "referenceIndices": [
+            8,
+            8
+          ]
+        },
+        {
+          "originalStart": 60.06,
+          "start": 64.55,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            9,
+            9
+          ]
+        },
+        {
+          "originalStart": 66.45,
+          "start": 71.5,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            10,
+            10
+          ]
+        },
+        {
+          "originalStart": 69.76,
+          "start": 74.1,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            11,
+            11
+          ]
+        },
+        {
+          "originalStart": 73.12,
+          "start": 77.65,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            12,
+            12
+          ]
+        },
+        {
+          "originalStart": 76.56,
+          "start": 80.9,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            13,
+            13
+          ]
+        },
+        {
+          "originalStart": 80.78,
+          "start": 85.15,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            14,
+            14
+          ]
+        },
+        {
+          "originalStart": 84.16,
+          "start": 88.45,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            15,
+            15
+          ]
+        },
+        {
+          "originalStart": 87.35,
+          "start": 91.6,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            16,
+            16
+          ]
+        },
+        {
+          "originalStart": 90.24,
+          "start": 94.75,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            17,
+            17
+          ]
+        },
+        {
+          "originalStart": 93.53999999999999,
+          "start": 98,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            18,
+            18
+          ]
+        },
+        {
+          "originalStart": 96.81,
+          "start": 101.35,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            19,
+            19
+          ]
+        },
+        {
+          "originalStart": 98.38,
+          "start": 102.9,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            20,
+            20
+          ]
+        },
+        {
+          "originalStart": 104.55,
+          "start": 109.45,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            21,
+            21
+          ]
+        },
+        {
+          "originalStart": 107.7,
+          "start": 112.55,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            22,
+            22
+          ]
+        },
+        {
+          "originalStart": 110.63,
+          "start": 115.2,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            23,
+            23
+          ]
+        },
+        {
+          "originalStart": 113.78,
+          "start": 118.45,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            24,
+            24
+          ]
+        },
+        {
+          "originalStart": 116.72,
+          "start": 121.2,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            25,
+            25
+          ]
+        },
+        {
+          "originalStart": 120.27,
+          "start": 124.95,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            26,
+            26
+          ]
+        },
+        {
+          "originalStart": 123.75,
+          "start": 128.35,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            27,
+            27
+          ]
+        },
+        {
+          "originalStart": 126.76,
+          "start": 131.35,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            28,
+            28
+          ]
+        },
+        {
+          "originalStart": 129.32,
+          "start": 133.95,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            29,
+            29
+          ]
+        },
+        {
+          "originalStart": 132.86,
+          "start": 137.75,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            30,
+            30
+          ]
+        },
+        {
+          "originalStart": 136.82999999999998,
+          "start": 141.55,
+          "matchRatio": 0.9375,
+          "referenceIndices": [
+            31,
+            32
+          ]
+        },
+        {
+          "originalStart": 140.12,
+          "start": 144.65,
+          "referenceIndices": [
+            33,
+            33
+          ],
+          "alignment": "median-offset-fallback",
+          "rejectedReferenceStart": 147.65
+        },
+        {
+          "originalStart": 142.84,
+          "start": 147.37,
+          "alignment": "median-offset-fallback",
+          "rejectedReferenceStart": 149.612
+        },
+        {
+          "originalStart": 149.41,
+          "start": 154.35,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            34,
+            34
+          ]
+        },
+        {
+          "originalStart": 155.9,
+          "start": 160.7,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            35,
+            35
+          ]
+        },
+        {
+          "originalStart": 159.01,
+          "start": 163.7,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            36,
+            36
+          ]
+        },
+        {
+          "originalStart": 162.82999999999998,
+          "start": 167.25,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            37,
+            37
+          ]
+        },
+        {
+          "originalStart": 166.03,
+          "start": 170.65,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            38,
+            38
+          ]
+        },
+        {
+          "originalStart": 170.2,
+          "start": 174.75,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            39,
+            39
+          ]
+        },
+        {
+          "originalStart": 173.59,
+          "start": 177.95,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            40,
+            40
+          ]
+        },
+        {
+          "originalStart": 176.57999999999998,
+          "start": 181.15,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            41,
+            41
+          ]
+        },
+        {
+          "originalStart": 179.85,
+          "start": 184.35,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            42,
+            42
+          ]
+        },
+        {
+          "originalStart": 182.9,
+          "start": 187.6,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            43,
+            43
+          ]
+        },
+        {
+          "originalStart": 186.33,
+          "start": 191,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            44,
+            44
+          ]
+        },
+        {
+          "originalStart": 188.04,
+          "start": 192.5,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            45,
+            45
+          ]
+        },
+        {
+          "originalStart": 194.19,
+          "start": 199.066,
+          "alignment": "interpolated"
+        },
+        {
+          "originalStart": 196.47,
+          "start": 201.5,
+          "matchRatio": 0.8421,
+          "referenceIndices": [
+            46,
+            46
+          ]
+        },
+        {
+          "originalStart": 204.8,
+          "start": 211.156,
+          "alignment": "interpolated"
+        },
+        {
+          "originalStart": 207.89,
+          "start": 212.42,
+          "alignment": "median-offset-fallback",
+          "rejectedReferenceStart": 214.738
+        },
+        {
+          "originalStart": 211.1,
+          "start": 215.63,
+          "alignment": "median-offset-fallback",
+          "rejectedReferenceStart": 218.459
+        },
+        {
+          "originalStart": 214.5,
+          "start": 219.03,
+          "referenceIndices": [
+            48,
+            48
+          ],
+          "alignment": "median-offset-fallback",
+          "rejectedReferenceStart": 222.4
+        },
+        {
+          "originalStart": 217.47,
+          "start": 222.0,
+          "alignment": "median-offset-fallback",
+          "rejectedReferenceStart": 224.048
+        },
+        {
+          "originalStart": 222.25,
+          "start": 226.7,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            49,
+            49
+          ]
+        },
+        {
+          "originalStart": 225.49,
+          "start": 229.8,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            50,
+            50
+          ]
+        },
+        {
+          "originalStart": 228.59,
+          "start": 233.1,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            51,
+            51
+          ]
+        },
+        {
+          "originalStart": 231.82999999999998,
+          "start": 236.4,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            52,
+            52
+          ]
+        },
+        {
+          "originalStart": 234.91,
+          "start": 239.6,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            53,
+            53
+          ]
+        },
+        {
+          "originalStart": 238.06,
+          "start": 242.95,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            54,
+            54
+          ]
+        },
+        {
+          "originalStart": 239.79,
+          "start": 244.45,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            55,
+            55
+          ]
+        },
+        {
+          "originalStart": 246.47,
+          "start": 251,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            56,
+            56
+          ]
+        },
+        {
+          "originalStart": 249.6,
+          "start": 254.1,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            57,
+            57
+          ]
+        },
+        {
+          "originalStart": 252.55,
+          "start": 256.85,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            58,
+            58
+          ]
+        },
+        {
+          "originalStart": 255.6,
+          "start": 260.5,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            59,
+            59
+          ]
+        },
+        {
+          "originalStart": 259.21,
+          "start": 264.11,
+          "alignment": "interpolated"
+        }
+      ]
+    },
+    {
+      "id": "feelin-good",
+      "name": "Feelin’ Go(o)d",
+      "videoId": "iyU1t8G0LZw",
+      "videoSource": "https://www.youtube.com/watch?v=iyU1t8G0LZw",
+      "referenceUrl": "https://www.marumaru-x.com/japanese-song/play-14o7153vok",
+      "providedFile": "09.lrc",
+      "cueCount": 48,
+      "directlyAlignedCues": 39,
+      "estimatedCues": 9,
+      "unchangedUnverifiedCues": 0,
+      "medianOffsetSeconds": 15.31,
+      "timingVerified": false,
+      "cues": [
+        {
+          "originalStart": 19.18,
+          "start": 34.4,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            0,
+            0
+          ]
+        },
+        {
+          "originalStart": 23.67,
+          "start": 39.1,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            1,
+            1
+          ]
+        },
+        {
+          "originalStart": 28.25,
+          "start": 43.6,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            2,
+            2
+          ]
+        },
+        {
+          "originalStart": 32.9,
+          "start": 48.2,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            3,
+            3
+          ]
+        },
+        {
+          "originalStart": 37.43,
+          "start": 52.75,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            4,
+            4
+          ]
+        },
+        {
+          "originalStart": 41.44,
+          "start": 56.95,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            5,
+            5
+          ]
+        },
+        {
+          "originalStart": 46.86,
+          "start": 61.9,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            6,
+            6
+          ]
+        },
+        {
+          "originalStart": 52.69,
+          "start": 68.1,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            7,
+            7
+          ]
+        },
+        {
+          "originalStart": 56.88,
+          "start": 72.2,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            8,
+            8
+          ]
+        },
+        {
+          "originalStart": 61.7,
+          "start": 76.95,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            9,
+            9
+          ]
+        },
+        {
+          "originalStart": 66.29,
+          "start": 81.4,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            10,
+            10
+          ]
+        },
+        {
+          "originalStart": 70.96000000000001,
+          "start": 86.1,
+          "matchRatio": 0.8182,
+          "referenceIndices": [
+            11,
+            11
+          ]
+        },
+        {
+          "originalStart": 83.14,
+          "start": 98.5,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            12,
+            12
+          ]
+        },
+        {
+          "originalStart": 87.78999999999999,
+          "start": 103.5,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            13,
+            13
+          ]
+        },
+        {
+          "originalStart": 92.19,
+          "start": 107.5,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            14,
+            14
+          ]
+        },
+        {
+          "originalStart": 96.93,
+          "start": 112.2,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            15,
+            15
+          ]
+        },
+        {
+          "originalStart": 101.6,
+          "start": 116.8,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            16,
+            16
+          ]
+        },
+        {
+          "originalStart": 105.66,
+          "start": 120.9,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            17,
+            17
+          ]
+        },
+        {
+          "originalStart": 110.78999999999999,
+          "start": 126,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            18,
+            18
+          ]
+        },
+        {
+          "originalStart": 116.87,
+          "start": 132,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            19,
+            19
+          ]
+        },
+        {
+          "originalStart": 120.89,
+          "start": 136.3,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            20,
+            20
+          ]
+        },
+        {
+          "originalStart": 125.84,
+          "start": 141,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            21,
+            21
+          ]
+        },
+        {
+          "originalStart": 130.0,
+          "start": 145.4,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            22,
+            22
+          ]
+        },
+        {
+          "originalStart": 134.81,
+          "start": 150.5,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            23,
+            23
+          ]
+        },
+        {
+          "originalStart": 139.39,
+          "start": 154.7,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            24,
+            24
+          ]
+        },
+        {
+          "originalStart": 144.01,
+          "start": 159.3,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            25,
+            25
+          ]
+        },
+        {
+          "originalStart": 148.32999999999998,
+          "start": 163.58,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            26,
+            26
+          ]
+        },
+        {
+          "originalStart": 153.1,
+          "start": 168.5,
+          "matchRatio": 0.8182,
+          "referenceIndices": [
+            27,
+            27
+          ]
+        },
+        {
+          "originalStart": 165.32999999999998,
+          "start": 180.75,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            28,
+            28
+          ]
+        },
+        {
+          "originalStart": 170.15,
+          "start": 185.3,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            29,
+            29
+          ]
+        },
+        {
+          "originalStart": 174.6,
+          "start": 189.88,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            30,
+            30
+          ]
+        },
+        {
+          "originalStart": 179.12,
+          "start": 194.5,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            31,
+            31
+          ]
+        },
+        {
+          "originalStart": 185.02,
+          "start": 200.3,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            32,
+            32
+          ]
+        },
+        {
+          "originalStart": 186.65,
+          "start": 201.966,
+          "alignment": "interpolated"
+        },
+        {
+          "originalStart": 189.52,
+          "start": 204.9,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            33,
+            33
+          ]
+        },
+        {
+          "originalStart": 191.16,
+          "start": 206.598,
+          "alignment": "interpolated"
+        },
+        {
+          "originalStart": 192.9,
+          "start": 208.4,
+          "matchRatio": 0.8,
+          "referenceIndices": [
+            34,
+            35
+          ]
+        },
+        {
+          "originalStart": 196.99,
+          "start": 212.41,
+          "alignment": "interpolated"
+        },
+        {
+          "originalStart": 203.15,
+          "start": 218.45,
+          "matchRatio": 0.8182,
+          "referenceIndices": [
+            36,
+            36
+          ]
+        },
+        {
+          "originalStart": 207.98,
+          "start": 223.25,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            37,
+            37
+          ]
+        },
+        {
+          "originalStart": 212.29,
+          "start": 227.75,
+          "matchRatio": 0.8182,
+          "referenceIndices": [
+            38,
+            38
+          ]
+        },
+        {
+          "originalStart": 217.05,
+          "start": 232.4,
+          "matchRatio": 0.8571,
+          "referenceIndices": [
+            39,
+            40
+          ]
+        },
+        {
+          "originalStart": 219.94,
+          "start": 235.29,
+          "alignment": "interpolated"
+        },
+        {
+          "originalStart": 224.44,
+          "start": 239.79,
+          "alignment": "interpolated"
+        },
+        {
+          "originalStart": 230.84,
+          "start": 246.19,
+          "alignment": "interpolated"
+        },
+        {
+          "originalStart": 235.44,
+          "start": 250.79,
+          "alignment": "interpolated"
+        },
+        {
+          "originalStart": 239.98,
+          "start": 255.33,
+          "alignment": "interpolated"
+        },
+        {
+          "originalStart": 247.14,
+          "start": 262.49,
+          "alignment": "interpolated"
+        }
+      ]
+    },
+    {
+      "id": "its-alright",
+      "name": "It’s Alright",
+      "videoId": "HA3WzXw8vM8",
+      "videoSource": "https://www.youtube.com/watch?v=HA3WzXw8vM8",
+      "referenceUrl": "https://www.marumaru-x.com/japanese-song/play-y7okw6yvoq",
+      "providedFile": "10.lrc",
+      "cueCount": 44,
+      "directlyAlignedCues": 24,
+      "estimatedCues": 20,
+      "unchangedUnverifiedCues": 0,
+      "medianOffsetSeconds": -0.42,
+      "timingVerified": false,
+      "cues": [
+        {
+          "originalStart": 6.4,
+          "start": 5.71,
+          "alignment": "interpolated"
+        },
+        {
+          "originalStart": 8.99,
+          "start": 8.3,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            0,
+            0
+          ]
+        },
+        {
+          "originalStart": 15.72,
+          "start": 15.3,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            1,
+            1
+          ]
+        },
+        {
+          "originalStart": 22.38,
+          "start": 21.85,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            2,
+            2
+          ]
+        },
+        {
+          "originalStart": 29.05,
+          "start": 28.55,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            3,
+            3
+          ]
+        },
+        {
+          "originalStart": 35.72,
+          "start": 35.3,
+          "matchRatio": 0.931,
+          "referenceIndices": [
+            4,
+            4
+          ]
+        },
+        {
+          "originalStart": 38.91,
+          "start": 38.75,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            5,
+            5
+          ]
+        },
+        {
+          "originalStart": 42.22,
+          "start": 42,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            6,
+            6
+          ]
+        },
+        {
+          "originalStart": 45.69,
+          "start": 45.369,
+          "alignment": "interpolated"
+        },
+        {
+          "originalStart": 49.07,
+          "start": 48.65,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            7,
+            7
+          ]
+        },
+        {
+          "originalStart": 52.45,
+          "start": 52,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            8,
+            8
+          ]
+        },
+        {
+          "originalStart": 55.54,
+          "start": 55.3,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            9,
+            9
+          ]
+        },
+        {
+          "originalStart": 59.01,
+          "start": 58.7,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            10,
+            10
+          ]
+        },
+        {
+          "originalStart": 62.75,
+          "start": 62.5,
+          "matchRatio": 0.9756,
+          "referenceIndices": [
+            11,
+            12
+          ]
+        },
+        {
+          "originalStart": 66.0,
+          "start": 65.725,
+          "alignment": "interpolated"
+        },
+        {
+          "originalStart": 74.48,
+          "start": 74.138,
+          "alignment": "interpolated"
+        },
+        {
+          "originalStart": 77.86,
+          "start": 77.492,
+          "alignment": "interpolated"
+        },
+        {
+          "originalStart": 87.78,
+          "start": 87.335,
+          "alignment": "interpolated"
+        },
+        {
+          "originalStart": 89.03999999999999,
+          "start": 88.585,
+          "alignment": "interpolated"
+        },
+        {
+          "originalStart": 92.38,
+          "start": 91.899,
+          "alignment": "interpolated"
+        },
+        {
+          "originalStart": 95.62,
+          "start": 95.113,
+          "alignment": "interpolated"
+        },
+        {
+          "originalStart": 99.15,
+          "start": 98.616,
+          "alignment": "interpolated"
+        },
+        {
+          "originalStart": 102.46000000000001,
+          "start": 101.9,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            15,
+            15
+          ]
+        },
+        {
+          "originalStart": 109.00999999999999,
+          "start": 108.55,
+          "matchRatio": 0.8148,
+          "referenceIndices": [
+            16,
+            16
+          ]
+        },
+        {
+          "originalStart": 115.75,
+          "start": 115.25,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            17,
+            17
+          ]
+        },
+        {
+          "originalStart": 122.35,
+          "start": 121.9,
+          "matchRatio": 0.8125,
+          "referenceIndices": [
+            18,
+            18
+          ]
+        },
+        {
+          "originalStart": 128.94,
+          "start": 128.75,
+          "matchRatio": 0.931,
+          "referenceIndices": [
+            19,
+            19
+          ]
+        },
+        {
+          "originalStart": 132.38,
+          "start": 132,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            20,
+            20
+          ]
+        },
+        {
+          "originalStart": 135.75,
+          "start": 135.2,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            21,
+            21
+          ]
+        },
+        {
+          "originalStart": 139.09,
+          "start": 138.657,
+          "alignment": "interpolated"
+        },
+        {
+          "originalStart": 142.32,
+          "start": 142,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            22,
+            22
+          ]
+        },
+        {
+          "originalStart": 145.65,
+          "start": 145.3,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            23,
+            23
+          ]
+        },
+        {
+          "originalStart": 149.07999999999998,
+          "start": 148.6,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            24,
+            24
+          ]
+        },
+        {
+          "originalStart": 152.45,
+          "start": 152.1,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            25,
+            25
+          ]
+        },
+        {
+          "originalStart": 156.13,
+          "start": 155.8,
+          "matchRatio": 0.9756,
+          "referenceIndices": [
+            26,
+            27
+          ]
+        },
+        {
+          "originalStart": 159.44,
+          "start": 159.11,
+          "alignment": "interpolated"
+        },
+        {
+          "originalStart": 167.88,
+          "start": 167.55,
+          "alignment": "interpolated"
+        },
+        {
+          "originalStart": 171.15,
+          "start": 170.82,
+          "alignment": "interpolated"
+        },
+        {
+          "originalStart": 181.15,
+          "start": 180.82,
+          "alignment": "interpolated"
+        },
+        {
+          "originalStart": 182.37,
+          "start": 182.04,
+          "alignment": "interpolated"
+        },
+        {
+          "originalStart": 185.62,
+          "start": 185.29,
+          "alignment": "interpolated"
+        },
+        {
+          "originalStart": 189.01,
+          "start": 188.68,
+          "alignment": "interpolated"
+        },
+        {
+          "originalStart": 192.51,
+          "start": 192.18,
+          "alignment": "interpolated"
+        },
+        {
+          "originalStart": 196.04,
+          "start": 195.71,
+          "alignment": "interpolated"
+        }
+      ]
+    },
+    {
+      "id": "hana",
+      "name": "花",
+      "videoId": "SfPkl7lol7g",
+      "videoSource": "https://www.youtube.com/watch?v=SfPkl7lol7g",
+      "referenceUrl": "https://www.marumaru-x.com/japanese-song/play-2go28v63o3",
+      "providedFile": "11.lrc",
+      "cueCount": 45,
+      "directlyAlignedCues": 23,
+      "estimatedCues": 22,
+      "unchangedUnverifiedCues": 0,
+      "medianOffsetSeconds": -0.26,
+      "timingVerified": false,
+      "cues": [
+        {
+          "originalStart": 15.71,
+          "start": 15.45,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            0,
+            0
+          ]
+        },
+        {
+          "originalStart": 19.85,
+          "start": 19.643,
+          "alignment": "interpolated"
+        },
+        {
+          "originalStart": 23.56,
+          "start": 23.4,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            1,
+            1
+          ]
+        },
+        {
+          "originalStart": 27.72,
+          "start": 27.4,
+          "alignment": "interpolated"
+        },
+        {
+          "originalStart": 31.62,
+          "start": 31.15,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            2,
+            2
+          ]
+        },
+        {
+          "originalStart": 35.53,
+          "start": 35,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            3,
+            3
+          ]
+        },
+        {
+          "originalStart": 39.22,
+          "start": 39,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            4,
+            4
+          ]
+        },
+        {
+          "originalStart": 43.27,
+          "start": 43.05,
+          "alignment": "interpolated"
+        },
+        {
+          "originalStart": 48.02,
+          "start": 47.8,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            5,
+            5
+          ]
+        },
+        {
+          "originalStart": 53.89,
+          "start": 53.514,
+          "alignment": "interpolated"
+        },
+        {
+          "originalStart": 55.93,
+          "start": 55.5,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            6,
+            6
+          ]
+        },
+        {
+          "originalStart": 62.63,
+          "start": 62.45,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            7,
+            7
+          ]
+        },
+        {
+          "originalStart": 66.78,
+          "start": 66.772,
+          "alignment": "interpolated"
+        },
+        {
+          "originalStart": 70.36,
+          "start": 70.5,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            8,
+            8
+          ]
+        },
+        {
+          "originalStart": 75.59,
+          "start": 75.635,
+          "alignment": "interpolated"
+        },
+        {
+          "originalStart": 93.99000000000001,
+          "start": 93.7,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            9,
+            9
+          ]
+        },
+        {
+          "originalStart": 97.94,
+          "start": 97.574,
+          "alignment": "interpolated"
+        },
+        {
+          "originalStart": 101.78999999999999,
+          "start": 101.35,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            10,
+            10
+          ]
+        },
+        {
+          "originalStart": 105.67,
+          "start": 105.35,
+          "alignment": "interpolated"
+        },
+        {
+          "originalStart": 109.58,
+          "start": 109.38,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            11,
+            11
+          ]
+        },
+        {
+          "originalStart": 113.58,
+          "start": 113.5,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            12,
+            12
+          ]
+        },
+        {
+          "originalStart": 117.4,
+          "start": 117.5,
+          "matchRatio": 0.9091,
+          "referenceIndices": [
+            13,
+            13
+          ]
+        },
+        {
+          "originalStart": 121.13,
+          "start": 121.051,
+          "alignment": "interpolated"
+        },
+        {
+          "originalStart": 126.17,
+          "start": 125.85,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            14,
+            14
+          ]
+        },
+        {
+          "originalStart": 131.42,
+          "start": 131.127,
+          "alignment": "interpolated"
+        },
+        {
+          "originalStart": 133.86,
+          "start": 133.58,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            15,
+            15
+          ]
+        },
+        {
+          "originalStart": 140.86,
+          "start": 140.4,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            16,
+            16
+          ]
+        },
+        {
+          "originalStart": 144.61,
+          "start": 144.254,
+          "alignment": "interpolated"
+        },
+        {
+          "originalStart": 148.45,
+          "start": 148.2,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            17,
+            17
+          ]
+        },
+        {
+          "originalStart": 158.67000000000002,
+          "start": 158.475,
+          "alignment": "interpolated"
+        },
+        {
+          "originalStart": 172.72,
+          "start": 172.6,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            18,
+            18
+          ]
+        },
+        {
+          "originalStart": 180.87,
+          "start": 180.4,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            19,
+            19
+          ]
+        },
+        {
+          "originalStart": 187.61,
+          "start": 187.2,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            20,
+            20
+          ]
+        },
+        {
+          "originalStart": 191.55,
+          "start": 191.105,
+          "alignment": "interpolated"
+        },
+        {
+          "originalStart": 195.48,
+          "start": 195,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            21,
+            21
+          ]
+        },
+        {
+          "originalStart": 203.23,
+          "start": 203,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            22,
+            22
+          ]
+        },
+        {
+          "originalStart": 212.59,
+          "start": 212.36,
+          "alignment": "interpolated"
+        },
+        {
+          "originalStart": 216.45,
+          "start": 216.22,
+          "alignment": "interpolated"
+        },
+        {
+          "originalStart": 220.36,
+          "start": 220.13,
+          "alignment": "interpolated"
+        },
+        {
+          "originalStart": 224.21,
+          "start": 223.98,
+          "alignment": "interpolated"
+        },
+        {
+          "originalStart": 228.18,
+          "start": 227.95,
+          "alignment": "interpolated"
+        },
+        {
+          "originalStart": 232.07,
+          "start": 231.84,
+          "alignment": "interpolated"
+        },
+        {
+          "originalStart": 235.99,
+          "start": 235.76,
+          "alignment": "interpolated"
+        },
+        {
+          "originalStart": 239.91,
+          "start": 239.68,
+          "alignment": "interpolated"
+        },
+        {
+          "originalStart": 243.29,
+          "start": 243.06,
+          "alignment": "interpolated"
+        }
+      ]
+    },
+    {
+      "id": "yasashisa",
+      "name": "優しさ",
+      "videoId": "vzhTpIIQR5I",
+      "videoSource": "https://www.youtube.com/watch?v=vzhTpIIQR5I",
+      "referenceUrl": "https://www.marumaru-x.com/japanese-song/play-xqrd9y4vnd",
+      "providedFile": "12.lrc",
+      "cueCount": 28,
+      "directlyAlignedCues": 24,
+      "estimatedCues": 4,
+      "unchangedUnverifiedCues": 0,
+      "medianOffsetSeconds": 1.595,
+      "timingVerified": false,
+      "cues": [
+        {
+          "originalStart": 13.7,
+          "start": 15.25,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            0,
+            0
+          ]
+        },
+        {
+          "originalStart": 20.75,
+          "start": 22.3,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            1,
+            1
+          ]
+        },
+        {
+          "originalStart": 28.04,
+          "start": 29.5,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            2,
+            2
+          ]
+        },
+        {
+          "originalStart": 35.15,
+          "start": 36.7,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            3,
+            3
+          ]
+        },
+        {
+          "originalStart": 43.79,
+          "start": 45.484,
+          "alignment": "interpolated"
+        },
+        {
+          "originalStart": 45.97,
+          "start": 47.7,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            4,
+            4
+          ]
+        },
+        {
+          "originalStart": 53.27,
+          "start": 54.7,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            5,
+            5
+          ]
+        },
+        {
+          "originalStart": 60.14,
+          "start": 61.9,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            6,
+            6
+          ]
+        },
+        {
+          "originalStart": 67.57,
+          "start": 69,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            7,
+            7
+          ]
+        },
+        {
+          "originalStart": 74.47,
+          "start": 76.25,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            8,
+            8
+          ]
+        },
+        {
+          "originalStart": 81.68,
+          "start": 83.2,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            9,
+            9
+          ]
+        },
+        {
+          "originalStart": 88.93,
+          "start": 90.6,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            10,
+            10
+          ]
+        },
+        {
+          "originalStart": 93.53,
+          "start": 95.1,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            11,
+            11
+          ]
+        },
+        {
+          "originalStart": 103.18,
+          "start": 104.75,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            12,
+            12
+          ]
+        },
+        {
+          "originalStart": 110.16,
+          "start": 111.8,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            13,
+            13
+          ]
+        },
+        {
+          "originalStart": 117.32,
+          "start": 119,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            14,
+            14
+          ]
+        },
+        {
+          "originalStart": 124.47,
+          "start": 126.2,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            15,
+            15
+          ]
+        },
+        {
+          "originalStart": 133.35,
+          "start": 134.959,
+          "alignment": "interpolated"
+        },
+        {
+          "originalStart": 135.52,
+          "start": 137.1,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            16,
+            16
+          ]
+        },
+        {
+          "originalStart": 142.86,
+          "start": 144.45,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            17,
+            17
+          ]
+        },
+        {
+          "originalStart": 149.9,
+          "start": 151.5,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            18,
+            18
+          ]
+        },
+        {
+          "originalStart": 156.87,
+          "start": 158.7,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            19,
+            19
+          ]
+        },
+        {
+          "originalStart": 170.57999999999998,
+          "start": 172.286,
+          "alignment": "interpolated"
+        },
+        {
+          "originalStart": 185.63,
+          "start": 187.2,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            20,
+            20
+          ]
+        },
+        {
+          "originalStart": 192.66,
+          "start": 194.3,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            21,
+            21
+          ]
+        },
+        {
+          "originalStart": 199.76,
+          "start": 201.5,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            22,
+            22
+          ]
+        },
+        {
+          "originalStart": 206.91,
+          "start": 208.6,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            23,
+            23
+          ]
+        },
+        {
+          "originalStart": 215.19,
+          "start": 216.88,
+          "alignment": "interpolated"
+        }
+      ]
+    },
+    {
+      "id": "prema",
+      "name": "Prema",
+      "videoId": "UJgPpzZcxGU",
+      "videoSource": "https://www.youtube.com/watch?v=UJgPpzZcxGU",
+      "referenceUrl": "https://www.marumaru-x.com/japanese-song/play-evr8434pnm",
+      "providedFile": "13.lrc",
+      "cueCount": 48,
+      "directlyAlignedCues": 35,
+      "estimatedCues": 13,
+      "unchangedUnverifiedCues": 0,
+      "medianOffsetSeconds": -0.08,
+      "timingVerified": false,
+      "cues": [
+        {
+          "originalStart": 21.34,
+          "start": 21.3,
+          "matchRatio": 0.9412,
+          "referenceIndices": [
+            0,
+            1
+          ]
+        },
+        {
+          "originalStart": 27.55,
+          "start": 27.1,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            2,
+            2
+          ]
+        },
+        {
+          "originalStart": 31.72,
+          "start": 31.2,
+          "matchRatio": 0.9375,
+          "referenceIndices": [
+            3,
+            4
+          ]
+        },
+        {
+          "originalStart": 36.78,
+          "start": 36.6,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            5,
+            5
+          ]
+        },
+        {
+          "originalStart": 41.29,
+          "start": 40.65,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            6,
+            7
+          ]
+        },
+        {
+          "originalStart": 45.71,
+          "start": 45.5,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            8,
+            9
+          ]
+        },
+        {
+          "originalStart": 50.54,
+          "start": 50.15,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            10,
+            11
+          ]
+        },
+        {
+          "originalStart": 53.9,
+          "start": 54.3,
+          "matchRatio": 0.8929,
+          "referenceIndices": [
+            12,
+            12
+          ]
+        },
+        {
+          "originalStart": 59.68,
+          "start": 59.6,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            13,
+            14
+          ]
+        },
+        {
+          "originalStart": 64.47,
+          "start": 64.35,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            15,
+            16
+          ]
+        },
+        {
+          "originalStart": 69.47,
+          "start": 69.2,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            17,
+            18
+          ]
+        },
+        {
+          "originalStart": 73.67,
+          "start": 73.2,
+          "matchRatio": 0.9667,
+          "referenceIndices": [
+            19,
+            19
+          ]
+        },
+        {
+          "originalStart": 78.73,
+          "start": 79.2,
+          "matchRatio": 0.9492,
+          "referenceIndices": [
+            20,
+            20
+          ]
+        },
+        {
+          "originalStart": 84.01,
+          "start": 84.1,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            21,
+            21
+          ]
+        },
+        {
+          "originalStart": 88.73,
+          "start": 88.65,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            22,
+            22
+          ]
+        },
+        {
+          "originalStart": 94.9,
+          "start": 94.7,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            23,
+            23
+          ]
+        },
+        {
+          "originalStart": 97.22,
+          "start": 97.2,
+          "matchRatio": 0.9412,
+          "referenceIndices": [
+            24,
+            25
+          ]
+        },
+        {
+          "originalStart": 103.03,
+          "start": 103.2,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            26,
+            26
+          ]
+        },
+        {
+          "originalStart": 107.05,
+          "start": 107.2,
+          "matchRatio": 0.9375,
+          "referenceIndices": [
+            27,
+            28
+          ]
+        },
+        {
+          "originalStart": 112.55,
+          "start": 112.5,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            29,
+            29
+          ]
+        },
+        {
+          "originalStart": 116.92,
+          "start": 116.941,
+          "alignment": "interpolated"
+        },
+        {
+          "originalStart": 122.13,
+          "start": 122.235,
+          "alignment": "interpolated"
+        },
+        {
+          "originalStart": 126.27,
+          "start": 126.442,
+          "alignment": "interpolated"
+        },
+        {
+          "originalStart": 135.38,
+          "start": 135.7,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            30,
+            31
+          ]
+        },
+        {
+          "originalStart": 140.16,
+          "start": 140.4,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            32,
+            33
+          ]
+        },
+        {
+          "originalStart": 144.79,
+          "start": 145.2,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            34,
+            35
+          ]
+        },
+        {
+          "originalStart": 149.57,
+          "start": 149.3,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            36,
+            36
+          ]
+        },
+        {
+          "originalStart": 155.66,
+          "start": 155.2,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            37,
+            37
+          ]
+        },
+        {
+          "originalStart": 159.99,
+          "start": 160.1,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            38,
+            38
+          ]
+        },
+        {
+          "originalStart": 164.84,
+          "start": 164.85,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            39,
+            39
+          ]
+        },
+        {
+          "originalStart": 170.82999999999998,
+          "start": 170.8,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            40,
+            40
+          ]
+        },
+        {
+          "originalStart": 174.92000000000002,
+          "start": 175.898,
+          "alignment": "interpolated"
+        },
+        {
+          "originalStart": 182.63,
+          "start": 182.55,
+          "alignment": "median-offset-fallback",
+          "rejectedReferenceStart": 185.509
+        },
+        {
+          "originalStart": 185.68,
+          "start": 185.6,
+          "alignment": "median-offset-fallback",
+          "rejectedReferenceStart": 189.311
+        },
+        {
+          "originalStart": 188.88,
+          "start": 188.8,
+          "referenceIndices": [
+            41,
+            41
+          ],
+          "alignment": "median-offset-fallback",
+          "rejectedReferenceStart": 193.3
+        },
+        {
+          "originalStart": 190.78,
+          "start": 190.7,
+          "alignment": "median-offset-fallback",
+          "rejectedReferenceStart": 194.242
+        },
+        {
+          "originalStart": 193.75,
+          "start": 193.67,
+          "alignment": "median-offset-fallback",
+          "rejectedReferenceStart": 195.715
+        },
+        {
+          "originalStart": 198.56,
+          "start": 198.1,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            42,
+            42
+          ]
+        },
+        {
+          "originalStart": 202.95,
+          "start": 202.8,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            43,
+            43
+          ]
+        },
+        {
+          "originalStart": 208.84,
+          "start": 208.6,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            44,
+            44
+          ]
+        },
+        {
+          "originalStart": 211.41,
+          "start": 211.3,
+          "matchRatio": 0.9688,
+          "referenceIndices": [
+            45,
+            46
+          ]
+        },
+        {
+          "originalStart": 217.36,
+          "start": 217.2,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            47,
+            47
+          ]
+        },
+        {
+          "originalStart": 221.11,
+          "start": 221.3,
+          "matchRatio": 0.9667,
+          "referenceIndices": [
+            48,
+            49
+          ]
+        },
+        {
+          "originalStart": 226.57,
+          "start": 226.65,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            50,
+            50
+          ]
+        },
+        {
+          "originalStart": 230.93,
+          "start": 231.01,
+          "alignment": "interpolated"
+        },
+        {
+          "originalStart": 237.14,
+          "start": 237.22,
+          "alignment": "interpolated"
+        },
+        {
+          "originalStart": 239.88,
+          "start": 239.96,
+          "alignment": "interpolated"
+        },
+        {
+          "originalStart": 243.92,
+          "start": 244.0,
+          "alignment": "interpolated"
+        }
+      ]
+    },
+    {
+      "id": "michi-teyu-ku",
+      "name": "満ちてゆく",
+      "videoId": "ptiK8U4WlSc",
+      "videoSource": "https://www.youtube.com/watch?v=ptiK8U4WlSc",
+      "referenceUrl": "https://www.marumaru-x.com/japanese-song/play-wzrv48xlr3",
+      "providedFile": "14.lrc",
+      "cueCount": 37,
+      "directlyAlignedCues": 32,
+      "estimatedCues": 5,
+      "unchangedUnverifiedCues": 0,
+      "medianOffsetSeconds": 13.59,
+      "timingVerified": false,
+      "cues": [
+        {
+          "originalStart": 26.53,
+          "start": 40.25,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            0,
+            0
+          ]
+        },
+        {
+          "originalStart": 30.13,
+          "start": 43.7,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            1,
+            1
+          ]
+        },
+        {
+          "originalStart": 33.48,
+          "start": 47,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            2,
+            2
+          ]
+        },
+        {
+          "originalStart": 39.85,
+          "start": 53.55,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            3,
+            3
+          ]
+        },
+        {
+          "originalStart": 43.49,
+          "start": 57,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            4,
+            4
+          ]
+        },
+        {
+          "originalStart": 46.94,
+          "start": 60.45,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            5,
+            5
+          ]
+        },
+        {
+          "originalStart": 53.49,
+          "start": 66.85,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            6,
+            6
+          ]
+        },
+        {
+          "originalStart": 56.87,
+          "start": 70.45,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            7,
+            7
+          ]
+        },
+        {
+          "originalStart": 60.08,
+          "start": 73.75,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            8,
+            8
+          ]
+        },
+        {
+          "originalStart": 66.99,
+          "start": 80.7,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            9,
+            9
+          ]
+        },
+        {
+          "originalStart": 73.7,
+          "start": 87.3,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            10,
+            10
+          ]
+        },
+        {
+          "originalStart": 80.23,
+          "start": 94.15,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            11,
+            11
+          ]
+        },
+        {
+          "originalStart": 87.07,
+          "start": 100.65,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            12,
+            12
+          ]
+        },
+        {
+          "originalStart": 100.25999999999999,
+          "start": 113.74,
+          "alignment": "interpolated"
+        },
+        {
+          "originalStart": 105.46000000000001,
+          "start": 118.9,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            13,
+            13
+          ]
+        },
+        {
+          "originalStart": 119.96000000000001,
+          "start": 133.4,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            14,
+            14
+          ]
+        },
+        {
+          "originalStart": 123.41,
+          "start": 136.86,
+          "alignment": "interpolated"
+        },
+        {
+          "originalStart": 126.94,
+          "start": 140.4,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            15,
+            15
+          ]
+        },
+        {
+          "originalStart": 133.22,
+          "start": 146.8,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            16,
+            16
+          ]
+        },
+        {
+          "originalStart": 139.67000000000002,
+          "start": 153.2,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            17,
+            17
+          ]
+        },
+        {
+          "originalStart": 146.71,
+          "start": 160.45,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            18,
+            18
+          ]
+        },
+        {
+          "originalStart": 150.15,
+          "start": 163.875,
+          "alignment": "interpolated"
+        },
+        {
+          "originalStart": 153.39,
+          "start": 167.1,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            19,
+            19
+          ]
+        },
+        {
+          "originalStart": 160.53,
+          "start": 174.5,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            20,
+            20
+          ]
+        },
+        {
+          "originalStart": 167.09,
+          "start": 180.6,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            21,
+            21
+          ]
+        },
+        {
+          "originalStart": 173.65,
+          "start": 187.3,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            22,
+            22
+          ]
+        },
+        {
+          "originalStart": 180.26,
+          "start": 194,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            23,
+            23
+          ]
+        },
+        {
+          "originalStart": 194.82,
+          "start": 208.43,
+          "alignment": "interpolated"
+        },
+        {
+          "originalStart": 213.81,
+          "start": 227.25,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            24,
+            24
+          ]
+        },
+        {
+          "originalStart": 219.18,
+          "start": 232.8,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            25,
+            25
+          ]
+        },
+        {
+          "originalStart": 225.77,
+          "start": 239.35,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            26,
+            26
+          ]
+        },
+        {
+          "originalStart": 232.39,
+          "start": 246,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            27,
+            27
+          ]
+        },
+        {
+          "originalStart": 240.31,
+          "start": 253.95,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            28,
+            28
+          ]
+        },
+        {
+          "originalStart": 246.9,
+          "start": 260.6,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            29,
+            29
+          ]
+        },
+        {
+          "originalStart": 253.82,
+          "start": 267.3,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            30,
+            30
+          ]
+        },
+        {
+          "originalStart": 260.39,
+          "start": 274.5,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            31,
+            31
+          ]
+        },
+        {
+          "originalStart": 269.61,
+          "start": 283.72,
+          "alignment": "interpolated"
+        }
+      ]
+    },
+    {
+      "id": "okay-goodbye",
+      "name": "Okay, Goodbye",
+      "videoId": "EAtRDZQLsgk",
+      "videoSource": "https://www.youtube.com/watch?v=EAtRDZQLsgk",
+      "referenceUrl": null,
+      "providedFile": "15.lrc",
+      "cueCount": 67,
+      "directlyAlignedCues": 0,
+      "estimatedCues": 0,
+      "unchangedUnverifiedCues": 67,
+      "medianOffsetSeconds": 0,
+      "timingVerified": false,
+      "cues": [
+        {
+          "originalStart": 11.28,
+          "start": 11.28
+        },
+        {
+          "originalStart": 13.89,
+          "start": 13.89
+        },
+        {
+          "originalStart": 16.36,
+          "start": 16.36
+        },
+        {
+          "originalStart": 18.94,
+          "start": 18.94
+        },
+        {
+          "originalStart": 21.53,
+          "start": 21.53
+        },
+        {
+          "originalStart": 24.75,
+          "start": 24.75
+        },
+        {
+          "originalStart": 27.37,
+          "start": 27.37
+        },
+        {
+          "originalStart": 28.96,
+          "start": 28.96
+        },
+        {
+          "originalStart": 32.39,
+          "start": 32.39
+        },
+        {
+          "originalStart": 35.38,
+          "start": 35.38
+        },
+        {
+          "originalStart": 38.23,
+          "start": 38.23
+        },
+        {
+          "originalStart": 41.77,
+          "start": 41.77
+        },
+        {
+          "originalStart": 45.6,
+          "start": 45.6
+        },
+        {
+          "originalStart": 47.57,
+          "start": 47.57
+        },
+        {
+          "originalStart": 51.38,
+          "start": 51.38
+        },
+        {
+          "originalStart": 53.11,
+          "start": 53.11
+        },
+        {
+          "originalStart": 56.07,
+          "start": 56.07
+        },
+        {
+          "originalStart": 58.21,
+          "start": 58.21
+        },
+        {
+          "originalStart": 61.15,
+          "start": 61.15
+        },
+        {
+          "originalStart": 63.35,
+          "start": 63.35
+        },
+        {
+          "originalStart": 66.66,
+          "start": 66.66
+        },
+        {
+          "originalStart": 73.07,
+          "start": 73.07
+        },
+        {
+          "originalStart": 77.17,
+          "start": 77.17
+        },
+        {
+          "originalStart": 88.15,
+          "start": 88.15
+        },
+        {
+          "originalStart": 90.78,
+          "start": 90.78
+        },
+        {
+          "originalStart": 93.38,
+          "start": 93.38
+        },
+        {
+          "originalStart": 95.89,
+          "start": 95.89
+        },
+        {
+          "originalStart": 98.24000000000001,
+          "start": 98.24000000000001
+        },
+        {
+          "originalStart": 99.94,
+          "start": 99.94
+        },
+        {
+          "originalStart": 102.99000000000001,
+          "start": 102.99000000000001
+        },
+        {
+          "originalStart": 104.66,
+          "start": 104.66
+        },
+        {
+          "originalStart": 106.52000000000001,
+          "start": 106.52000000000001
+        },
+        {
+          "originalStart": 109.18,
+          "start": 109.18
+        },
+        {
+          "originalStart": 112.63,
+          "start": 112.63
+        },
+        {
+          "originalStart": 115.47,
+          "start": 115.47
+        },
+        {
+          "originalStart": 116.81,
+          "start": 116.81
+        },
+        {
+          "originalStart": 118.97999999999999,
+          "start": 118.97999999999999
+        },
+        {
+          "originalStart": 122.74,
+          "start": 122.74
+        },
+        {
+          "originalStart": 124.67,
+          "start": 124.67
+        },
+        {
+          "originalStart": 128.77,
+          "start": 128.77
+        },
+        {
+          "originalStart": 131.11,
+          "start": 131.11
+        },
+        {
+          "originalStart": 133.9,
+          "start": 133.9
+        },
+        {
+          "originalStart": 136.23,
+          "start": 136.23
+        },
+        {
+          "originalStart": 138.93,
+          "start": 138.93
+        },
+        {
+          "originalStart": 141.37,
+          "start": 141.37
+        },
+        {
+          "originalStart": 144.22,
+          "start": 144.22
+        },
+        {
+          "originalStart": 150.32999999999998,
+          "start": 150.32999999999998
+        },
+        {
+          "originalStart": 154.55,
+          "start": 154.55
+        },
+        {
+          "originalStart": 156.73,
+          "start": 156.73
+        },
+        {
+          "originalStart": 158.9,
+          "start": 158.9
+        },
+        {
+          "originalStart": 161.8,
+          "start": 161.8
+        },
+        {
+          "originalStart": 163.9,
+          "start": 163.9
+        },
+        {
+          "originalStart": 166.36,
+          "start": 166.36
+        },
+        {
+          "originalStart": 169.37,
+          "start": 169.37
+        },
+        {
+          "originalStart": 170.93,
+          "start": 170.93
+        },
+        {
+          "originalStart": 175.44,
+          "start": 175.44
+        },
+        {
+          "originalStart": 177.44,
+          "start": 177.44
+        },
+        {
+          "originalStart": 180.23,
+          "start": 180.23
+        },
+        {
+          "originalStart": 182.48,
+          "start": 182.48
+        },
+        {
+          "originalStart": 185.29,
+          "start": 185.29
+        },
+        {
+          "originalStart": 187.7,
+          "start": 187.7
+        },
+        {
+          "originalStart": 190.64,
+          "start": 190.64
+        },
+        {
+          "originalStart": 196.8,
+          "start": 196.8
+        },
+        {
+          "originalStart": 201.88,
+          "start": 201.88
+        },
+        {
+          "originalStart": 207.07,
+          "start": 207.07
+        },
+        {
+          "originalStart": 211.57,
+          "start": 211.57
+        },
+        {
+          "originalStart": 213.03,
+          "start": 213.03
+        }
+      ]
+    },
+    {
+      "id": "seishun-sick",
+      "name": "青春病",
+      "videoId": "kQvT37OzkP8",
+      "videoSource": "https://www.youtube.com/watch?v=kQvT37OzkP8",
+      "referenceUrl": "https://www.marumaru-x.com/japanese-song/play-ywn1zx8dr7",
+      "providedFile": "16.lrc",
+      "cueCount": 50,
+      "directlyAlignedCues": 47,
+      "estimatedCues": 3,
+      "unchangedUnverifiedCues": 0,
+      "medianOffsetSeconds": -1.02,
+      "timingVerified": false,
+      "cues": [
+        {
+          "originalStart": 4.49,
+          "start": 3.7,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            0,
+            0
+          ]
+        },
+        {
+          "originalStart": 8.81,
+          "start": 8.18,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            1,
+            1
+          ]
+        },
+        {
+          "originalStart": 13.63,
+          "start": 12.55,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            2,
+            2
+          ]
+        },
+        {
+          "originalStart": 17.67,
+          "start": 16.7,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            3,
+            3
+          ]
+        },
+        {
+          "originalStart": 22.15,
+          "start": 21.25,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            4,
+            4
+          ]
+        },
+        {
+          "originalStart": 28.79,
+          "start": 27.852,
+          "alignment": "interpolated"
+        },
+        {
+          "originalStart": 43.32,
+          "start": 42.3,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            5,
+            5
+          ]
+        },
+        {
+          "originalStart": 50.22,
+          "start": 49.35,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            6,
+            6
+          ]
+        },
+        {
+          "originalStart": 54.58,
+          "start": 53.3,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            7,
+            7
+          ]
+        },
+        {
+          "originalStart": 60.99,
+          "start": 59.95,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            8,
+            8
+          ]
+        },
+        {
+          "originalStart": 68.0,
+          "start": 67.2,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            9,
+            9
+          ]
+        },
+        {
+          "originalStart": 72.23,
+          "start": 71,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            10,
+            10
+          ]
+        },
+        {
+          "originalStart": 78.96000000000001,
+          "start": 78,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            11,
+            11
+          ]
+        },
+        {
+          "originalStart": 83.76,
+          "start": 82.4,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            12,
+            12
+          ]
+        },
+        {
+          "originalStart": 87.89,
+          "start": 87,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            13,
+            13
+          ]
+        },
+        {
+          "originalStart": 92.22,
+          "start": 91.2,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            14,
+            14
+          ]
+        },
+        {
+          "originalStart": 96.28,
+          "start": 95.2,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            15,
+            15
+          ]
+        },
+        {
+          "originalStart": 100.88,
+          "start": 99.65,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            16,
+            16
+          ]
+        },
+        {
+          "originalStart": 105.25999999999999,
+          "start": 104.15,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            17,
+            17
+          ]
+        },
+        {
+          "originalStart": 109.53,
+          "start": 108.65,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            18,
+            18
+          ]
+        },
+        {
+          "originalStart": 116.13,
+          "start": 114.75,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            19,
+            19
+          ]
+        },
+        {
+          "originalStart": 120.04,
+          "start": 119.15,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            20,
+            20
+          ]
+        },
+        {
+          "originalStart": 124.67,
+          "start": 123.55,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            21,
+            21
+          ]
+        },
+        {
+          "originalStart": 128.76,
+          "start": 127.75,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            22,
+            22
+          ]
+        },
+        {
+          "originalStart": 133.39,
+          "start": 132.1,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            23,
+            23
+          ]
+        },
+        {
+          "originalStart": 139.59,
+          "start": 138.381,
+          "alignment": "interpolated"
+        },
+        {
+          "originalStart": 145.57999999999998,
+          "start": 144.45,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            24,
+            24
+          ]
+        },
+        {
+          "originalStart": 152.53,
+          "start": 151.45,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            25,
+            25
+          ]
+        },
+        {
+          "originalStart": 156.47,
+          "start": 155.55,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            26,
+            26
+          ]
+        },
+        {
+          "originalStart": 163.5,
+          "start": 162.45,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            27,
+            27
+          ]
+        },
+        {
+          "originalStart": 167.87,
+          "start": 166.85,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            28,
+            28
+          ]
+        },
+        {
+          "originalStart": 172.48,
+          "start": 171.3,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            29,
+            29
+          ]
+        },
+        {
+          "originalStart": 176.41,
+          "start": 175.9,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            30,
+            30
+          ]
+        },
+        {
+          "originalStart": 180.87,
+          "start": 179.75,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            31,
+            31
+          ]
+        },
+        {
+          "originalStart": 185.2,
+          "start": 184.15,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            32,
+            32
+          ]
+        },
+        {
+          "originalStart": 189.55,
+          "start": 188.6,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            33,
+            33
+          ]
+        },
+        {
+          "originalStart": 194.04,
+          "start": 193.5,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            34,
+            34
+          ]
+        },
+        {
+          "originalStart": 200.45,
+          "start": 199.45,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            35,
+            35
+          ]
+        },
+        {
+          "originalStart": 204.97,
+          "start": 203.75,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            36,
+            36
+          ]
+        },
+        {
+          "originalStart": 209.37,
+          "start": 208.3,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            37,
+            37
+          ]
+        },
+        {
+          "originalStart": 213.74,
+          "start": 212.75,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            38,
+            38
+          ]
+        },
+        {
+          "originalStart": 218.27,
+          "start": 217.25,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            39,
+            39
+          ]
+        },
+        {
+          "originalStart": 227.27,
+          "start": 226.5,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            40,
+            40
+          ]
+        },
+        {
+          "originalStart": 236.07999999999998,
+          "start": 234.95,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            41,
+            41
+          ]
+        },
+        {
+          "originalStart": 245.03,
+          "start": 243.85,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            42,
+            42
+          ]
+        },
+        {
+          "originalStart": 253.53,
+          "start": 252.6,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            43,
+            43
+          ]
+        },
+        {
+          "originalStart": 257.88,
+          "start": 256.9,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            44,
+            44
+          ]
+        },
+        {
+          "originalStart": 262.46,
+          "start": 261.5,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            45,
+            45
+          ]
+        },
+        {
+          "originalStart": 266.82,
+          "start": 265.55,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            46,
+            46
+          ]
+        },
+        {
+          "originalStart": 278.57,
+          "start": 277.3,
+          "alignment": "interpolated"
+        }
+      ]
+    },
+    {
+      "id": "hachiko",
+      "name": "Hachikō",
+      "videoId": "OodEsjZ88TQ",
+      "videoSource": "https://www.youtube.com/watch?v=OodEsjZ88TQ",
+      "referenceUrl": "https://www.marumaru-x.com/japanese-song/play-pynpv14pnd",
+      "providedFile": "17.lrc",
+      "cueCount": 62,
+      "directlyAlignedCues": 44,
+      "estimatedCues": 18,
+      "unchangedUnverifiedCues": 0,
+      "medianOffsetSeconds": -0.325,
+      "timingVerified": false,
+      "cues": [
+        {
+          "originalStart": 39.8,
+          "start": 39.4,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            0,
+            0
+          ]
+        },
+        {
+          "originalStart": 44.16,
+          "start": 43.8,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            1,
+            1
+          ]
+        },
+        {
+          "originalStart": 48.56,
+          "start": 47.85,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            2,
+            2
+          ]
+        },
+        {
+          "originalStart": 52.11,
+          "start": 51.7,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            3,
+            3
+          ]
+        },
+        {
+          "originalStart": 55.69,
+          "start": 55.343,
+          "alignment": "interpolated"
+        },
+        {
+          "originalStart": 56.63,
+          "start": 56.3,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            4,
+            4
+          ]
+        },
+        {
+          "originalStart": 58.92,
+          "start": 58.6,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            5,
+            5
+          ]
+        },
+        {
+          "originalStart": 61.11,
+          "start": 60.8,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            6,
+            6
+          ]
+        },
+        {
+          "originalStart": 64.3,
+          "start": 64.043,
+          "alignment": "interpolated"
+        },
+        {
+          "originalStart": 65.34,
+          "start": 65.1,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            7,
+            7
+          ]
+        },
+        {
+          "originalStart": 67.63,
+          "start": 67.4,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            8,
+            8
+          ]
+        },
+        {
+          "originalStart": 69.81,
+          "start": 69.7,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            9,
+            9
+          ]
+        },
+        {
+          "originalStart": 73.21000000000001,
+          "start": 72.985,
+          "alignment": "interpolated"
+        },
+        {
+          "originalStart": 74.26,
+          "start": 74,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            10,
+            10
+          ]
+        },
+        {
+          "originalStart": 76.35,
+          "start": 76.051,
+          "alignment": "interpolated"
+        },
+        {
+          "originalStart": 78.57,
+          "start": 78.23,
+          "alignment": "interpolated"
+        },
+        {
+          "originalStart": 80.75,
+          "start": 80.369,
+          "alignment": "interpolated"
+        },
+        {
+          "originalStart": 82.52,
+          "start": 82.107,
+          "alignment": "interpolated"
+        },
+        {
+          "originalStart": 82.87,
+          "start": 82.45,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            11,
+            11
+          ]
+        },
+        {
+          "originalStart": 91.69,
+          "start": 91.3,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            12,
+            12
+          ]
+        },
+        {
+          "originalStart": 100.39,
+          "start": 100.1,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            13,
+            13
+          ]
+        },
+        {
+          "originalStart": 102.59,
+          "start": 102.25,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            14,
+            14
+          ]
+        },
+        {
+          "originalStart": 104.74000000000001,
+          "start": 104.4,
+          "matchRatio": 0.875,
+          "referenceIndices": [
+            15,
+            15
+          ]
+        },
+        {
+          "originalStart": 106.97,
+          "start": 106.65,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            16,
+            16
+          ]
+        },
+        {
+          "originalStart": 109.15,
+          "start": 108.9,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            17,
+            17
+          ]
+        },
+        {
+          "originalStart": 117.78999999999999,
+          "start": 117.456,
+          "alignment": "interpolated"
+        },
+        {
+          "originalStart": 135.81,
+          "start": 135.3,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            18,
+            18
+          ]
+        },
+        {
+          "originalStart": 140.15,
+          "start": 139.7,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            19,
+            19
+          ]
+        },
+        {
+          "originalStart": 144.55,
+          "start": 143.9,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            20,
+            20
+          ]
+        },
+        {
+          "originalStart": 148.26,
+          "start": 147.8,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            21,
+            21
+          ]
+        },
+        {
+          "originalStart": 151.92000000000002,
+          "start": 151.576,
+          "alignment": "interpolated"
+        },
+        {
+          "originalStart": 152.67000000000002,
+          "start": 152.35,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            22,
+            22
+          ]
+        },
+        {
+          "originalStart": 154.96,
+          "start": 154.65,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            23,
+            23
+          ]
+        },
+        {
+          "originalStart": 157.14,
+          "start": 156.8,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            24,
+            24
+          ]
+        },
+        {
+          "originalStart": 160.19,
+          "start": 160.141,
+          "alignment": "interpolated"
+        },
+        {
+          "originalStart": 161.43,
+          "start": 161.5,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            25,
+            25
+          ]
+        },
+        {
+          "originalStart": 163.62,
+          "start": 163.4,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            26,
+            26
+          ]
+        },
+        {
+          "originalStart": 165.81,
+          "start": 165.55,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            27,
+            27
+          ]
+        },
+        {
+          "originalStart": 169.67000000000002,
+          "start": 169.272,
+          "alignment": "interpolated"
+        },
+        {
+          "originalStart": 170.27,
+          "start": 169.85,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            28,
+            28
+          ]
+        },
+        {
+          "originalStart": 172.41,
+          "start": 172.034,
+          "alignment": "interpolated"
+        },
+        {
+          "originalStart": 174.59,
+          "start": 174.26,
+          "alignment": "interpolated"
+        },
+        {
+          "originalStart": 176.78,
+          "start": 176.495,
+          "alignment": "interpolated"
+        },
+        {
+          "originalStart": 178.68,
+          "start": 178.435,
+          "alignment": "interpolated"
+        },
+        {
+          "originalStart": 178.94,
+          "start": 178.7,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            29,
+            29
+          ]
+        },
+        {
+          "originalStart": 187.73,
+          "start": 187.25,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            30,
+            30
+          ]
+        },
+        {
+          "originalStart": 196.37,
+          "start": 196.1,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            31,
+            31
+          ]
+        },
+        {
+          "originalStart": 198.53,
+          "start": 198.3,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            32,
+            32
+          ]
+        },
+        {
+          "originalStart": 200.71,
+          "start": 200.3,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            33,
+            33
+          ]
+        },
+        {
+          "originalStart": 202.97,
+          "start": 202.5,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            34,
+            34
+          ]
+        },
+        {
+          "originalStart": 205.12,
+          "start": 204.8,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            35,
+            35
+          ]
+        },
+        {
+          "originalStart": 213.52,
+          "start": 213.2,
+          "alignment": "interpolated"
+        },
+        {
+          "originalStart": 231.32,
+          "start": 231,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            36,
+            36
+          ]
+        },
+        {
+          "originalStart": 233.52,
+          "start": 233.2,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            37,
+            37
+          ]
+        },
+        {
+          "originalStart": 235.65,
+          "start": 235.3,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            38,
+            38
+          ]
+        },
+        {
+          "originalStart": 237.82999999999998,
+          "start": 237.55,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            39,
+            39
+          ]
+        },
+        {
+          "originalStart": 239.92000000000002,
+          "start": 239.565,
+          "alignment": "interpolated"
+        },
+        {
+          "originalStart": 240.06,
+          "start": 239.7,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            40,
+            40
+          ]
+        },
+        {
+          "originalStart": 242.2,
+          "start": 241.8,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            41,
+            41
+          ]
+        },
+        {
+          "originalStart": 244.38,
+          "start": 243.95,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            42,
+            42
+          ]
+        },
+        {
+          "originalStart": 246.54,
+          "start": 246.3,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            43,
+            43
+          ]
+        },
+        {
+          "originalStart": 248.83,
+          "start": 248.59,
+          "alignment": "interpolated"
+        }
+      ]
+    },
+    {
+      "id": "masshiro",
+      "name": "真っ白",
+      "videoId": "XwgL4C2WaU8",
+      "videoSource": "https://www.youtube.com/watch?v=XwgL4C2WaU8",
+      "referenceUrl": "https://www.marumaru-x.com/japanese-song/play-lkrz5qk6re",
+      "providedFile": "18.lrc",
+      "cueCount": 38,
+      "directlyAlignedCues": 26,
+      "estimatedCues": 12,
+      "unchangedUnverifiedCues": 0,
+      "medianOffsetSeconds": -0.3,
+      "timingVerified": false,
+      "cues": [
+        {
+          "originalStart": 1.3,
+          "start": 1.35,
+          "alignment": "interpolated"
+        },
+        {
+          "originalStart": 5.05,
+          "start": 5.1,
+          "alignment": "interpolated"
+        },
+        {
+          "originalStart": 11.59,
+          "start": 11.64,
+          "alignment": "interpolated"
+        },
+        {
+          "originalStart": 14.75,
+          "start": 14.8,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            0,
+            0
+          ]
+        },
+        {
+          "originalStart": 22.75,
+          "start": 22.4,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            1,
+            1
+          ]
+        },
+        {
+          "originalStart": 30.15,
+          "start": 30.15,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            2,
+            2
+          ]
+        },
+        {
+          "originalStart": 37.98,
+          "start": 37.8,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            3,
+            3
+          ]
+        },
+        {
+          "originalStart": 47.52,
+          "start": 47.3,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            4,
+            4
+          ]
+        },
+        {
+          "originalStart": 53.42,
+          "start": 53.1,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            5,
+            5
+          ]
+        },
+        {
+          "originalStart": 62.73,
+          "start": 62.6,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            6,
+            6
+          ]
+        },
+        {
+          "originalStart": 68.78,
+          "start": 68.35,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            7,
+            7
+          ]
+        },
+        {
+          "originalStart": 78.03999999999999,
+          "start": 77.7,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            8,
+            8
+          ]
+        },
+        {
+          "originalStart": 84.5,
+          "start": 84.2,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            9,
+            9
+          ]
+        },
+        {
+          "originalStart": 91.56,
+          "start": 91.13,
+          "alignment": "interpolated"
+        },
+        {
+          "originalStart": 93.72,
+          "start": 93.25,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            10,
+            10
+          ]
+        },
+        {
+          "originalStart": 101.63,
+          "start": 101.271,
+          "alignment": "interpolated"
+        },
+        {
+          "originalStart": 107.28,
+          "start": 107,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            11,
+            11
+          ]
+        },
+        {
+          "originalStart": 114.87,
+          "start": 114.5,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            12,
+            12
+          ]
+        },
+        {
+          "originalStart": 122.35,
+          "start": 122.2,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            13,
+            13
+          ]
+        },
+        {
+          "originalStart": 130.7,
+          "start": 130,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            14,
+            14
+          ]
+        },
+        {
+          "originalStart": 140.59,
+          "start": 139.957,
+          "alignment": "interpolated"
+        },
+        {
+          "originalStart": 151.03,
+          "start": 150.468,
+          "alignment": "interpolated"
+        },
+        {
+          "originalStart": 156.87,
+          "start": 156.347,
+          "alignment": "interpolated"
+        },
+        {
+          "originalStart": 161.67000000000002,
+          "start": 161.18,
+          "alignment": "interpolated"
+        },
+        {
+          "originalStart": 165.75,
+          "start": 165.288,
+          "alignment": "interpolated"
+        },
+        {
+          "originalStart": 170.53,
+          "start": 170.1,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            15,
+            15
+          ]
+        },
+        {
+          "originalStart": 176.65,
+          "start": 176.35,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            16,
+            16
+          ]
+        },
+        {
+          "originalStart": 185.84,
+          "start": 185.45,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            17,
+            17
+          ]
+        },
+        {
+          "originalStart": 193.4,
+          "start": 193.306,
+          "alignment": "interpolated"
+        },
+        {
+          "originalStart": 199.36,
+          "start": 199.5,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            18,
+            18
+          ]
+        },
+        {
+          "originalStart": 206.97,
+          "start": 206.7,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            19,
+            19
+          ]
+        },
+        {
+          "originalStart": 214.61,
+          "start": 214.4,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            20,
+            20
+          ]
+        },
+        {
+          "originalStart": 222.68,
+          "start": 222.1,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            21,
+            21
+          ]
+        },
+        {
+          "originalStart": 232.15,
+          "start": 231.75,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            22,
+            22
+          ]
+        },
+        {
+          "originalStart": 237.61,
+          "start": 237.4,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            23,
+            23
+          ]
+        },
+        {
+          "originalStart": 247.33,
+          "start": 247.5,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            24,
+            24
+          ]
+        },
+        {
+          "originalStart": 253.01,
+          "start": 252.7,
+          "matchRatio": 1.0,
+          "referenceIndices": [
+            25,
+            25
+          ]
+        },
+        {
+          "originalStart": 258.26,
+          "start": 257.95,
+          "alignment": "interpolated"
+        }
+      ]
+    }
+  ]
+}
