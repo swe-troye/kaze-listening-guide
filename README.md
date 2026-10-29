@@ -74,3 +74,9 @@ git push origin main
 ```
 
 推送後 GitHub Pages 會自動重新發布。`dist/`、`release/`、`node_modules/` 與環境變數檔案已排除版本控制；dist 可由原始碼重建。新 session 先讀 HANDOFF.md 即可接續。
+
+## 動漫人像的製作方式
+
+`assets/kaze-guide.svg` 是直接編寫 SVG 向量路徑繪製的原創 2D 動漫角色，不是圖片生成 API 的輸出。輪廓、捲髮、五官、襯衫、手部與鍵盤由 `<path>`、`<circle>` 和漸層組成；背景與角色分層，背景由 `anime.html` 的 SVG 與 `anime.css` 配色呈現，翻頁由 `anime.js` 的 Web Animations API 驅動。SVG 自帶透明背景，可直接編輯、縮放，不需要 OPENAI_API_KEY，也沒有生圖 API 費用。
+
+2026/10/29 已回查原始 session：`rollout-2026-10-28T11-14-29-01a18080-87e8-77e3-bb61-181004bf314b.jsonl`。紀錄在 2026-10-28 16:03 UTC 確認使用原創向量角色，16:08 UTC 透過 shell 將 SVG 原始碼寫入 `assets/kaze-guide.svg`；Git 提交 `db5a608` 收錄該插畫。這是可重現的製作方法，不需尋找隱藏的生圖工具。延伸網站可沿用向量方式，另畫新藝人人像，不把藤井風角色當作另一位藝人。
