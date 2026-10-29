@@ -13,6 +13,7 @@
   const readingData=()=>window.KAZE_READINGS?.[song().id];
   const storageKey=()=>`kaze-youtube-lrc-v1-${video().videoId}`;
   const currentPlayer=()=>player?.getVideoData?.()?.video_id===video().videoId;
+  const playlistVideoIds=new Set(Object.values(videos).map(v=>v.videoId));
   function playbackLabel() {
     $('play').disabled=!ready;
     const text=!ready?'播放器載入中':actualPlaying?'❚❚ 暫停':pending?'取消播放':'▶ 播放影片';if($('play').textContent!==text)$('play').textContent=text;
@@ -84,6 +85,7 @@
   function clearLoop(){singleLoop=false;loopCue=-1;pointA=null;pointB=null;loopLabel();}
   function seek(time) {
     if(!ready){status('播放器還在載入，請稍候。');return;}
+    if(!currentPlayer()){status('請等歌曲開始後再點句跳播；前置內容可用影片內的控制操作。');return;}
     const t=Math.max(0,Math.min(time,player.getDuration?.()||Infinity));player.seekTo(t,true);lastTime=-1;setActive(t);
     if(wanted)player.playVideo();
   }
@@ -92,7 +94,15 @@
     sourceDuration=duration;cues=demoCues(duration);renderCues();
   }
   function tick() {
-    if(!ready||!currentPlayer())return;
+    if(!ready)return;
+    if(!currentPlayer()){
+      lastTime=-1;
+      const id=player.getVideoData?.()?.video_id;
+      if(wanted&&player.getPlayerState()===1&&id&&!playlistVideoIds.has(id)){
+        clearAttempt();pending=true;actualPlaying=false;playbackLabel();status('YouTube 前置內容播放中，歌曲開始後歌詞會同步。');
+      }
+      return;
+    }
     const time=player.getCurrentTime()||0,duration=player.getDuration()||0,state=player.getPlayerState();
     $('time').textContent=formatTime(time);if(duration>0){$('duration').textContent=formatTime(duration);updateTimelineDuration(duration);}
     setActive(time);
@@ -173,7 +183,15 @@
     player=new YT.Player('youtube-player',{host:'https://www.youtube-nocookie.com',videoId:initialVideo,width:'100%',height:'100%',playerVars:{playsinline:1,controls:1,rel:0,cc_load_policy:1,cc_lang_pref:bundled()?.language||'ja',origin:location.origin},events:{
       onReady:()=>{clearTimeout(apiTimer);ready=true;if(video().videoId!==initialVideo)player.cueVideoById(video().videoId);playbackLabel();status('按影片的 ▶ 開始聽，文字會跟隨播放。');pollTimer=setInterval(tick,200);},
       onStateChange:event=>{
-        if(!currentPlayer())return;
+        if(!currentPlayer()){
+          const id=player.getVideoData?.()?.video_id;
+          if(id&&!playlistVideoIds.has(id)){
+            if(event.data===1){wanted=true;pending=true;actualPlaying=false;clearAttempt();status('YouTube 前置內容播放中，歌曲開始後歌詞會同步。');}
+            else if(event.data===2){wanted=false;pending=false;actualPlaying=false;clearAttempt();status('影片前置內容已暫停。');}
+            playbackLabel();
+          }
+          return;
+        }
         const state=event.data;
         if(state===1){wanted=true;pending=true;lastTime=-1;status('正在確認影片播放…');}
         else if(state===2){wanted=false;pending=false;actualPlaying=false;clearAttempt();status('影片已暫停。');}

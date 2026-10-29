@@ -33,6 +33,13 @@ try{
   await page.evaluate(()=>window.testPlayer.stateEvent(0));assert.match(await page.locator('#player-status').innerText(),/播放完畢/);assert.equal(await page.locator('#next').isEnabled(),false);
   await page.evaluate(()=>location.hash='song-nan-nan');await page.waitForFunction(()=>window.testPlayer.videoId==='Nt6ZwuVzOS4');assert.equal(await page.evaluate(()=>window.testPlayer.getPlayerState()),5);
  });
+ await check('pre-roll time stays separate from song lyrics and does not time out as failed playback',async()=>{
+  await page.click('#play');await page.evaluate(()=>{window.testPlayer.videoId='ad-fixture-id';window.testPlayer.setTime(12);});
+  await page.waitForFunction(()=>document.querySelector('#player-status').textContent.includes('前置內容'));
+  await page.waitForTimeout(10500);assert.match(await page.locator('#player-status').innerText(),/前置內容/);assert.match(await page.locator('#play').innerText(),/取消播放/);assert.equal(await page.locator('#time').innerText(),'00:00');
+  await page.locator('[data-cue="0"]').click();assert.match(await page.locator('#player-status').innerText(),/等歌曲開始/);
+  await page.evaluate(()=>{window.testPlayer.videoId='Nt6ZwuVzOS4';window.testPlayer.setTime(0);window.testPlayer.stateEvent(1);});await page.waitForFunction(()=>document.querySelector('#player-status').textContent.includes('影片播放中'));await page.click('#play');
+ });
  const lrc='[00:00]最初的閱讀提示\n[00:00]First note\n[00:02]第二段提示\n[00:02]Second note\n[00:04]第三段提示\n[00:06]最後一段提示';
  await check('local LRC import groups bilingual text and survives reload',async()=>{await page.locator('#lrc-file').setInputFiles({name:'owned-test.lrc',mimeType:'text/plain',buffer:Buffer.from(lrc)});await page.waitForFunction(()=>document.querySelectorAll('.cue').length===4);assert.match(await page.locator('#content-kind').innerText(),/owned-test/);assert.equal(await page.locator('.cue-secondary').count(),2);await page.reload();await page.waitForFunction(()=>!document.querySelector('#play').disabled);assert.equal(await page.locator('.cue').count(),4);});
  await check('clicking a line seeks and highlights the matching timestamp',async()=>{await page.locator('[data-cue="1"]').click();await page.waitForFunction(()=>document.querySelector('[data-cue="1"]').getAttribute('aria-current')==='true');assert.equal(await page.evaluate(()=>window.testPlayer.calls.at(-1)[1]),2);});
