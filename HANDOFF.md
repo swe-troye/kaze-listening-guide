@@ -1,3 +1,13 @@
+# 最新交接：同步 Vaundy 歌詞頁 UI／UX
+
+2026-10-29。使用者要求把 Vaundy 網頁最新 UI／UX 改善同步到藤井風。參考 sibling repo 的 254615e（Improve mobile lyrics follow interface and collapse secondary details），同步 youtube.html/css/js 的主要結構與行為，保留藤井風青綠色、18 首原文／繁中資料與校正紀錄、ruby、storage namespace、官方影片及前置廣告隔離。
+
+歌詞預設放大，目前句用青綠整塊底／白字與「目前」標記，切換不改字級。工具列留跟隨／讀音／中文／設定；字級、匯入與偏移在原生 details 設定，來源與對照另折疊。狀態顯示自動跟隨／自由瀏覽，手動及 PageUp/PageDown/Home/End 暫停跟隨，可回到目前句。跟隨以容器與螢幕可見交集置中，暫停輪詢不捲動；換歌即時回頂端，停用容器捲動錨點。外部 YouTube 入口平常隱藏，API／影片／autoplay／啟動失敗顯示；來源區始終有官方影片連結。匯入與保存錯誤會展開來源區，避免藏住錯誤提示。CSS／JS 加 lyrics-ui-2 快取版本，build 驗證支援 query。
+
+本次本機驗證：npm test 15 項與 npm run build 通過；更新後 scripts/youtube-browser-check.cjs 28 項通過（包含 320/390/768/844px、200% 字體、目前句 AA 對比、不改字級、手機可見高亮、折疊設定與 aria、鍵盤跟隨、換歌重設、LRC 錯誤可見、前置廣告與原有播放／循環／匯入）。已視覺檢查 /private/tmp/kaze-lyrics-mobile-active.png 與 kaze-youtube-desktop.png。未更動首頁與動漫 UI。發布後再檢查公開資產與真實播放；此前 WebKit 的 YouTube 150 限制見下文，不能宣稱所有影片與瀏覽器穩定實播。
+
+---
+
 # 最新交接：YouTube 歌詞跟唱
 
 2026-10-29。使用者要求參考 Vaundy repo 歌詞頁，使用其 Downloads 的 `fujii_kaze_18_lrc.zip` 並對照 marumaru 的每首 YouTube 影片。新增 youtube.html/css/js、youtube-core/data/lrc/readings.js；18 首原文取使用者 LRC，繁中為本站原創翻譯，ruby 保留原文並對照 marumaru 讀音。17 首使用該站連結影片與時間軸；Okay, Goodbye 找不到該站頁面，使用官方音源與原始 LRC。時間對照 624 個直接起點、202 個推算、67 個原時軸未核對，全部 893 起點保持使用者順序與文字。完整方法與逐點紀錄在 outputs/kaze-youtube-alignment.md/json，沒有宣稱逐句實聽全部影片。

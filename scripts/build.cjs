@@ -12,7 +12,7 @@ for (const [page, script] of [['index.html','app.js'],['anime.html','anime.js'],
     if (!html.includes(`id="${id}"`)) throw new Error(`Missing ${script} DOM anchor: ${id}`);
   }
   for (const [,link] of html.matchAll(/(?:src|href)="([^"#]+)"/g)) {
-    const target = link.split('#')[0];
+    const target = link.split(/[?#]/)[0];
     if (!/^https?:/.test(target) && !files.includes(target)) throw new Error(`Missing local asset: ${target}`);
   }
 }

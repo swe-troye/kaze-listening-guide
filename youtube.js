@@ -7,7 +7,7 @@
   let index=Math.max(0,songs.findIndex(s=>`#song-${s.id}`===location.hash));
   let player,ready=false,wanted=false,pending=false,actualPlaying=false,cues=[],active=-1,offset=0,imported=null;
   let following=true,singleLoop=false,loopCue=-1,pointA=null,pointB=null,lastTime=-1,sourceDuration=0;
-  let guardTimer,apiTimer,pollTimer;
+  let guardTimer,apiTimer,pollTimer,apiUnavailable=false;
   const song=()=>songs[index],video=()=>videos[song().id];
   const bundled=()=>lyrics[song().id];
   const readingData=()=>window.KAZE_READINGS?.[song().id];
@@ -19,10 +19,11 @@
     const text=!ready?'播放器載入中':actualPlaying?'❚❚ 暫停':pending?'取消播放':'▶ 播放影片';if($('play').textContent!==text)$('play').textContent=text;
   }
   function status(text){if($('player-status').textContent!==text)$('player-status').textContent=text;}
+  function syncError(text){$('sync-status').textContent=text;$('lyrics-provenance').open=true;}
   function clearAttempt(){clearTimeout(guardTimer);}
   function startGuard() {
     clearAttempt();guardTimer=setTimeout(()=>{
-      if(!actualPlaying&&wanted){wanted=false;pending=false;playbackLabel();status('尚未開始播放，請點影片中的 ▶；也可在 YouTube 開啟。');}
+      if(!actualPlaying&&wanted){wanted=false;pending=false;playbackLabel();status('尚未開始播放，請點影片中的 ▶；也可用下方連結播放。');$('youtube-open').hidden=false;}
     },10000);
   }
   function play() {
@@ -41,7 +42,7 @@
     $('timeline').replaceChildren();active=-1;
     for(const [i,cue] of cues.entries()) {
       const button=document.createElement('button');button.type='button';button.className='cue';button.dataset.cue=String(i);
-      const time=document.createElement('span');time.className='cue-time';time.textContent=formatTime(cue.start+offset);
+      const time=document.createElement('span');time.className='cue-time';const marker=document.createElement('span');marker.className='cue-marker';marker.textContent='目前';marker.setAttribute('aria-hidden','true');time.append(marker,document.createTextNode(formatTime(cue.start+offset)));
       const words=document.createElement('span');const primary=document.createElement('span');primary.className='cue-primary';primary.lang=cue.language||(/[A-Za-z]/.test(cue.primary)&&!/[\u3040-\u30ff\u3400-\u9fff]/.test(cue.primary)?'en':bundled()?.language||'ja');
       const segments=readingData()?.lines[cue.primary];
       if(segments&&segments.map(x=>x.text).join('')===cue.primary){
@@ -55,7 +56,7 @@
       button.append(time,words);$('timeline').append(button);
     }
     $('content-kind').textContent=imported?`你匯入的 LRC · ${imported.name}`:bundled()?'原文／繁中逐句歌詞 · 原創繁中翻譯':'原創導聆提示 · 非逐句歌詞';
-    $('timeline-hint').textContent=imported||bundled()?'點一句跳播，原文與中文一起亮起；時間不合可在下方微調。':'先用原創導聆提示體驗同步。提示時間按影片段落配置；匯入 LRC 才是逐句歌詞對應。';
+    $('timeline-hint').textContent=imported||bundled()?'點歌詞，跳到這一句':'先用原創導聆提示體驗同步。提示時間按影片段落配置；匯入 LRC 才是逐句歌詞對應。';
     $('remove-lrc').disabled=!imported;
     const bilingual=cues.some(c=>c.secondary);$('translation').disabled=!bilingual;
     $('readings').disabled=!$('timeline').querySelector('ruby');
@@ -72,10 +73,14 @@
     if(row){row.setAttribute('aria-current','true');if(following&&scroll)scrollToRow(row);}
   }
   function scrollToRow(row) {
-    const box=$('timeline');box.scrollTo({top:Math.max(0,box.scrollTop+row.getBoundingClientRect().top-box.getBoundingClientRect().top-(box.clientHeight-row.clientHeight)/2),behavior:matchMedia('(prefers-reduced-motion: reduce)').matches?'instant':'smooth'});
+    const box=$('timeline'),rect=box.getBoundingClientRect(),rowRect=row.getBoundingClientRect();
+    const visibleTop=Math.max(rect.top,0),visibleBottom=Math.min(rect.bottom,innerHeight);
+    const center=visibleBottom>visibleTop?(visibleTop+visibleBottom)/2:rect.top+box.clientHeight/2;
+    const target=Math.max(0,box.scrollTop+rowRect.top-(center-rowRect.height/2));
+    box.scrollTo({top:target,behavior:matchMedia('(prefers-reduced-motion: reduce)').matches?'instant':'smooth'});
   }
   function setFollowing(value) {
-    following=value;$('follow').setAttribute('aria-pressed',String(value));$('return-current').hidden=value;
+    following=value;$('follow').setAttribute('aria-pressed',String(value));$('return-current').hidden=value;$('follow-state').textContent=value?'自動跟隨':'自由瀏覽';
     if(value&&active>=0)scrollToRow($('timeline').children[active]);
   }
   function loopLabel() {
@@ -105,7 +110,7 @@
     }
     const time=player.getCurrentTime()||0,duration=player.getDuration()||0,state=player.getPlayerState();
     $('time').textContent=formatTime(time);if(duration>0){$('duration').textContent=formatTime(duration);updateTimelineDuration(duration);}
-    setActive(time);
+    setActive(time,state===1);
     if(state===1&&time>lastTime&&lastTime>=0){actualPlaying=true;pending=false;wanted=true;clearAttempt();playbackLabel();status(player.isMuted?.()?'影片正在播放，但目前靜音；請用影片控制開啟聲音。':'影片播放中 · 文字跟隨目前時間。');}
     lastTime=time;
     if(state!==1)return;
@@ -124,7 +129,7 @@
     if(!imported)cues=bundled()?parseLRC(bundled().text):demoCues(durationHint());
     $('offset').value=String(offset);$('offset-value').textContent=`${offset.toFixed(1)} 秒`;sourceDuration=durationHint();renderCues();
   }
-  function saveLRC() {try{localStorage.setItem(storageKey(),JSON.stringify(imported?{...imported,offset}:{bundled:true,offset}));}catch{$('sync-status').textContent='瀏覽器無法保存此次歌詞或時間微調，重開後請重新設定。';}}
+  function saveLRC() {try{localStorage.setItem(storageKey(),JSON.stringify(imported?{...imported,offset}:{bundled:true,offset}));}catch{syncError('瀏覽器無法保存此次歌詞或時間微調，重開後請重新設定。');}}
   function renderSong() {
     const s=song(),v=video();$('song-number').textContent=`${String(index+1).padStart(2,'0')} / ${songs.length}`;
     $('song-title').textContent=s.name;$('song-reading').textContent=`${s.reading} / ${s.chinese}`;
@@ -138,13 +143,13 @@
     $('marumaru-link').href=marumaru?.url||'https://www.marumaru-x.com/';
     $('lyrics-source-link').href=marumaru?.url||original.url;
     $('lyrics-source-link').textContent=marumaru?'在 marumaru 查看原文與中文翻譯 ↗':`原文來源：${original.name} ↗`;
-    clearLoop();restoreLRC();songList();setFollowing(true);$('time').textContent='00:00';$('duration').textContent='--:--';
+    clearLoop();restoreLRC();$('timeline').scrollTo({top:0,behavior:'instant'});songList();setFollowing(true);$('youtube-open').hidden=!apiUnavailable;$('time').textContent='00:00';$('duration').textContent='--:--';
   }
   function select(next) {
     if(next<0||next>=songs.length||next===index)return;
     const continuePlaying=wanted;clearAttempt();index=next;actualPlaying=false;pending=continuePlaying;lastTime=-1;
     history.replaceState(null,'',`#song-${song().id}`);renderSong();playbackLabel();
-    if(ready){if(continuePlaying){player.loadVideoById(video().videoId);status('正在換到下一支影片…');startGuard();}else player.cueVideoById(video().videoId);}
+    if(ready){if(continuePlaying){player.loadVideoById(video().videoId);status('正在換到下一支影片…');startGuard();}else{player.cueVideoById(video().videoId);status('按影片的 ▶ 開始聽，文字會跟隨播放。');}}
   }
   $('previous').addEventListener('click',()=>select(index-1));$('next').addEventListener('click',()=>select(index+1));
   $('play').addEventListener('click',()=>{if(actualPlaying||pending)pause();else play();});
@@ -152,6 +157,9 @@
   $('song-search').addEventListener('input',songList);
   $('song-list').addEventListener('click',event=>{const b=event.target.closest('[data-song]');if(b)select(songs.findIndex(s=>s.id===b.dataset.song));});
   $('timeline').addEventListener('click',event=>{const b=event.target.closest('[data-cue]');if(b){const i=Number(b.dataset.cue);if(singleLoop)loopCue=i;seek(cues[i].start+offset);}});
+  $('settings-open').addEventListener('click',()=>{const settings=$('lyrics-settings');settings.open=!settings.open;if(settings.open){settings.querySelector('summary').focus();settings.scrollIntoView({block:'nearest',behavior:'instant'});}});
+  $('lyrics-settings').addEventListener('toggle',()=>$('settings-open').setAttribute('aria-expanded',String($('lyrics-settings').open)));
+  $('timeline').addEventListener('keydown',event=>{if(['PageDown','PageUp','Home','End'].includes(event.key))setFollowing(false);});
   $('follow').addEventListener('click',()=>setFollowing(!following));$('return-current').addEventListener('click',()=>setFollowing(true));
   for(const event of ['wheel','touchmove'])$('timeline').addEventListener(event,()=>setFollowing(false),{passive:true});
   $('translation').addEventListener('click',()=>{const shown=$('translation').getAttribute('aria-pressed')==='true';$('translation').setAttribute('aria-pressed',String(!shown));$('timeline').classList.toggle('hide-secondary',shown);});
@@ -166,7 +174,7 @@
   $('import-open').addEventListener('click',()=>$('lrc-file').click());
   $('lrc-file').addEventListener('change',async()=>{
     const file=$('lrc-file').files[0];if(!file)return;const selected=video().videoId;
-    try{if(file.size>512000)throw Error('檔案太大，請使用 500 KB 以內的 LRC。');const text=await file.text(),parsed=parseLRC(text);if(video().videoId!==selected)return;imported={text,name:file.name};cues=parsed;offset=0;clearLoop();renderCues();$('offset').value='0';$('offset-value').textContent='0.0 秒';saveLRC();setActive(ready?player.getCurrentTime():0,false);}catch(error){$('sync-status').textContent=error.message;}
+    try{if(file.size>512000)throw Error('檔案太大，請使用 500 KB 以內的 LRC。');const text=await file.text(),parsed=parseLRC(text);if(video().videoId!==selected)return;imported={text,name:file.name};cues=parsed;offset=0;clearLoop();renderCues();$('offset').value='0';$('offset-value').textContent='0.0 秒';saveLRC();setActive(ready?player.getCurrentTime():0,false);}catch(error){syncError(error.message);}
     $('lrc-file').value='';
   });
   $('remove-lrc').addEventListener('click',()=>{try{localStorage.removeItem(storageKey());}catch{}clearLoop();restoreLRC();setActive(ready?player.getCurrentTime():0,false);});
@@ -181,7 +189,7 @@
   window.onYouTubeIframeAPIReady=()=>{
     const initialVideo=video().videoId;
     player=new YT.Player('youtube-player',{host:'https://www.youtube-nocookie.com',videoId:initialVideo,width:'100%',height:'100%',playerVars:{playsinline:1,controls:1,rel:0,cc_load_policy:1,cc_lang_pref:bundled()?.language||'ja',origin:location.origin},events:{
-      onReady:()=>{clearTimeout(apiTimer);ready=true;if(video().videoId!==initialVideo)player.cueVideoById(video().videoId);playbackLabel();status('按影片的 ▶ 開始聽，文字會跟隨播放。');pollTimer=setInterval(tick,200);},
+      onReady:()=>{clearTimeout(apiTimer);apiUnavailable=false;$('youtube-open').hidden=true;ready=true;if(video().videoId!==initialVideo)player.cueVideoById(video().videoId);playbackLabel();status('按影片的 ▶ 開始聽，文字會跟隨播放。');pollTimer=setInterval(tick,200);},
       onStateChange:event=>{
         if(!currentPlayer()){
           const id=player.getVideoData?.()?.video_id;
@@ -199,12 +207,12 @@
         else if(state===0){actualPlaying=false;pending=false;clearAttempt();if(singleLoop&&loopCue>=0){seek(cues[loopCue].start+offset);play();}else if(pointA!==null&&pointB!==null){seek(pointA);play();}else if(wanted&&index<songs.length-1)select(index+1);else{wanted=false;status('這首已播放完畢。');}}
         playbackLabel();
       },
-      onAutoplayBlocked:()=>{wanted=false;pending=false;actualPlaying=false;clearAttempt();playbackLabel();status('瀏覽器需要播放許可，請點影片中的 ▶ 繼續。');},
+      onAutoplayBlocked:()=>{wanted=false;pending=false;actualPlaying=false;clearAttempt();playbackLabel();status('瀏覽器需要播放許可，請點影片中的 ▶，或用下方連結繼續。');$('youtube-open').hidden=false;},
       onPlaybackRateChange:event=>{$('speed').value=String(event.data);},
-      onError:event=>{wanted=false;pending=false;actualPlaying=false;clearAttempt();playbackLabel();status(`這支影片目前無法在此播放（YouTube ${event.data}）。請用「在 YouTube 開啟」。`);}
+      onError:event=>{wanted=false;pending=false;actualPlaying=false;clearAttempt();playbackLabel();status(`這支影片目前無法在此播放（YouTube ${event.data}）。請用下方連結繼續。`);$('youtube-open').hidden=false;}
     }});
   };
-  function apiFailed(){status('YouTube 播放器無法連線，仍可閱讀或在 YouTube 開啟影片。');$('play').textContent='播放器無法連線';}
+  function apiFailed(){apiUnavailable=true;status('YouTube 播放器無法連線，仍可閱讀或用下方連結播放。');$('play').textContent='播放器無法連線';$('youtube-open').hidden=false;}
   apiTimer=setTimeout(apiFailed,15000);const script=document.createElement('script');script.src='https://www.youtube.com/iframe_api';script.onerror=apiFailed;document.body.append(script);
   addEventListener('pagehide',()=>{clearInterval(pollTimer);clearAttempt();});
   addEventListener('pageshow',event=>{if(event.persisted&&ready){clearInterval(pollTimer);pollTimer=setInterval(tick,200);}});
