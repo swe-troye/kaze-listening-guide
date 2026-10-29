@@ -18,7 +18,7 @@ test('playlist order and complete, traceable research remain explicit', () => {
   for (const s of songs) {
     assert.match(s.id, /^[a-z0-9-]+$/);
     assert.match(s.duration, /^\d+:\d{2}$/);
-    for (const key of ['name','reading','chinese','line','summary','interpretation','listen']) assert.ok(s[key]?.trim(), `${s.id}: ${key}`);
+    for (const key of ['name','reading','chinese','line','summary','interpretation','listen','titleMeaning','highlight']) assert.ok(s[key]?.trim(), `${s.id}: ${key}`);
     assert.ok(s.meaning.length > 0);
     assert.equal(s.verified, true);
     assert.match(s.research.checkedAt, /^\d{4}-\d{2}-\d{2}$/);

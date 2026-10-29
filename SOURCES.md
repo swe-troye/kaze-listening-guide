@@ -115,3 +115,16 @@
 - 原文：[KKBOX｜日文原文](https://www.kkbox.com/tw/tc/song/T-KNWE7u-xXCVit7NP)；全文（含重複副歌與尾聲）。
 - 中文翻譯：[marumaru｜頁面轉載中譯](https://www.marumaru-x.com/japanese-song/play-lkrz5qk6re)；全文已讀。署名／轉載資訊：頁面註明轉自影片 CC 字幕；原字幕譯者未署名，未另核實官方性。。
 - 核對重點：全文包含喜歡與離開的矛盾，不僅是純白的意象；告別對象未指定。
+
+## 2026-10-29：白話摘要改寫與Prema背景
+
+18首保留2026-10-28全文原文／外部中譯核對紀錄；本次依據已核對資料重寫歌名意思、核心摘要、歌詞亮點及深入大意，新增editorialUpdatedAt，未冒稱當日重讀所有外部歌詞。
+
+新增實際已讀：
+- https://fujiikaze.com/music/prema/ ：專輯資料與9首曲目表；第三張專輯、全英文、2025/9/5發行；Hachikō與Sir Nolan、Tobias Jesso Jr.的2022年製作及250重新編曲。
+- https://fujiikaze.com/news-article/news250725/ ：官方發行公告，確認首張全英語歌詞專輯與Pre:Prema附碟。
+- https://fujiikaze.com/profile/ ：三張專輯與理念、Prema至上之愛。
+- https://hehn.fujiikaze.com/pwt/ ：巡演頁開頭及高雄場次區塊，日期2026/10/31、Kaohsiung National Stadium；未根據歌單保證演出順序或舞台橋段。
+- https://music.apple.com/tw/album/prema/1819419299 與 https://music.apple.com/us/album/prema/1819419299 ：專輯介紹與9首逐曲解說全部文字已讀、中英文對照。本人談創作倦怠、若為最後一張的自問、梵文無私／靈性／至高之愛、250製作、You與Shy Carter共同寫詞；Prema描述自己與高我自我介紹、Hachikō確認忠犬來源、Okay Goodbye談與世間一切告別。4首新增本人說明字段與來源。
+
+未採用為已確認事實：Gemini範例把死ぬのがいいわ唯一對象指定為高我；10/31必有倒地、扇子舞、開花手勢及指定編曲。未找到本首正式解說或本場演出文件支持，僅保留有根據的歌詞理解與聆聽提示。搜尋Google／DuckDuckGo遇到機器人頁、Bing RSS結果無關，未以搜尋結果片段作背景依據。

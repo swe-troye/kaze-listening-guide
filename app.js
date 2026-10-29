@@ -41,7 +41,7 @@
       <h2 id="title-${s.id}">${e(s.name)}</h2><p class="song-meta"><span>${e(s.reading)}</span><span class="divider" aria-hidden="true">/</span><span>${e(s.chinese)}</span><span class="divider" aria-hidden="true">/</span><span>${e(s.duration)}</span></p>
       <p class="song-line">${e(s.line)}</p>
       ${s.themes.length ? `<div class="tags" aria-label="歌曲主題">${s.themes.map(t => `<span class="tag">${e(t)}</span>`).join('')}</div>` : ''}
-      <div class="summary-block"><p class="summary-label">${s.verified ? '30 秒摘要' : s.pending ? '先從這裡聽' : s.partial ? '30 秒開頭導聆' : '30 秒導聆草稿'}</p><p class="summary-copy">${e(s.summary)}</p></div>
+      <div class="summary-block"><p class="summary-label">白話導聆</p><dl class="summary-facts"><div><dt>歌名意思</dt><dd>${e(s.titleMeaning)}</dd></div><div><dt>核心意思</dt><dd class="summary-copy">${e(s.summary)}</dd></div><div><dt>歌詞亮點</dt><dd>${e(s.highlight)}</dd></div></dl></div>
       ${statusNote(s)}
       <details class="song-details"><summary>${s.pending ? '閱讀聆聽提問與背景' : '深入這首歌'}</summary><div class="detail-content">
         ${paragraphs ? `<section class="detail-section"><h3>${s.verified ? '歌詞大意（原創中文摘要）' : s.partial ? '目前讀到的開頭大意' : '歌詞大意草稿（待核對）'}</h3>${paragraphs}</section>` : ''}
@@ -56,6 +56,8 @@
       ${sourceDetails(s)}
     </article>`;
   }
+  const intro = window.KAZE_INTRO;
+  $('prema-intro').innerHTML = `<p class="intro-kicker">聽歌之前</p><h2 id="prema-title">${e(intro.title)}</h2><p class="prema-lead">${e(intro.lead)}</p><div class="prema-basics">${intro.sections.slice(0,2).map(s=>`<section><h3>${e(s.title)}</h3><p>${e(s.text)}</p></section>`).join('')}</div><details class="prema-background"><summary>創作背景、專輯主線與同名歌曲</summary><div class="prema-more">${intro.sections.slice(2).map(s=>`<section><h3>${e(s.title)}</h3><p>${e(s.text)}</p></section>`).join('')}</div></details><nav class="intro-sources" aria-label="Prema介紹來源">${intro.sources.map(s=>`<a href="${e(s.url)}" target="_blank" rel="noopener noreferrer">${e(s.name)} ↗<span class="sr-only">（在新分頁開啟）</span></a>`).join('')}</nav>`;
   $('songs').innerHTML = songs.map(article).join('');
   const navHTML = songs.map((s, i) => `<a class="nav-song" href="#song-${s.id}" data-nav="${s.id}"><span class="nav-number">${String(i + 1).padStart(2, '0')}</span><span class="nav-name">${e(s.name)}</span><span class="nav-read" aria-hidden="true">${state.read.includes(s.id) ? '✓' : ''}</span><span class="sr-only nav-read-label">${state.read.includes(s.id) ? '，已讀' : ''}</span></a>`).join('');
   $('song-nav').innerHTML = navHTML; $('mobile-song-nav').innerHTML = navHTML;
@@ -105,7 +107,7 @@
     state.mode = mode; document.body.dataset.mode = mode;
     $('slow-mode').checked = mode === 'slow';
     $('quick-mode').checked = mode === 'quick';
-    $('mode-description').textContent = mode === 'slow' ? '30 秒摘要，喜歡再往裡讀。' : '一句話＋聆聽重點，入場前再看一次。';
+    $('mode-description').textContent = mode === 'slow' ? '歌名、核心意思與亮點，喜歡再往裡讀。' : '一句話＋聆聽重點，入場前再看一次。';
     // Keep the same song and relative reading position when content above changes height.
     if (anchor && oldTop < window.innerHeight) {
       // When an expanded article shrinks, keep at least its heading in view.

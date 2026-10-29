@@ -20,6 +20,7 @@
       <a class="anime-brand" href="index.html"><span class="brand-sign" aria-hidden="true">風</span><span>風，在歌裡<small>動漫導聆</small></span></a>
       <p class="orientation-note">橫拿手機，展開這段旅程</p>
       <nav class="header-actions" aria-label="頁面操作">
+        <button id="intro-open" class="header-button" type="button">Prema</button>
         <a class="header-link" href="index.html">文字版<span aria-hidden="true"> ↗</span></a>
         <button id="chapter-open" class="header-button" type="button"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 5h4v4H4zm0 10h4v4H4zM12 7h8M12 17h8"/></svg><span>章節</span></button>
         <button id="fullscreen" class="header-button fullscreen-button" type="button" aria-label="進入全螢幕"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 4H4v5m11-5h5v5M4 15v5h5m11-5v5h-5"/></svg></button>
@@ -52,7 +53,7 @@
           <button id="tab-interpretation" type="button" role="tab" aria-selected="false" aria-controls="content-panel" data-view="interpretation" tabindex="-1">一種聽法</button>
           <button id="tab-listen" type="button" role="tab" aria-selected="false" aria-controls="content-panel" data-view="listen" tabindex="-1">聆聽重點</button>
         </div>
-        <div id="content-panel" class="content-panel" role="tabpanel" aria-labelledby="tab-summary" tabindex="0"><p id="slide-text">從提醒牙縫裡的青海苔，到眼看對方不聽勸、又栽進同一個坑，說話者始終留在身旁。這首歌是在提醒我們，聽見內在的善意。</p></div>
+        <div id="content-panel" class="content-panel" role="tabpanel" aria-labelledby="tab-summary" tabindex="0"><div id="slide-title-meaning" class="slide-fact"><h2>歌名意思</h2><p id="slide-title-meaning-text"></p></div><p id="slide-text">從提醒牙縫裡的青海苔，到眼看對方不聽勸、又栽進同一個坑，說話者始終留在身旁。這首歌是在提醒我們，聽見內在的善意。</p><div id="slide-highlight" class="slide-fact"><h2>歌詞亮點</h2><p id="slide-highlight-text"></p></div></div>
         <div class="slide-footnote"><p id="content-label">原創摘要 · 完整原文與中譯已核對</p><button id="notes-open" class="notes-link" type="button">完整筆記與來源 <span aria-hidden="true">↗</span></button></div>
       </article>
       <div id="page-turn" class="page-turn" aria-hidden="true"></div>
@@ -63,6 +64,7 @@
       <div class="page-navigation"><button id="previous" class="previous-button" type="button" disabled><span aria-hidden="true">←</span><span>上一首</span></button><button id="next" class="next-button" type="button"><span id="next-label">下一首</span><span aria-hidden="true">→</span></button></div>
     </footer>
   </div>
+  <dialog id="intro-dialog" class="intro-dialog" aria-labelledby="anime-intro-title"><div class="dialog-heading"><div><p class="dialog-kicker">在第一首之前</p><h2 id="anime-intro-title"><span lang="en">Prema</span> 是什麼？</h2></div><button id="intro-close" class="dialog-close" type="button" aria-label="關閉Prema介紹">✕</button></div><div id="intro-content" class="notes-content"></div><button id="intro-start" class="intro-start" type="button">開始聽歌 →</button></dialog>
   <dialog id="chapter-dialog" class="chapter-dialog" aria-labelledby="chapters-title"><div class="dialog-heading"><div><p class="dialog-kicker">18 首，一起慢慢走</p><h2 id="chapters-title">選一段風景</h2></div><button id="chapter-close" class="dialog-close" type="button" aria-label="關閉章節目錄">✕</button></div><label class="chapter-search-label" for="chapter-search">找歌名</label><input id="chapter-search" class="chapter-search" type="search" placeholder="日文、英文或中文歌名" autocomplete="off"><nav id="chapter-list" class="chapter-list" aria-label="歌曲章節"></nav><p id="chapter-empty" class="chapter-empty" hidden>沒有符合的歌名，試試另一種語言。</p><p class="art-credit">以藤井風為原型的原創向量角色插畫。</p></dialog>
   <dialog id="notes-dialog" class="notes-dialog" aria-labelledby="notes-title"><div class="dialog-heading"><div><p class="dialog-kicker">往歌裡，再走一點</p><h2 id="notes-title">何なんw</h2></div><button id="notes-close" class="dialog-close" type="button" aria-label="關閉完整筆記">✕</button></div><div id="notes-content" class="notes-content"></div></dialog>
   <p id="slide-status" class="sr-only" role="status" aria-live="polite" aria-atomic="true"></p>

@@ -25,6 +25,20 @@ async function mode(page, value) {
     const page = await context.newPage();
     page.on('pageerror', error => {errors.push(error.message); console.error('PAGE ERROR',error.stack);});
     await page.goto(url);
+    await check('opening Prema context and all 18 plain-language summaries render', async()=>{
+      assert.equal(await page.locator('#prema-title').innerText(),'「Prema」是什麼？');
+      assert.equal(await page.locator('.intro-sources a').count(),4);
+      assert.equal(await page.locator('.summary-facts').count(),18);
+      const songs = await page.evaluate(()=>window.KAZE_SONGS);
+      for (const song of songs) {
+        const facts = await page.locator(`#song-${song.id} .summary-facts`).innerText();
+        for (const text of [song.titleMeaning,song.summary,song.highlight]) assert.ok(facts.includes(text));
+      }
+      await page.locator('.prema-background > summary').click();
+      assert.match(await page.locator('.prema-more').innerText(),/Shy Carter/);
+      await page.locator('.prema-background > summary').click();
+      await page.locator('#prema-intro').screenshot({path:path.join(artifactDir,'prema-intro.png')});
+    });
     await check('site loads 18 songs and 18 source disclosures', async () => {
       assert.equal(await page.locator('.song').count(),18);
       assert.equal(await page.locator('.song-sources').count(),18);

@@ -1,3 +1,15 @@
+# 最新更新：易讀歌詞摘要與Prema介紹
+
+2026-10-29 使用者提供Gemini摘要範例，要求18首改成類似「歌名意思／核心意思／歌詞亮點」的白話格式，並加入Prema開場介紹。已完成兩頁同步資料與版面；保留原歌單順序、來源及閱讀進度。文字版開頭有Prema介紹，更多背景可展開；動漫頁首次顯示介紹dialog，頁首按鈕可重開，深連結直接讀歌。
+
+額外實際閱讀來源：藤井風官網專輯頁、profile、官方Prema World Tour頁，以及Apple Music Prema介紹／9首本人逐曲解說的中英文版。確認第三張／首張全英文專輯、2025/9/5發行、梵文至上之愛、創作倦怠與最後一張專輯的自問、250／Sir Nolan／Tobias Jesso Jr.／Shy Carter合作，以及2026/10/31高雄國家體育場場次。4首歌曲新增authorContext與本人訪談來源，〈何なんw〉保留先前字幕核對。來源紀錄詳SOURCES.md。
+
+使用者例文中的「死ぬのがいいわ的你必然是高我」未找到本首正式解說支持，因此保留為延伸理解；倒地、扇子舞、開花舞等未當作10/31指定表演。摘要引用以具體意象和原創解釋為主，不轉貼整首歌詞。
+
+最新本機驗證：6項核心測試、建置、文字版13組／動漫版11組Edge瀏覽器回歸通過，涵蓋新增導言、18首白話欄位和舊功能；獨立版面／字體評估與機械掃描無未解決項目。使用者原授權仍為測試後直接push origin/main。前一批動漫功能已以db5a608發布成功；以下保留該批交接與更早紀錄。
+
+---
+
 # 最新交接：動漫導聆
 
 更新日期：2026-10-29。使用者要求以藤井風為原型的原創向量角色插畫、橫式動漫歌詞介紹、簡報翻頁與流暢動畫，並明確授權改完測試直接 commit／push origin/main；不需要額外設計或發布確認。忽略使用者誤輸入的 remote-control start。
@@ -6,7 +18,7 @@
 
 建置與本機伺服器已加入新資產。npm run build 產生10個資產及 standalone.html、anime-standalone.html，兩個離線HTML均內嵌內容與圖片，需放同一目錄才能互相連結。GitHub Pages 仍發布 main 根目錄，不用上傳 dist。
 
-驗證：npm test 6項通過；原頁 scripts/browser-check.cjs 12組 Edge 回歸通過（包含閱讀模式）；新頁 scripts/anime-browser-check.cjs 10組檢查涵蓋18首三種內容／筆記／來源、章節搜尋、鍵盤與dialog焦點、分享／儲存受限、滑動、動畫與快速翻頁、7種橫直式尺寸、200%文字與全螢幕失敗。離線雙頁與本機HTTP均已測試；截圖位於 /private/tmp/kaze-anime-qa、/private/tmp/kaze-anime-http-qa。獨立layout／type評估與機械掃描已完成，修正觸控區、直式提示與放大字體標籤換行；实际檢查角色與構圖後另改善平板直式。
+驗證：npm test 6項通過；原頁 scripts/browser-check.cjs 12組 Edge 回歸通過（包含閱讀模式）；新頁 scripts/anime-browser-check.cjs 10組檢查涵蓋18首三種內容／筆記／來源、章節搜尋、鍵盤與dialog焦點、分享／儲存受限、滑動、動畫與快速翻頁、7種橫直式尺寸、200%文字與全螢幕失敗。離線雙頁與本機HTTP均已測試；截圖位於 /private/tmp/kaze-anime-qa、/private/tmp/kaze-anime-http-qa。獨立layout／type評估與機械掃描已完成，修正觸控區、直式提示與放大字體標籤換行；實际檢查角色與構圖後另改善平板直式。
 
 後續從原始碼修改，先讀 README.md、DESIGN.md、SOURCES.md。部署網址：https://swe-troye.github.io/kaze-listening-guide/ ，動漫頁 anime.html。以下保留先前內容查證與部署紀錄。
 
@@ -16,10 +28,10 @@
 
 更新日期：2026-10-28。
 
-使用者之後批准將完整專案提交至同一公開儲存庫：包含網站原始碼、HANDOFF.md、README.md、SOURCES.md、產品與設計文件、package.json、建置及測試腳本。本機目錄接上 Git，origin 為 https://github.com/swe-troye/kaze-listening-guide.git，main 為發布分支。修改後先 npm test 與 npm run build，再 commit／push origin main；GitHub Pages 會自動重新發布，根目錄網站檔案是發布內容。dist/、release/、node_modules/ 與環境變數檔案排除版本控制。release 的部署紀錄是本機暫存；首次部署資訊已記錄於下段。
+使用者之後批準將完整專案提交至同一公開儲存庫：包含網站原始碼、HANDOFF.md、README.md、SOURCES.md、產品與設計文件、package.json、建置及測試腳本。本機目錄接上 Git，origin 為 https://github.com/swe-troye/kaze-listening-guide.git，main 為發布分支。修改後先 npm test 與 npm run build，再 commit／push origin main；GitHub Pages 會自動重新發布，根目錄網站檔案是發布內容。dist/、release/、node_modules/ 與環境變數檔案排除版本控制。release 的部署紀錄是本機暫存；首次部署資訊已記錄於下段。
 
 
-已依使用者批准部署至 GitHub Pages：https://swe-troye.github.io/kaze-listening-guide/ 。首次發布時，公開儲存庫 swe-troye/kaze-listening-guide 僅含 6 個網站資產與 .nojekyll，該次 main 發布 commit 為 d148c8cb8ec0a4c1c70d8c5f75228f1fae6e726d；GitHub Pages 工作流程成功，所有資產 HTTP 200 且與本機建置雜湊一致。線上網址的 12 組 Edge 桌面／手機瀏覽器檢查全部通過。部署紀錄在 release/github-deployment.json。
+已依使用者批準部署至 GitHub Pages：https://swe-troye.github.io/kaze-listening-guide/ 。首次發布時，公開儲存庫 swe-troye/kaze-listening-guide 僅含 6 個網站資產與 .nojekyll，該次 main 發布 commit 為 d148c8cb8ec0a4c1c70d8c5f75228f1fae6e726d；GitHub Pages 工作流程成功，所有資產 HTTP 200 且與本機建置雜湊一致。線上網址的 12 組 Edge 桌面／手機瀏覽器檢查全部通過。部署紀錄在 release/github-deployment.json。
 
 本次已完成原交接要求：18 首均逐曲實際打開並閱讀完整原文與中文翻譯，含重複副歌與尾聲；data.js 已重寫全部導聆並記錄來源、署名或轉載資訊、閱讀範圍、日期及譯法差異。核對紀錄見 SOURCES.md，網站每首皆有可展開來源，速讀模式也能使用。
 
@@ -43,7 +55,7 @@ Edge 的模式切換問題已實際重現與修正：index.html 的閱讀控制�
 
 使用者準備參加 10/31 高雄藤井風演唱會，想理解歌詞內容與意境，並把 Spotify 清單整理成使用者友善的繁體中文網站。日期與城市由使用者提供，活動資訊未核對。
 
-已批准的網站方向：明亮、輕快，像音樂探索工具；「慢慢讀」提供30秒摘要＋可展開深入解讀；「演前速讀」提供一句話＋聆聽重點。歌曲依歌單排序，附歌名搜尋、主題篩選、收藏、手動已讀進度，手機使用單欄與歌曲目錄。
+已批準的網站方向：明亮、輕快，像音樂探索工具；「慢慢讀」提供30秒摘要＋可展開深入解讀；「演前速讀」提供一句話＋聆聽重點。歌曲依歌單排序，附歌名搜尋、主題篩選、收藏、手動已讀進度，手機使用單欄與歌曲目錄。
 
 最新重要要求：使用者明確要求「請逐首看完歌詞，上網幫我找歌詞翻譯」。先前沒有完成這件事，必須補做。使用者追問来源後，已坦白並把網站內容標成未查證草稿。
 

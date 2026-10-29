@@ -9,6 +9,7 @@ const artifactDir = process.env.KAZE_QA_DIR || '/private/tmp/kaze-anime-qa';
 const base = process.env.KAZE_SITE_URL || pathToFileURL(path.resolve(__dirname,'../dist/standalone.html')).href;
 const url = new URL(base.startsWith('file:') ? 'anime-standalone.html' : 'anime.html',base).href;
 const results = [];
+async function dismissIntro(page) { if(await page.locator('#intro-dialog').isVisible()) await page.locator('#intro-start').click(); }
 async function check(name,fn) { await fn(); results.push(name); console.log(`PASS ${name}`); }
 (async()=>{
   fs.mkdirSync(artifactDir,{recursive:true});
@@ -23,16 +24,31 @@ async function check(name,fn) { await fn(); results.push(name); console.log(`PAS
       const popup = context.waitForEvent('page');
       await page.locator('.anime-entry').click();
       const anime = await popup; await anime.waitForLoadState();
+      assert.equal(await anime.locator('#intro-dialog').isVisible(),true);
+      assert.equal(await anime.locator('#intro-content li a').count(),4);
+      await dismissIntro(anime);
       assert.equal(await anime.locator('#slide-title').innerText(),'何なんw');
       assert.equal(await anime.locator('#guide-character').evaluate(img=>img.complete && img.naturalWidth>0),true);
       await anime.close();
     });
-    await page.goto(url);
+    await page.goto(url); await dismissIntro(page);
+    await check('Prema introduction can reopen and keyboard navigation stays in the dialog',async()=>{
+      await page.locator('#intro-open').click();
+      assert.match(await page.locator('#intro-content').innerText(),/全英文/);
+      assert.match(await page.locator('#intro-content').innerText(),/高雄國家體育場/);
+      await page.keyboard.press('ArrowRight');
+      assert.equal(await page.locator('#slide-title').innerText(),'何なんw');
+      await page.keyboard.press('Escape');
+      assert.equal(await page.locator('#intro-open').evaluate(e=>e===document.activeElement),true);
+    });
     const songs = await page.evaluate(()=>window.KAZE_SONGS);
     await check('all 18 slides, three tabs, notes and source links match verified data',async()=>{
       for (const [i,song] of songs.entries()) {
         assert.equal(await page.locator('#slide-title').innerText(),song.name);
         assert.equal(await page.locator('#slide-line').innerText(),song.line);
+        await page.locator('#tab-summary').click();
+        assert.equal(await page.locator('#slide-title-meaning-text').innerText(),song.titleMeaning);
+        assert.equal(await page.locator('#slide-highlight-text').innerText(),song.highlight);
         for (const view of ['summary','interpretation','listen']) {
           await page.locator(`#tab-${view}`).click();
           assert.equal(await page.locator('#slide-text').innerText(),song[view]);
@@ -83,7 +99,7 @@ async function check(name,fn) { await fn(); results.push(name); console.log(`PAS
       await page.goto(`${url}#unknown`); await page.reload(); assert.equal(await page.locator('#slide-title').innerText(),songs[0].name);
       const blocked=await browser.newContext();
       await blocked.addInitScript(()=>Object.defineProperty(window,'localStorage',{get(){throw new Error('blocked');}}));
-      const p=await blocked.newPage(); await p.goto(url); await p.locator('#next').click();
+      const p=await blocked.newPage(); await p.goto(url); await dismissIntro(p); await p.locator('#next').click();
       assert.equal(await p.locator('#slide-title').innerText(),songs[1].name); await blocked.close();
     });
     await check('horizontal swipe advances; vertical scroll and multitouch do not',async()=>{
@@ -128,6 +144,12 @@ async function check(name,fn) { await fn(); results.push(name); console.log(`PAS
           assert.ok(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth),`title overflow ${song.id} ${w}`);
         }
         await page.locator('#slide-title').focus(); await page.keyboard.press('Home');
+        if (w === 320 || w === 844) {
+          await page.locator('#intro-open').click();
+          assert.ok(await page.locator('#intro-dialog').evaluate(e=>e.scrollWidth<=e.clientWidth));
+          await page.locator('#intro-start').click();
+          assert.equal(await page.locator('#intro-dialog').isVisible(),false);
+        }
         await page.evaluate(()=>document.activeElement?.blur());
         await page.screenshot({path:path.join(artifactDir,`anime-${w}x${h}.png`),fullPage:true});
       }
@@ -137,6 +159,10 @@ async function check(name,fn) { await fn(); results.push(name); console.log(`PAS
       await page.addStyleTag({content:':root {font-size:200%;}'});
       await page.setViewportSize({width:320,height:740});
       assert.ok(await page.locator('#content-tabs').evaluate(e=>e.scrollWidth<=e.clientWidth));
+      await page.locator('#intro-open').click();
+      assert.ok(await page.locator('#intro-dialog').evaluate(e=>e.scrollWidth<=e.clientWidth));
+      await page.screenshot({path:path.join(artifactDir,'intro-320-text-200.png'),fullPage:true});
+      await page.locator('#intro-start').click();
       assert.ok(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth));
       await page.setViewportSize({width:1280,height:720});
       assert.ok(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth));

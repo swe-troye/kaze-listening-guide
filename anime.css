@@ -209,3 +209,20 @@ dialog::backdrop { background: oklch(.19 .03 250 / .7); }
 @media (max-width: 360px) and (orientation: portrait) { .guide-character { right: -40px; } .anime-brand > span:last-child { font-size: var(--text-caption); } .header-link { display: none; } .slide-copy { padding: var(--space-base); } .scene-caption { max-width: 45%; } .page-navigation button { padding: var(--space-sm); } .journey { flex-basis: 74px; } }
 @media (prefers-reduced-motion: reduce) { *, *::before, *::after { animation: none !important; transition: none !important; scroll-behavior: auto !important; } }
 @media print { .anime-shell { height: auto; min-height: 0; display: block; padding: 0; } .anime-header, .anime-footer, .scene-panel, .content-tabs, .notes-link { display: none; } .anime-stage { display: block; border: 0; } .slide-copy { overflow: visible; } }
+
+.slide-fact { margin-bottom: var(--space-base); }
+.slide-fact h2 { font-size: var(--text-caption); font-weight: 600; color: var(--muted); line-height: 1.5; margin-bottom: var(--space-xs); }
+.slide-fact p { font-size: var(--text-body); line-height: 1.85; max-width: 34em; }
+#slide-highlight { margin: var(--space-lg) 0 0; }
+.intro-lead { font-weight: 600; }
+.intro-start { display: flex; align-items: center; justify-content: center; min-height: 48px; margin-top: var(--space-lg); padding: var(--space-md) var(--space-lg); background: var(--accent); color: var(--ink); border-radius: .5rem; font-weight: 600; }
+.intro-start:hover { background: oklch(.95 .12 100); }
+@media (max-width: 700px) and (orientation: portrait) { .header-actions { flex-wrap: wrap; justify-content: flex-end; } .anime-header { column-gap: var(--space-xs); } }
+@media (max-width: 360px) {
+  dialog { padding: var(--space-base); }
+  .dialog-heading { flex-direction: column-reverse; align-items: stretch; gap: var(--space-sm); }
+  .dialog-close { align-self: flex-end; }
+  .dialog-heading h2 { font-size: var(--text-subheading); }
+}
+
+#anime-intro-title span { white-space: nowrap; }

@@ -226,3 +226,22 @@ dialog::backdrop { background: oklch(.15 0 0 / .35); }
 @media (max-width: 350px) { .brand-sub { display: none; } h1 { font-size: 1.75rem; } .mode-option { padding: var(--space-sm); } .saved-filter { padding: var(--space-sm); } .theme-row { font-size: var(--text-caption); } }
 @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } *, *::before, *::after { transition: none !important; animation: none !important; } }
 @media print { .topbar, .directory, .reading-controls, .song-buttons, .song-navigation, .toast, dialog { display: none !important; } main { padding: 0; } .workspace { display: block; } .song { break-inside: avoid; } .song-details { display: block !important; } .song-details > summary { display: none; } .song-details:not([open]) > .detail-content { display: block; } .intro { padding: 0 0 1rem; } }
+
+/* Plain-language listening notes and the opening album introduction. */
+.prema-intro { padding: var(--space-xl) 0; border-top: 1px solid var(--line); }
+.intro-kicker { font-size: var(--text-caption); color: var(--brand); font-weight: 600; margin-bottom: var(--space-sm); }
+.prema-intro h2 { font-size: var(--text-heading); line-height: 1.4; }
+.prema-lead { font-size: var(--text-lead); margin-top: var(--space-md); max-width: 40em; }
+.prema-basics { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: var(--space-xl); margin-top: var(--space-lg); }
+.prema-intro h3 { font-size: var(--text-body); font-weight: 600; margin-bottom: var(--space-sm); }
+.prema-intro section p { line-height: 1.9; max-width: 40em; }
+.prema-background { margin-top: var(--space-lg); }
+.prema-background summary { min-height: 44px; padding: var(--space-sm) 0; font-weight: 600; cursor: pointer; }
+.prema-more { display: grid; gap: var(--space-lg); margin: var(--space-base) 0; }
+.intro-sources { display: flex; flex-wrap: wrap; gap: 0 var(--space-lg); margin-top: var(--space-base); }
+.intro-sources a { display: inline-flex; align-items: center; min-height: 44px; padding: var(--space-sm) 0; font-size: var(--text-caption); color: var(--brand); }
+.summary-facts { margin: var(--space-base) 0 0; display: grid; gap: var(--space-lg); }
+.summary-facts > div { display: grid; gap: var(--space-xs); }
+.summary-facts dt { font-size: var(--text-caption); font-weight: 600; color: var(--muted); }
+.summary-facts dd { margin: 0; font-size: var(--text-body); line-height: 1.9; max-width: 40em; }
+@media (max-width: 850px) { .prema-basics { grid-template-columns: minmax(0,1fr); gap: var(--space-lg); } }

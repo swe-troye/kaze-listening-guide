@@ -59,6 +59,10 @@
   function renderView() {
     const song = songs[current];
     $('slide-text').textContent = song[view];
+    $('slide-title-meaning-text').textContent = song.titleMeaning;
+    $('slide-highlight-text').textContent = song.highlight;
+    $('slide-title-meaning').hidden = view !== 'summary';
+    $('slide-highlight').hidden = view !== 'summary';
     $('content-label').textContent = view === 'interpretation' ? (song.authorContext ? '編輯延伸 · 本人解說另列於完整筆記' : '編輯延伸 · 不是作者正式解說') : view === 'listen' ? '聆聽提示 · 帶著一點理解聽歌' : '原創摘要 · 完整原文與中譯已核對';
     document.querySelectorAll('[data-view]').forEach(button => {
       const selected = button.dataset.view === view;
@@ -143,7 +147,7 @@
     const song = songs[current];
     $('notes-title').textContent = song.name;
     $('notes-content').innerHTML = `<p class="notes-meta">${e(song.reading)} / ${e(song.chinese)} · ${e(song.duration)}</p>
-      <h3>歌詞大意（原創摘要）</h3>${song.meaning.map(p=>`<p>${e(p)}</p>`).join('')}
+      <h3>歌名意思</h3><p>${e(song.titleMeaning)}</p><h3>核心意思</h3><p>${e(song.summary)}</p><h3>歌詞亮點</h3><p>${e(song.highlight)}</p><h3>再往裡讀</h3>${song.meaning.map(p=>`<p>${e(p)}</p>`).join('')}
       ${song.authorContext ? `<h3>本人解說</h3><p>${e(song.authorContext)}</p>` : ''}
       <h3>一種聽法 · 編輯延伸</h3><p>${e(song.interpretation)}</p>
       <h3>聆聽重點</h3><p>${e(song.listen)}</p>
@@ -153,14 +157,14 @@
     openDialog('notes-dialog');
   });
   $('notes-close').addEventListener('click',() => $('notes-dialog').close());
-  for (const id of ['chapter-dialog','notes-dialog']) {
+  for (const id of ['chapter-dialog','notes-dialog','intro-dialog']) {
     $(id).addEventListener('click',event => {
       if (event.target !== $(id)) return;
       const box = $(id).getBoundingClientRect();
       if (event.clientX < box.left || event.clientX > box.right || event.clientY < box.top || event.clientY > box.bottom) $(id).close();
     });
   }
-  function dialogOpen() { return $('chapter-dialog').open || $('notes-dialog').open; }
+  function dialogOpen() { return $('chapter-dialog').open || $('notes-dialog').open || $('intro-dialog').open; }
   document.addEventListener('keydown',event => {
     if (dialogOpen() || event.altKey || event.ctrlKey || event.metaKey || event.shiftKey) return;
     if (event.target.closest('input, select, textarea, [role="tablist"], [contenteditable="true"]')) return;
@@ -195,5 +199,18 @@
   });
   document.addEventListener('fullscreenchange',() => $('fullscreen').setAttribute('aria-label', document.fullscreenElement ? '離開全螢幕' : '進入全螢幕'));
   window.addEventListener('hashchange',() => { const index = hashIndex(); if (index >= 0) goTo(index); });
+  const intro = window.KAZE_INTRO;
+  $('intro-content').innerHTML = `<p class="intro-lead">${e(intro.lead)}</p>${intro.sections.map(s=>`<h3>${e(s.title)}</h3><p>${e(s.text)}</p>`).join('')}<h3>介紹來源</h3><ul>${intro.sources.map(s=>`<li><a href="${e(s.url)}" target="_blank" rel="noopener noreferrer">${e(s.name)} ↗<span class="sr-only">（在新分頁開啟）</span></a></li>`).join('')}</ul>`;
+  $('intro-open').addEventListener('click',()=>openDialog('intro-dialog'));
+  function closeIntro() {
+    $('intro-dialog').close();
+    try { localStorage.setItem('kaze-intro-seen-v1','true'); } catch { /* Introduction remains available without storage. */ }
+  }
+  $('intro-close').addEventListener('click',closeIntro);
+  $('intro-start').addEventListener('click',()=>{ closeIntro(); $('slide-title').focus(); });
+  $('intro-dialog').addEventListener('close',()=>{try { localStorage.setItem('kaze-intro-seen-v1','true'); } catch { /* Optional preference. */ }});
   render();
+  let seenIntro = false;
+  try { seenIntro = localStorage.getItem('kaze-intro-seen-v1') === 'true'; } catch { /* Show introduction on this visit. */ }
+  if (!seenIntro && initialHash < 0) openDialog('intro-dialog');
 })();
