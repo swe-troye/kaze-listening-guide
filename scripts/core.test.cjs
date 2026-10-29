@@ -12,12 +12,14 @@ const ids = songs.map(s => s.id);
 test('playlist order and complete, traceable research remain explicit', () => {
   assert.equal(songs.length, 18);
   assert.equal(new Set(ids).size, 18);
+  assert.equal(new Set(songs.map(s=>s.spotifyTrackId)).size,18);
   assert.equal(songs[0].spotify, 'Nan-Nan');
   assert.equal(songs[17].spotify, 'masshiro (pure white)');
   assert.equal(songs.filter(s => s.pending || s.partial).length, 0);
   for (const s of songs) {
     assert.match(s.id, /^[a-z0-9-]+$/);
     assert.match(s.duration, /^\d+:\d{2}$/);
+    assert.match(s.spotifyTrackId, /^[A-Za-z0-9]{22}$/);
     for (const key of ['name','reading','chinese','line','summary','interpretation','listen','titleMeaning','highlight']) assert.ok(s[key]?.trim(), `${s.id}: ${key}`);
     assert.ok(s.meaning.length > 0);
     assert.equal(s.verified, true);

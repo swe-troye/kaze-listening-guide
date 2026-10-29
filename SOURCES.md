@@ -128,3 +128,30 @@
 - https://music.apple.com/tw/album/prema/1819419299 與 https://music.apple.com/us/album/prema/1819419299 ：專輯介紹與9首逐曲解說全部文字已讀、中英文對照。本人談創作倦怠、若為最後一張的自問、梵文無私／靈性／至高之愛、250製作、You與Shy Carter共同寫詞；Prema描述自己與高我自我介紹、Hachikō確認忠犬來源、Okay Goodbye談與世間一切告別。4首新增本人說明字段與來源。
 
 未採用為已確認事實：Gemini範例把死ぬのがいいわ唯一對象指定為高我；10/31必有倒地、扇子舞、開花手勢及指定編曲。未找到本首正式解說或本場演出文件支持，僅保留有根據的歌詞理解與聆聽提示。搜尋Google／DuckDuckGo遇到機器人頁、Bing RSS結果無關，未以搜尋結果片段作背景依據。
+
+## 2026-10-29：Spotify嵌入曲目核對
+
+實際讀取 https://open.spotify.com/embed/playlist/272N92sW7BRMNbokpOq8k7 的公開歌曲清單資料，18首名稱與網站spotify欄位逐首一致，藝人均為Fujii Kaze，維持原版本與排序。僅把公開曲目ID加入資料，專案資料未加入服務的session資料。
+
+| 歌曲 | Spotify曲目ID |
+| --- | --- |
+| 何なんw | 2CbGuO0LtVvbh3umN3mDwM |
+| もうええわ | 1JRNrJKTQhfvxII8kkIcAQ |
+| 死ぬのがいいわ | 0o9zmvc5f3EFApU52PPIyW |
+| まつり | 7AMGgAPFczs3wJgMqu6Eqi |
+| きらり | 51oc6MEsXTpnPn6GOw5VuP |
+| ガーデン | 2vMc8rqFmqs7RFi8NDx0CJ |
+| 帰ろう | 26e8ujjSpBAHhIY2ymLUT1 |
+| You | 2vQhYhGSBBamRhhJeWprr1 |
+| Feelin’ Go(o)d | 1C22EnQawXuIsqgnnWcrMR |
+| It’s Alright | 2jytVzmZdqPLy6wKgMMTfT |
+| 花 | 02tNuntKQsoou5T4O8meyh |
+| 優しさ | 57u1FaZlztApkcT5x5XNuD |
+| Prema | 0IByNT868RxZwmcj1rQgno |
+| 満ちてゆく | 4hsEFcCA7AL5hlKG4PRp2Z |
+| Okay, Goodbye | 1Vw0JiY6Jk8vCypHzb3fo4 |
+| 青春病 | 2PDtvT5DEamQTM5qeiTDsR |
+| Hachikō | 4WhHNXBgRglnkjy7TMzgdh |
+| 真っ白 | 1yzVgJGGU4vrjy67nOx3od |
+
+實際閱讀Spotify官方Creating an Embed與iFrame API文件：https://developer.spotify.com/documentation/embeds/tutorials/creating-an-embed 與 https://developer.spotify.com/documentation/embeds/references/iframe-api 。採原生iframe方案，未使用需要存取權杖的Web Playback SDK，未要求自動播放。

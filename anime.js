@@ -96,12 +96,34 @@
     document.querySelector('.header-link').href = `index.html#song-${song.id}`;
     document.title = `${song.name} · 動漫導聆 · 風，在歌裡`;
     renderView();
+    renderPlayer(song);
     if (save) {
       try { localStorage.setItem('kaze-anime-v1', JSON.stringify({id:song.id})); } catch { /* No storage is necessary for navigation. */ }
       try { history.replaceState(null,'',`#song-${song.id}`); } catch { /* Local-file browsers may disallow history updates. */ }
       $('slide-status').textContent = `第 ${current + 1} 首，共 ${songs.length} 首：${song.name}。${chapter}。`;
     }
     if (direction) animate(direction);
+  }
+  let playerTrackId, playerTimer;
+  function renderPlayer(song) {
+    $('spotify-open').href = `https://open.spotify.com/track/${song.spotifyTrackId}`;
+    $('spotify-open').setAttribute('aria-label',`在 Spotify 聽 ${song.name}（在新分頁開啟）`);
+    if (playerTrackId === song.spotifyTrackId) return;
+    clearTimeout(playerTimer);
+    $('spotify-player').replaceChildren();
+    playerTrackId = song.spotifyTrackId;
+    playerTimer = setTimeout(() => {
+      const frame = document.createElement('iframe');
+      frame.src = `https://open.spotify.com/embed/track/${song.spotifyTrackId}?theme=0`;
+      frame.title = `Spotify 播放器：${song.name}`;
+      frame.width = '100%'; frame.height = '80';
+      frame.loading = 'lazy';
+      frame.allow = 'autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture';
+      frame.allowFullscreen = true;
+      // Removing the previous browsing context stops its audio immediately.
+      // No playback command or autoplay URL is sent: the listener presses Play.
+      $('spotify-player').replaceChildren(frame);
+    },150);
   }
   function goTo(index) {
     if (!Number.isInteger(index) || index < 0 || index >= songs.length || index === current) return;

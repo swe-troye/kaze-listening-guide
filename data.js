@@ -1,4 +1,4 @@
-/* 18 首全文核對於 2026-10-28；2026-10-29 改寫白話導聆並補本人訪談，保留原始來源。 */
+/* 18 首全文核對於 2026-10-28；2026-10-29 改寫白話導聆、補本人訪談及Spotify曲目，保留原始來源。 */
 window.KAZE_SONGS = [
   {
     "id": "nan-nan",
@@ -61,7 +61,8 @@ window.KAZE_SONGS = [
     "authorContext": "藤井風在「Kaze talks about Nan-Nan」中解釋：歌曲是在每個人之中尋找高我；這個部分不受自私、嫉妒等情緒牽動，而是愛，想引導自己走向幸福。本頁實際讀到 VoiceTube 收錄的英文字幕，未以搜尋片段代替全文。",
     "titleMeaning": "岡山方言的「搞什麼啦？」；結尾的 w 像網路上的笑聲，帶著吐槽語氣。",
     "highlight": "開場連「牙齒卡了青海苔，要不要提醒你？」這種小尷尬都寫進歌裡，讓高我像一個很熟的朋友。後面再從不聽勸、受傷、後悔，走到閉眼傾聽內心：吐槽的背後，其實一直是關心。",
-    "editorialUpdatedAt": "2026-10-29"
+    "editorialUpdatedAt": "2026-10-29",
+    "spotifyTrackId": "2CbGuO0LtVvbh3umN3mDwM"
   },
   {
     "id": "mo-eh-wa",
@@ -110,7 +111,8 @@ window.KAZE_SONGS = [
     ],
     "titleMeaning": "「夠了啦／算了吧」，帶有方言語氣：我已經不想再耗下去了。",
     "highlight": "翅膀、看不清前方的夜路、等待結痂的心傷，把想逃離又還會痛的感覺寫得很具體。結尾從黑夜走向晨光，讓那句「夠了啦」像推開門，重新呼吸。",
-    "editorialUpdatedAt": "2026-10-29"
+    "editorialUpdatedAt": "2026-10-29",
+    "spotifyTrackId": "1JRNrJKTQhfvxII8kkIcAQ"
   },
   {
     "id": "shinunoga-e-wa",
@@ -159,7 +161,8 @@ window.KAZE_SONGS = [
     ],
     "titleMeaning": "「寧願死去」；放在副歌裡是「與其和你分開，我寧可死」。",
     "highlight": "一開頭就用童年「打勾勾、說謊要吞針」的誓約，接著又問魔鏡誰能給自己不變的愛。童話般的意象遇上「寧可去死」的強烈宣言，讓甜蜜、執著與戲劇感同時存在。",
-    "editorialUpdatedAt": "2026-10-29"
+    "editorialUpdatedAt": "2026-10-29",
+    "spotifyTrackId": "0o9zmvc5f3EFApU52PPIyW"
   },
   {
     "id": "matsuri",
@@ -208,7 +211,8 @@ window.KAZE_SONGS = [
     ],
     "titleMeaning": "「祭典」。歌裡把人生過成一場人人都能參加的慶祝。",
     "highlight": "歌詞先問「你想要什麼、想贏過誰？」再把花祭、夏祭、秋祭連起來。後面連大哭、嚴冬和生死都抱進祭典裡，讓歡樂不只屬於幸運的人，也屬於走過辛苦的你。",
-    "editorialUpdatedAt": "2026-10-29"
+    "editorialUpdatedAt": "2026-10-29",
+    "spotifyTrackId": "7AMGgAPFczs3wJgMqu6Eqi"
   },
   {
     "id": "kirari",
@@ -257,7 +261,8 @@ window.KAZE_SONGS = [
     ],
     "titleMeaning": "「閃亮一下／閃閃發光」，像生活中突然照進來的一束光。",
     "highlight": "歌詞用一串日文擬態詞，把輕快、落淚、搖晃和閃光放在同一首裡。最後不只肯定新的日子，還把笨拙的過去也稱作閃亮：過去沒有完美，仍然可以被愛。",
-    "editorialUpdatedAt": "2026-10-29"
+    "editorialUpdatedAt": "2026-10-29",
+    "spotifyTrackId": "51oc6MEsXTpnPn6GOw5VuP"
   },
   {
     "id": "garden",
@@ -306,7 +311,8 @@ window.KAZE_SONGS = [
     ],
     "titleMeaning": "「花園」。可以把它想成自己的心，或你一直用心照顧的關係。",
     "highlight": "春天戀愛、夏天追逐美好、秋天出發、冬天擁抱自己，像走過一整段人生。歌裡說流過的眼淚和給出的愛，都讓花園更豐盛，最後才邀請你鬆開握緊的手。",
-    "editorialUpdatedAt": "2026-10-29"
+    "editorialUpdatedAt": "2026-10-29",
+    "spotifyTrackId": "2vMc8rqFmqs7RFi8NDx0CJ"
   },
   {
     "id": "kaerou",
@@ -355,7 +361,8 @@ window.KAZE_SONGS = [
     ],
     "titleMeaning": "「回去吧／回家吧」。歌裡也把這個邀請放到生命終點的尺度。",
     "highlight": "夕陽與黎明把兩個人帶往不同方向；後半又想像「沒有我的世界還是會繼續」。最動人的轉折是，整首一直說回去，最後卻把問題留給今天：現在開始，怎麼生活？",
-    "editorialUpdatedAt": "2026-10-29"
+    "editorialUpdatedAt": "2026-10-29",
+    "spotifyTrackId": "26e8ujjSpBAHhIY2ymLUT1"
   },
   {
     "id": "you",
@@ -418,7 +425,8 @@ window.KAZE_SONGS = [
     "titleMeaning": "「你」。整首像在對受傷、忘了自身價值的人說話。",
     "highlight": "開頭很親密，只是關心你為什麼這麼難過；副歌卻突然打開成日月、星光和宇宙。這個由小變大的視角，像把一個縮起來的人，重新帶回自己的光。",
     "editorialUpdatedAt": "2026-10-29",
-    "authorContext": "藤井風在 Apple Music 說，和 Shy Carter 一起寫詞讓他有勇氣做純粹的自己；他想把正向、令人振奮的訊息放進 R&B 律動。"
+    "authorContext": "藤井風在 Apple Music 說，和 Shy Carter 一起寫詞讓他有勇氣做純粹的自己；他想把正向、令人振奮的訊息放進 R&B 律動。",
+    "spotifyTrackId": "2vQhYhGSBBamRhhJeWprr1"
   },
   {
     "id": "feelin-good",
@@ -467,7 +475,8 @@ window.KAZE_SONGS = [
     ],
     "titleMeaning": "「感覺真好」。Go(o)d 的括號也讓人聯想到 good 與 God 的字形。",
     "highlight": "風暴、傷口、眼淚與笑容，最後都像融化後被還給天空。中段明確寫到「我之中的你」在安慰自己；結尾越過黑暗與山，甚至不再需要言語，只想感受愛。",
-    "editorialUpdatedAt": "2026-10-29"
+    "editorialUpdatedAt": "2026-10-29",
+    "spotifyTrackId": "1C22EnQawXuIsqgnnWcrMR"
   },
   {
     "id": "its-alright",
@@ -522,7 +531,8 @@ window.KAZE_SONGS = [
     ],
     "titleMeaning": "「沒關係／會沒事的」。可以把它當作一句允許你哭的安慰。",
     "highlight": "大地像母親、太陽像父親，接著又被說成自己的孩子與眼睛，寫出人和萬物相連的感覺。另一個亮點是 kama 與 Prema 的對照：歌詞用的是欲望 kama，不能和業力 karma 混為一談。",
-    "editorialUpdatedAt": "2026-10-29"
+    "editorialUpdatedAt": "2026-10-29",
+    "spotifyTrackId": "2jytVzmZdqPLy6wKgMMTfT"
   },
   {
     "id": "hana",
@@ -571,7 +581,8 @@ window.KAZE_SONGS = [
     ],
     "titleMeaning": "「花」。歌裡最重要的是「內在的花」，可以理解為自己獨有的生命與價值。",
     "highlight": "開頭同時寫到凋萎與盛開，也抱著一束已經枯皺的花。最清楚的變化在尾聲：前面還在問「我的花在哪裡」，最後終於認出「它就在這裡」。",
-    "editorialUpdatedAt": "2026-10-29"
+    "editorialUpdatedAt": "2026-10-29",
+    "spotifyTrackId": "02tNuntKQsoou5T4O8meyh"
   },
   {
     "id": "yasashisa",
@@ -620,7 +631,8 @@ window.KAZE_SONGS = [
     ],
     "titleMeaning": "「溫柔／善意」。這裡的溫柔有力量，能讓一顆冷下來的心重新回暖。",
     "highlight": "歌裡把溫柔寫成足以讓人招架不住的力量。對方的溫暖照出自己的冰冷，後面再用凍住的心融開、花季回來，描寫一個人重新有了愛人的能力。",
-    "editorialUpdatedAt": "2026-10-29"
+    "editorialUpdatedAt": "2026-10-29",
+    "spotifyTrackId": "57u1FaZlztApkcT5x5XNuD"
   },
   {
     "id": "prema",
@@ -677,7 +689,8 @@ window.KAZE_SONGS = [
     "titleMeaning": "與梵文「愛」相關；藤井風官網把專輯標題解釋為「至上之愛」。",
     "highlight": "反覆的 love itself 說的是「愛本身」。最後一次副歌把 you 換成 I，像先透過另一個人看見愛，再回到自己身上。這個代名詞變化，就是整首最容易抓住的主線。",
     "editorialUpdatedAt": "2026-10-29",
-    "authorContext": "藤井風在 Apple Music 逐曲解說中說，這首像自然寫成；他選擇順從，並形容歌曲是「我與高我在自我介紹」。"
+    "authorContext": "藤井風在 Apple Music 逐曲解說中說，這首像自然寫成；他選擇順從，並形容歌曲是「我與高我在自我介紹」。",
+    "spotifyTrackId": "0IByNT868RxZwmcj1rQgno"
   },
   {
     "id": "michi-teyu-ku",
@@ -732,7 +745,8 @@ window.KAZE_SONGS = [
     ],
     "titleMeaning": "「漸漸盈滿／滿溢而出」，強調的是一個慢慢發生的過程。",
     "highlight": "反覆的「放手、變輕、漸漸盈滿」把矛盾說得很美：手裡少了，心裡卻多了。歌詞也特別指出「為了被愛才去愛」的痛苦，後面才走向即使一無所有，仍願意給予。",
-    "editorialUpdatedAt": "2026-10-29"
+    "editorialUpdatedAt": "2026-10-29",
+    "spotifyTrackId": "4hsEFcCA7AL5hlKG4PRp2Z"
   },
   {
     "id": "okay-goodbye",
@@ -789,7 +803,8 @@ window.KAZE_SONGS = [
     "titleMeaning": "「好吧，再見」。像是接受一段關係已經走到終點。",
     "highlight": "前面從黑暗的昨日走到今天的日出，副歌則把感謝和告別放在一起。橋段更明確說出「我不會回來」，讓溫柔的祝福也帶著清楚的界線。",
     "editorialUpdatedAt": "2026-10-29",
-    "authorContext": "藤井風在 Apple Music 說，他一直唱放下的重要性；人終究要與世界的一切道別，希望這首苦樂參半的歌能輕鬆陪人走過這個課題。"
+    "authorContext": "藤井風在 Apple Music 說，他一直唱放下的重要性；人終究要與世界的一切道別，希望這首苦樂參半的歌能輕鬆陪人走過這個課題。",
+    "spotifyTrackId": "1Vw0JiY6Jk8vCypHzb3fo4"
   },
   {
     "id": "seishun-sick",
@@ -838,7 +853,8 @@ window.KAZE_SONGS = [
     ],
     "titleMeaning": "「青春病」，把青春的焦躁、迷戀與放不下比作一場病。",
     "highlight": "兩個「以為如此，結果卻不是」的反轉，把成長的矛盾寫得很真實。最後特別分開青春的閃光與永恆：那段日子可以很亮，卻不必成為你一輩子的答案。",
-    "editorialUpdatedAt": "2026-10-29"
+    "editorialUpdatedAt": "2026-10-29",
+    "spotifyTrackId": "2PDtvT5DEamQTM5qeiTDsR"
   },
   {
     "id": "hachiko",
@@ -901,7 +917,8 @@ window.KAZE_SONGS = [
     "titleMeaning": "「八公」，讓人想到耐心等待主人的忠犬。歌中也直接問八公要去哪裡。",
     "highlight": "副歌反覆問「要去哪裡呢，八公？」把漫長的等待改寫成共同出發。尾聲又加入不用趕路、可以慢慢來，讓承諾不只是熱烈，也變得很安定。",
     "editorialUpdatedAt": "2026-10-29",
-    "authorContext": "藤井風在 Apple Music 說，這首展現玩心和嘗試新事物的意願，也是嘗試從節拍開始創作；他確認歌名來自等候已故主人超過九年的忠犬八公。"
+    "authorContext": "藤井風在 Apple Music 說，這首展現玩心和嘗試新事物的意願，也是嘗試從節拍開始創作；他確認歌名來自等候已故主人超過九年的忠犬八公。",
+    "spotifyTrackId": "4WhHNXBgRglnkjy7TMzgdh"
   },
   {
     "id": "masshiro",
@@ -950,7 +967,8 @@ window.KAZE_SONGS = [
     ],
     "titleMeaning": "「純白／全白」。歌裡是被一顆純白的心吸引，也迎向新的風。",
     "highlight": "「還喜歡」後面緊接著「必須離開」，是整首最清楚的矛盾。後面又把前進比作必須繼續玩、才走得到終點的遊戲，最後保留口語的自我打趣，讓告別不至於太沉重。",
-    "editorialUpdatedAt": "2026-10-29"
+    "editorialUpdatedAt": "2026-10-29",
+    "spotifyTrackId": "1yzVgJGGU4vrjy67nOx3od"
   }
 ];
 
