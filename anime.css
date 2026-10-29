@@ -158,7 +158,7 @@ dialog::backdrop { background: oklch(.19 .03 250 / .7); }
   .scene-panel { clip-path: none; }
   .scene-sun { width: 200px; left: 34%; top: -20%; }
   .scene-orbit { width: 240px; top: -25%; left: 27%; }
-  .guide-character { width: 250px; height: 310px; left: auto; right: 0; bottom: -150px; object-position: center; }
+  .guide-character { width: 220px; height: 272px; left: auto; right: 0; bottom: -105px; object-position: center; }
   .scene-word { top: 3%; left: 5%; font-size: 5rem; }
   .scene-caption { bottom: var(--space-lg); left: var(--space-md); right: auto; max-width: 47%; gap: var(--space-sm); padding: var(--space-sm) var(--space-md); box-shadow: 3px 3px 0 var(--ink); }
   .scene-caption p { font-size: var(--text-caption); }
@@ -201,7 +201,7 @@ dialog::backdrop { background: oklch(.19 .03 250 / .7); }
 }
 @media (min-width: 701px) and (max-width: 1100px) and (orientation: portrait) {
   .anime-stage { grid-template-rows: 240px minmax(0,1fr); }
-  .guide-character { width: 360px; height: 450px; right: 24px; bottom: -210px; }
+  .guide-character { width: 300px; height: 370px; right: 24px; bottom: -140px; }
   .scene-sun { width: 320px; left: 45%; top: -20%; }
   .scene-orbit { width: 400px; left: 37%; }
   .scene-caption { max-width: 45%; }
