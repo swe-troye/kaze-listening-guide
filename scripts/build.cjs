@@ -3,7 +3,7 @@ const fs = require('node:fs');
 const path = require('node:path');
 const vm = require('node:vm');
 const root = path.resolve(__dirname, '..');
-const files = ['index.html', 'style.css', 'data.js', 'core.js', 'app.js', 'favicon.svg', 'anime.html', 'anime.css', 'anime.js', 'assets/kaze-guide.svg'];
+const files = ['index.html', 'style.css', 'data.js', 'core.js', 'app.js', 'favicon.svg', 'anime.html', 'anime.css', 'previews.js', 'player.js', 'anime.js', 'assets/kaze-guide.svg'];
 const read = file => fs.readFileSync(path.join(root,file),'utf8');
 for (const file of files) if (file.endsWith('.js')) new vm.Script(read(file), {filename:file});
 for (const [page, script] of [['index.html','app.js'],['anime.html','anime.js']]) {
@@ -32,7 +32,7 @@ for (const [page, css, app, destination] of [['index.html','style.css','app.js',
     html = html.split(`"${asset}"`).join(`"data:image/svg+xml,${encodeURIComponent(read(asset))}"`);
   }
   html = html.replaceAll('href="anime.html"','href="anime-standalone.html"').replaceAll('href="index.html','href="standalone.html');
-  const scripts = ['data.js','core.js',app].map(file => {
+  const scripts = ['data.js','core.js',...(page === 'anime.html' ? ['previews.js','player.js'] : []),app].map(file => {
     const source = read(file).replaceAll('index.html#song-','standalone.html#song-').replace(/<\/script/gi,'<\\/script');
     return `<script>${source}</script>`;
   }).join('\n');

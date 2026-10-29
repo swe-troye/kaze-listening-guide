@@ -9,6 +9,13 @@ const context = {window: {}};
 vm.runInNewContext(fs.readFileSync(path.join(__dirname, '../data.js'), 'utf8'), context);
 const songs = JSON.parse(JSON.stringify(context.window.KAZE_SONGS));
 const ids = songs.map(s => s.id);
+test('public previews match all exact playlist IDs without query credentials', () => {
+  const previewContext = {window:{}};
+  vm.runInNewContext(fs.readFileSync(path.join(__dirname,'../previews.js'),'utf8'),previewContext);
+  const previews = previewContext.window.KAZE_PREVIEWS;
+  assert.deepEqual(Object.keys(previews).sort(),songs.map(s=>s.spotifyTrackId).sort());
+  for (const s of songs) assert.match(previews[s.spotifyTrackId],/^https:\/\/p\.scdn\.co\/mp3-preview\/[a-f0-9]{40}$/);
+});
 test('playlist order and complete, traceable research remain explicit', () => {
   assert.equal(songs.length, 18);
   assert.equal(new Set(ids).size, 18);

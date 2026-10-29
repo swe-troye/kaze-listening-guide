@@ -104,26 +104,12 @@
     }
     if (direction) animate(direction);
   }
-  let playerTrackId, playerTimer;
+  const player = window.KazePlayer.create({host:$('spotify-player'),button:$('play-toggle'),status:$('playback-status')});
+  $('spotify-open').addEventListener('click',()=>player.pause());
   function renderPlayer(song) {
     $('spotify-open').href = `https://open.spotify.com/track/${song.spotifyTrackId}`;
     $('spotify-open').setAttribute('aria-label',`在 Spotify 聽 ${song.name}（在新分頁開啟）`);
-    if (playerTrackId === song.spotifyTrackId) return;
-    clearTimeout(playerTimer);
-    $('spotify-player').replaceChildren();
-    playerTrackId = song.spotifyTrackId;
-    playerTimer = setTimeout(() => {
-      const frame = document.createElement('iframe');
-      frame.src = `https://open.spotify.com/embed/track/${song.spotifyTrackId}?theme=0`;
-      frame.title = `Spotify 播放器：${song.name}`;
-      frame.width = '100%'; frame.height = '80';
-      frame.loading = 'lazy';
-      frame.allow = 'autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture';
-      frame.allowFullscreen = true;
-      // Removing the previous browsing context stops its audio immediately.
-      // No playback command or autoplay URL is sent: the listener presses Play.
-      $('spotify-player').replaceChildren(frame);
-    },150);
+    player.select(song);
   }
   function goTo(index) {
     if (!Number.isInteger(index) || index < 0 || index >= songs.length || index === current) return;
@@ -229,8 +215,9 @@
     try { localStorage.setItem('kaze-intro-seen-v1','true'); } catch { /* Introduction remains available without storage. */ }
   }
   $('intro-close').addEventListener('click',closeIntro);
-  $('intro-start').addEventListener('click',()=>{ closeIntro(); $('slide-title').focus(); });
+  $('intro-start').addEventListener('click',()=>{ closeIntro(); $('slide-title').focus(); if ($('preview-audio').paused) player.start(); });
   $('intro-dialog').addEventListener('close',()=>{try { localStorage.setItem('kaze-intro-seen-v1','true'); } catch { /* Optional preference. */ }});
+  player.onEnded = () => { if (current < songs.length - 1) { goTo(current + 1); return true; } return false; };
   render();
   let seenIntro = false;
   try { seenIntro = localStorage.getItem('kaze-intro-seen-v1') === 'true'; } catch { /* Show introduction on this visit. */ }

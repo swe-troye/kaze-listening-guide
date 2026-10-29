@@ -11,6 +11,8 @@
   <link rel="preload" href="assets/kaze-guide.svg" as="image" type="image/svg+xml">
   <script src="data.js" defer></script>
   <script src="core.js" defer></script>
+  <script src="previews.js" defer></script>
+  <script src="player.js" defer></script>
   <script src="anime.js" defer></script>
 </head>
 <body data-scene="sky" data-palette="mint">
@@ -58,9 +60,9 @@
       </article>
       <div id="page-turn" class="page-turn" aria-hidden="true"></div>
     </main>
-    <section class="music-dock" aria-labelledby="music-title">
-      <div id="spotify-player" class="spotify-player"></div>
-      <div class="music-meta"><h2 id="music-title">點 ▶ 播放這首</h2><p class="spotify-instruction">點播放器的 ▶ 開始聽，翻頁後重新播放。</p><a id="spotify-open" class="spotify-open" href="https://open.spotify.com/track/2CbGuO0LtVvbh3umN3mDwM" target="_blank" rel="noopener noreferrer">在 Spotify 聽 ↗<span class="sr-only">（在新分頁開啟）</span></a></div>
+    <section class="music-dock" aria-label="歌曲試聽">
+      <div id="spotify-player" class="preview-player"><div class="preview-heading"><strong id="preview-title">何なんw</strong><span>約 30 秒試聽</span></div><audio id="preview-audio" controls playsinline preload="none" aria-label="歌曲試聽播放器"></audio></div>
+      <div class="music-meta"><button id="play-toggle" class="play-toggle" type="button" disabled>▶ 開始試聽</button><p id="playback-status" class="spotify-instruction" role="status">按一次開始，翻頁接著聽，播完自動下一首。</p><a id="spotify-open" class="spotify-open" href="https://open.spotify.com/track/2CbGuO0LtVvbh3umN3mDwM" target="_blank" rel="noopener noreferrer">在 Spotify 聽 ↗<span class="sr-only">（在新分頁開啟）</span></a></div>
     </section>
     <footer class="anime-footer">
       <div class="journey"><p><strong id="journey-count">01</strong><span> / 18 首</span><span class="journey-caption">一首，一段風景。</span></p><div id="journey-track" class="journey-track" aria-hidden="true"></div></div>

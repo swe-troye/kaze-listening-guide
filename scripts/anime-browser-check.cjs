@@ -9,7 +9,7 @@ const artifactDir = process.env.KAZE_QA_DIR || '/private/tmp/kaze-anime-qa';
 const base = process.env.KAZE_SITE_URL || pathToFileURL(path.resolve(__dirname,'../dist/standalone.html')).href;
 const url = new URL(base.startsWith('file:') ? 'anime-standalone.html' : 'anime.html',base).href;
 const results = [];
-async function dismissIntro(page) { if(await page.locator('#intro-dialog').isVisible()) await page.locator('#intro-start').click(); }
+async function dismissIntro(page) { if(await page.locator('#intro-dialog').isVisible()) await page.locator('#intro-close').click(); }
 async function check(name,fn) { await fn(); results.push(name); console.log(`PASS ${name}`); }
 (async()=>{
   fs.mkdirSync(artifactDir,{recursive:true});
@@ -42,39 +42,23 @@ async function check(name,fn) { await fn(); results.push(name); console.log(`PAS
       assert.equal(await page.locator('#intro-open').evaluate(e=>e===document.activeElement),true);
     });
     const songs = await page.evaluate(()=>window.KAZE_SONGS);
-    await check('Spotify preview plays on click; tabs retain it and navigation removes it',async()=>{
-      await page.locator('#spotify-player iframe').waitFor();
-      const player = page.frameLocator('#spotify-player iframe');
-      await player.getByText('Nan-Nan',{exact:true}).first().waitFor({timeout:30000});
-      const play = player.getByRole('button',{name:/^(播放|Play)$/});
-      await play.waitFor({state:'visible',timeout:30000});
-      await play.click();
-      await player.getByRole('button',{name:/^(暫停|Pause)$/}).waitFor({timeout:30000});
-      await page.screenshot({path:path.join(artifactDir,'spotify-desktop.png')});
-      await page.setViewportSize({width:320,height:740});
-      await page.waitForTimeout(300);
-      await player.getByRole('button',{name:/^(暫停|Pause)$/}).waitFor();
-      await page.screenshot({path:path.join(artifactDir,'spotify-320.png')});
-      await page.setViewportSize({width:667,height:375});
-      await page.waitForTimeout(300);
-      await player.getByRole('button',{name:/^(暫停|Pause)$/}).waitFor();
-      await page.screenshot({path:path.join(artifactDir,'spotify-667.png')});
-      await page.setViewportSize({width:1440,height:900});
-      const oldPlayer = await page.locator('#spotify-player iframe').elementHandle();
+    await check('preview selection retains one audio element and follows chapter navigation',async()=>{
+      const audio = await page.locator('#preview-audio').elementHandle();
+      const first = songs[0];
+      assert.equal(await audio.evaluate(e=>e.paused),true);
+      assert.equal(await audio.getAttribute('src'),await page.evaluate(id=>window.KAZE_PREVIEWS[id],first.spotifyTrackId));
       await page.locator('#tab-listen').click();
-      assert.equal(await oldPlayer.evaluate(e=>e.isConnected),true,'content tab must retain playback');
+      assert.equal(await audio.evaluate(e=>e.isConnected),true);
       await page.locator('#next').click();
-      assert.equal(await oldPlayer.evaluate(e=>e.isConnected),false,'changing songs must remove old audio context');
+      assert.equal(await audio.evaluate(e=>e.isConnected),true);
+      assert.equal(await audio.evaluate(e=>e.paused),true);
       await page.locator('#slide-title').focus(); await page.keyboard.press('Home');
-      // Test our navigation against a lightweight provider response after one real playback check.
-      await page.route('https://open.spotify.com/embed/**',route=>route.fulfill({contentType:'text/html',body:'<!doctype html><title>Spotify test fixture</title><p>Player</p>'}));
     });
     await check('all 18 slides, three tabs, notes and source links match verified data',async()=>{
       for (const [i,song] of songs.entries()) {
         assert.equal(await page.locator('#slide-title').innerText(),song.name);
-        await page.waitForFunction(id=>document.querySelector('#spotify-player iframe')?.src===`https://open.spotify.com/embed/track/${id}?theme=0`,song.spotifyTrackId);
-        assert.equal(await page.locator('#spotify-player iframe').count(),1);
-        assert.equal(await page.locator('#spotify-player iframe').getAttribute('src'),`https://open.spotify.com/embed/track/${song.spotifyTrackId}?theme=0`);
+        assert.equal(await page.locator('#preview-audio').getAttribute('src'),await page.evaluate(id=>window.KAZE_PREVIEWS[id],song.spotifyTrackId));
+        assert.equal(await page.locator('#preview-audio').count(),1);
         assert.equal(await page.locator('#spotify-open').getAttribute('href'),`https://open.spotify.com/track/${song.spotifyTrackId}`);
         assert.equal(await page.locator('#slide-line').innerText(),song.line);
         await page.locator('#tab-summary').click();
@@ -178,7 +162,7 @@ async function check(name,fn) { await fn(); results.push(name); console.log(`PAS
         if (w === 320 || w === 844) {
           await page.locator('#intro-open').click();
           assert.ok(await page.locator('#intro-dialog').evaluate(e=>e.scrollWidth<=e.clientWidth));
-          await page.locator('#intro-start').click();
+          await page.locator('#intro-close').click();
           assert.equal(await page.locator('#intro-dialog').isVisible(),false);
         }
         await page.evaluate(()=>document.activeElement?.blur());
@@ -193,7 +177,7 @@ async function check(name,fn) { await fn(); results.push(name); console.log(`PAS
       await page.locator('#intro-open').click();
       assert.ok(await page.locator('#intro-dialog').evaluate(e=>e.scrollWidth<=e.clientWidth));
       await page.screenshot({path:path.join(artifactDir,'intro-320-text-200.png'),fullPage:true});
-      await page.locator('#intro-start').click();
+      await page.locator('#intro-close').click();
       assert.ok(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth));
       await page.setViewportSize({width:1280,height:720});
       assert.ok(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth));
@@ -205,17 +189,15 @@ async function check(name,fn) { await fn(); results.push(name); console.log(`PAS
       }
       await page.locator('#next').click(); assert.equal(await page.locator('#slide-title').innerText(),songs[1].name);
     });
-    await check('blocked Spotify embed leaves reading and the direct song link available',async()=>{
-      await page.route('https://open.spotify.com/embed/**',route=>route.abort());
-      const blocked = page.waitForEvent('requestfailed',r=>r.url().includes(`/embed/track/${songs[2].spotifyTrackId}`));
+    await check('missing preview leaves reading and the direct song link available',async()=>{
+      await page.evaluate(id=>delete window.KAZE_PREVIEWS[id],songs[2].spotifyTrackId);
       await page.locator('#next').click();
-      await blocked;
       assert.equal(await page.locator('#slide-title').innerText(),songs[2].name);
-      assert.equal(await page.locator('#spotify-open').isVisible(),true);
+      assert.equal(await page.locator('#play-toggle').isDisabled(),true);
+      assert.match(await page.locator('#playback-status').innerText(),/暫無公開試聽/);
       assert.equal(await page.locator('#spotify-open').getAttribute('href'),`https://open.spotify.com/track/${songs[2].spotifyTrackId}`);
       await page.locator('#tab-listen').click();
       assert.equal(await page.locator('#slide-text').innerText(),songs[2].listen);
-      await page.unroute('https://open.spotify.com/embed/**');
     });
     await check('no page errors',async()=>assert.deepEqual(errors,[]));
     fs.writeFileSync(path.join(artifactDir,'results.json'),JSON.stringify({url,checks:results,errors},null,2));
